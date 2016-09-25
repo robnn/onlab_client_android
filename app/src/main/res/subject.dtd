@@ -1,0 +1,9 @@
+<!ELEMENT subject (name, requirement)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT requirement (test*, homework*, consultation*)>
+<!ELEMENT test (date, thematics?)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT thematics (#PCDATA)>
+<!ELEMENT consultation (date, thematics?)>
+<!ELEMENT homework (date, thematics?)>
+

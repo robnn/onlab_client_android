@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE subject SYSTEM "subject.dtd">
+<subject>
+    <name>Mérnöki problémamegoldás</name>
+    <requirement>
+        <test>
+            <date>2016.02.01 18:00</date>
+            <thematics>Első 4 előadás</thematics>
+        </test>
+
+    </requirement>
+</subject>
