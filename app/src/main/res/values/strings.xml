@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Unireq</string>
+    <string name="title_activity_add_req">AddReq</string>
 </resources>

@@ -35,13 +35,13 @@ public class SubjectParser {
     private SubjectParser() {
         parser = Xml.newPullParser();
         try {
-            parser.setFeature(XmlPullParser.FEATURE_VALIDATION, true);
+            parser.setFeature(XmlPullParser.FEATURE_PROCESS_DOCDECL, true);
         } catch (XmlPullParserException e) {
             e.printStackTrace(); //TODO
         }
         xmlInputStream = null;
     }
-    public Subject parse() throws XmlPullParserException, IOException {
+    public Subject parse() throws XmlPullParserException, IOException, ParseException {
        if(xmlInputStream!=null){
            try{
                parser.setInput(xmlInputStream, null);
@@ -60,7 +60,7 @@ public class SubjectParser {
     public void setInputStream(InputStream a){
         xmlInputStream = a;
     }
-    private Subject readSubject(XmlPullParser parser) throws IOException, XmlPullParserException {
+    private Subject readSubject(XmlPullParser parser) throws IOException, XmlPullParserException, ParseException {
 
         String subjectName = null;
         Subject subject ;
@@ -98,7 +98,7 @@ public class SubjectParser {
         parser.require(XmlPullParser.END_TAG, null, "name");
         return title;
     }
-    private List readReq(XmlPullParser parser) throws IOException, XmlPullParserException {
+    private List readReq(XmlPullParser parser) throws IOException, XmlPullParserException, ParseException {
         List<ReqElement> reqElements = new ArrayList<>();
         ReqElement rq = null;
         parser.require(XmlPullParser.START_TAG, null, "requirement");
@@ -125,14 +125,32 @@ public class SubjectParser {
         return reqElements;
     }
 
-    private ReqElement readReqElement(XmlPullParser parser, String n)throws IOException, XmlPullParserException {
-        ReqElement reqElement = null;
+    private ReqElement readReqElement(XmlPullParser parser, String n) throws IOException, XmlPullParserException, ParseException {
+        ReqElement reqElement;
+
+
+
+        String date ="";
+        String thematics ="";
+        int hardness = 0;
         parser.require(XmlPullParser.START_TAG, null, n);
-        try {
-            reqElement= new ReqElement(readDate(parser), readThematics(parser),null);
-        } catch (ParseException e) {
-            e.printStackTrace(); //TODO
+        while(parser.next() !=XmlPullParser.END_TAG){
+            if(parser.getEventType() != XmlPullParser.START_TAG){
+                continue;
+            }
+            String name = parser.getName();
+            if(name.equals("date")){
+                date = readDate(parser);
+            } else if(name.equals("thematics")){
+                thematics = readThematics(parser);
+            } else if(name.equals("hardness")){
+                hardness = Integer.parseInt(readHardness(parser));
+            }
+            else{
+                skip(parser);
+            }
         }
+        reqElement= new ReqElement(date, thematics, hardness);
         parser.require(XmlPullParser.END_TAG, null, n);
         switch (n){
             case "homework": reqElement.setRe(ReqElement.reqtype.HOMEWORK);
@@ -146,6 +164,14 @@ public class SubjectParser {
         }
         return reqElement;
     }
+
+    private String readHardness(XmlPullParser parser) throws IOException, XmlPullParserException {
+        parser.require(XmlPullParser.START_TAG, null, "hardness");
+        String date=readText(parser);
+        parser.require(XmlPullParser.END_TAG, null, "hardness");
+        return date;
+    }
+
     private String readDate(XmlPullParser parser)throws IOException, XmlPullParserException {
 
         parser.require(XmlPullParser.START_TAG, null, "date");
