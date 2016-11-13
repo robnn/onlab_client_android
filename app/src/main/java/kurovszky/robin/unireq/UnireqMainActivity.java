@@ -24,7 +24,7 @@ public class UnireqMainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
-        InputStream a;
+        /*InputStream a;
 
         a = getResources().openRawResource(R.raw.testsubject);
 
