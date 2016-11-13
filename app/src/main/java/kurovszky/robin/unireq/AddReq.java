@@ -14,6 +14,7 @@ public class AddReq extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_req);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setLogo(R.drawable.logo);
         setSupportActionBar(toolbar);
 
 

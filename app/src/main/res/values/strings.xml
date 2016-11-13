@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Unireq</string>
     <string name="title_activity_add_req">AddReq</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_subject">Add subject</string>
+    <string name="properties">Settings</string>
+    <string name="info">Info</string>
 </resources>

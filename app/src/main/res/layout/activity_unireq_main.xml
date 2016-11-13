@@ -17,6 +17,6 @@
             android:theme="@style/AppTheme.ActionBar"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    </android.support.design.widget.AppBarLayout>
 
+    </android.support.design.widget.AppBarLayout>
 </LinearLayout>
