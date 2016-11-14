@@ -1,4 +1,4 @@
-package kurovszky.robin.unireq.xml_parser;
+package kurovszky.robin.unicalendar.xml_parser;
 
 
 import android.util.Log;
@@ -13,9 +13,9 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-import kurovszky.robin.unireq.model.ReqElement;
-import kurovszky.robin.unireq.model.Requirement;
-import kurovszky.robin.unireq.model.Subject;
+import kurovszky.robin.unicalendar.model.ReqElement;
+import kurovszky.robin.unicalendar.model.Requirement;
+import kurovszky.robin.unicalendar.model.Subject;
 
 /**
  * Usage is:

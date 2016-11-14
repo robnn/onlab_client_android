@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="kurovszky.robin.unireq.AddReq">
+    tools:context="kurovszky.robin.unicalendar.AddReq">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -16,6 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            app:contentInsetStart="0dp"
             android:background="?attr/colorPrimary"
             android:theme="@style/AppTheme.ActionBar"
             app:popupTheme="@style/AppTheme.PopupOverlay" />

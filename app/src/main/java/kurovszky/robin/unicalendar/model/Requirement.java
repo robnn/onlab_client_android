@@ -1,4 +1,4 @@
-package kurovszky.robin.unireq.model;
+package kurovszky.robin.unicalendar.model;
 
 import java.util.List;
 

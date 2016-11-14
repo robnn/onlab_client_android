@@ -1,6 +1,12 @@
-package kurovszky.robin.unireq;
+package kurovszky.robin.unicalendar;
 
+import android.app.Fragment;
+
+
+import android.net.Uri;
+import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -8,37 +14,29 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class UnireqMainActivity extends AppCompatActivity {
+public class UnireqMainActivity extends AppCompatActivity implements CalendarFragment.OnFragmentInteractionListener, UpcomingFragment.OnFragmentInteractionListener {
     /*for debug only, use view instead*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unireq_main);
+        //toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.main_toolbar);
-        toolbar.setLogo(R.drawable.logo);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.logo);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        //fragments
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        /*InputStream a;
+        UpcomingFragment upcomingFragment = new UpcomingFragment();
+        CalendarFragment calendarFragment = new CalendarFragment();
+        fragmentTransaction.add(R.id.fragment_space,upcomingFragment);
+        fragmentTransaction.add(R.id.fragment_space,calendarFragment);
+        fragmentTransaction.commit();
 
-        a = getResources().openRawResource(R.raw.testsubject);
 
-        SubjectParser b = SubjectParser.getInstance();
-        b.setInputStream(a);
-        Subject s=null;
-        try {
-            s = b.parse();
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        TextView tx = new TextView(this);
-        tx.setText(s.toString());
-        /*this.addContentView(tx, new Toolbar.LayoutParams(
-                Toolbar.LayoutParams.FILL_PARENT,
-                Toolbar.LayoutParams.WRAP_CONTENT));*/
     }
 
     @Override
@@ -58,5 +56,10 @@ public class UnireqMainActivity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

@@ -1,4 +1,4 @@
-package kurovszky.robin.unireq;
+package kurovszky.robin.unicalendar;
 
 import android.content.Context;
 import android.net.Uri;
