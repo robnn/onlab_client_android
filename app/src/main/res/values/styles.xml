@@ -20,4 +20,8 @@
     <style name="AppTheme.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="TabStrip">
+        <item name="android:textColor">@color/icons</item>
+    </style>
+
 </resources>
