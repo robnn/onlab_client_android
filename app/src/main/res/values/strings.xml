@@ -7,4 +7,8 @@
     <string name="add_subject">Add subject</string>
     <string name="properties">Settings</string>
     <string name="info">Info</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="calendar">Calendar</string>
+    <string name="bad_string">this is not supposed to be seen :(</string>
+    <string name="enter_subject_name">Enter subject name</string>
 </resources>

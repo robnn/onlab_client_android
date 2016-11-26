@@ -1,19 +1,32 @@
 package kurovszky.robin.unicalendar.model;
 
+import com.orm.SugarRecord;
 
-public class Subject {
-    private String name;
-    private Requirement req;
-    public Subject(String n, Requirement r){
-        req = r;
-        name = n;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by robin on 2016. 11. 26..
+ */
+
+public class Subject extends SugarRecord{
+    List<Requirement> requirements;
+    String name;
+
+    public Subject(String name) {
+        this.name = name;
+        requirements = new ArrayList<>();
     }
-    @Override
-    public String toString(){
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(name);
-        stringBuilder.append(" - ");
-        stringBuilder.append(req.toString());
-        return stringBuilder.toString();
+    public void addReq(Requirement requirement){
+        requirement.setSubject(this);
+        requirements.add(requirement);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Requirement> getRequirements() {
+        return requirements;
     }
 }

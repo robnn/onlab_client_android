@@ -1,14 +1,26 @@
 package kurovszky.robin.unicalendar.fragment;
 
+
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutCompat;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import kurovszky.robin.unicalendar.R;
+import kurovszky.robin.unicalendar.fragment.adapter.UpcomingAdapter;
+import kurovszky.robin.unicalendar.model.Requirement;
+import kurovszky.robin.unicalendar.model.Subject;
 
 
 /**
@@ -27,7 +39,10 @@ public class UpcomingFragment extends Fragment {
     public static final String TAG = "Upcoming";
 
     private OnFragmentInteractionListener mListener;
-
+    RecyclerView mRecyclerView;
+    RecyclerView.LayoutManager mLayoutManager;
+    List<Subject> subjects;
+    List<Requirement> requirements;
     public UpcomingFragment() {
         // Required empty public constructor
     }
@@ -46,8 +61,23 @@ public class UpcomingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View upcomingView = inflater.inflate(R.layout.fragment_upcoming, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_upcoming, container, false);
+        mRecyclerView = (RecyclerView) upcomingView.findViewById(R.id.my_recycler_view);
+
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this.getActivity()).color(R.color.divider).sizeResId(R.dimen.divider).marginResId(R.dimen.leftmargin, R.dimen.rightmargin).build());
+
+        // use a linear layout manager
+        mLayoutManager = new LinearLayoutManager(this.getActivity());
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        // specify an adapter (see also next example)
+        UpcomingAdapter adapter = new UpcomingAdapter(requirements);
+        mRecyclerView.setAdapter(adapter);
+
+        return upcomingView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -87,5 +117,15 @@ public class UpcomingFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public void setSubjects(List<Subject> subjects) {
+        this.subjects = subjects;
+        this.requirements = new ArrayList<>();
+        for (Subject s:subjects
+             ) {
+            requirements.addAll(s.getRequirements());
+
+        }
     }
 }
