@@ -1,8 +1,14 @@
 package kurovszky.robin.unicalendar.model;
 
+import android.content.res.Resources;
+
 import com.orm.SugarRecord;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+
+import kurovszky.robin.unicalendar.R;
 
 /**
  * Created by robin on 2016. 11. 26..
@@ -12,8 +18,11 @@ public class Requirement extends SugarRecord{
     private String type;
     private Calendar time;
     private int hardiness; //1-5 number
-    private Subject subject;
+    private String subject;
     private Calendar time_for_notification;
+
+    public Requirement() {
+    }
 
     public Requirement(String type, Calendar time, int hardiness) {
         this.type = type;
@@ -22,7 +31,7 @@ public class Requirement extends SugarRecord{
 
     }
 
-    public void setSubject(Subject subject) {
+    public void setSubject(String subject) {
         this.subject = subject;
     }
 
@@ -31,7 +40,12 @@ public class Requirement extends SugarRecord{
     }
 
     public String getTime() {
-        return time.getTime().toString();
+        SimpleDateFormat format1 = new SimpleDateFormat("yyyy:MM:dd - HH:mm");
+        String formatted = format1.format(time.getTime());
+        return formatted;
+    }
+    public Date getTimeInDate(){
+        return  time.getTime();
     }
 
     public int getHardiness() {
@@ -39,6 +53,8 @@ public class Requirement extends SugarRecord{
     }
 
     public String getSubject() {
-        return subject.getName();
+        if(subject!=null)
+            return subject;
+        return "";
     }
 }

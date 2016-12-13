@@ -8,6 +8,8 @@
         <item name="colorAccent">@color/accent</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerStyle</item>
+
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -31,6 +33,13 @@
         <item name="android:textColor">@color/accent</item>
         <item name="android:textSize">20dp</item>
         <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SpinnerStyle">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropdownStyle</item>
+    </style>
+    <style name="SpinnerDropdownStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/icons</item>
     </style>
 
 </resources>

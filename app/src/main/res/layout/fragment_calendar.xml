@@ -4,9 +4,11 @@
     android:layout_height="match_parent"
     tools:context="kurovszky.robin.unicalendar.fragment.CalendarFragment">
 
-    <CalendarView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/calendarView" />
+
+    <com.mustafaferhan.MFCalendarView
+        android:id="@+id/mFCalendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.mustafaferhan.MFCalendarView>
 
 </FrameLayout>

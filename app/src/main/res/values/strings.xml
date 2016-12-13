@@ -11,4 +11,30 @@
     <string name="calendar">Calendar</string>
     <string name="bad_string">this is not supposed to be seen :(</string>
     <string name="enter_subject_name">Enter subject name</string>
+    <string name="add_requirement">Add requirement</string>
+    <string name="addReqTitle">Add a subject</string>
+    <string name="hardiness">Hardiness</string>
+    <string name="type">Type</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="add_a_requ">Add a requirement</string>
+    <string name="asd">asd</string>
+    <string name="veryeasy">Very easy</string>
+    <string name="easy">Easy</string>
+    <string name="moderate">Moderate</string>
+    <string name="hard">Hard</string>
+    <string name="veryhard">Very hard</string>
+    <string-array name="hardiness_spinner_items">
+        <item name="veryeasy">Very easy</item>
+        <item name="easy">Easy</item>
+        <item name="moderate">Moderate</item>
+        <item name="hard">Hard</item>
+        <item name="veryhard">Very hard</item>
+    </string-array>
+    <string-array name="types">
+        <item name="ZH">Test</item>
+        <item name="Konzi">Consultation</item>
+        <item name="HW">Homework</item>
+        <item name="Exam">Exam</item>
+    </string-array>
 </resources>

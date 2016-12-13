@@ -2,8 +2,7 @@ package kurovszky.robin.unicalendar;
 
 
 
-import android.net.Uri;
-
+import android.content.Context;
 import android.content.Intent;
 
 
@@ -12,7 +11,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
 import android.os.Bundle;
 
 import android.support.v7.app.AppCompatActivity;
@@ -24,21 +22,22 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
 import kurovszky.robin.unicalendar.fragment.CalendarFragment;
 import kurovszky.robin.unicalendar.fragment.UpcomingFragment;
 import kurovszky.robin.unicalendar.model.Requirement;
-import kurovszky.robin.unicalendar.model.Subject;
 
-public class UnireqMainActivity extends AppCompatActivity implements CalendarFragment.OnFragmentInteractionListener, UpcomingFragment.OnFragmentInteractionListener {
+public class UnireqMainActivity extends AppCompatActivity {
 
     public static final int FRAGMENT_COUNT= 2;
+    public static final int REQUEST_CODE = 1;
     MyAdapter adapter;
     ViewPager pager;
-    List<Subject> subjects;
+    List<Requirement> requirements;
+    UpcomingFragment upcomingFragment;
+    CalendarFragment calendarFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,16 +66,8 @@ public class UnireqMainActivity extends AppCompatActivity implements CalendarFra
             }
         });
 
-        subjects = new ArrayList<>();
-        Subject test = new Subject("teszt");
-        test.addReq(new Requirement("házi", Calendar.getInstance(), 5));
-
-        subjects.add(test);
-        Subject test2 = new Subject("teszt2");
-        test2.addReq(new Requirement("ZH", Calendar.getInstance(), 1));
-
-        subjects.add(test2);
-
+        //subjects.add(test);
+        requirements = Requirement.listAll(Requirement.class);
     }
 
     @Override
@@ -91,7 +82,7 @@ public class UnireqMainActivity extends AppCompatActivity implements CalendarFra
         switch (item.getItemId()){
             case R.id.add_subject:
                 Intent intent = new Intent(this, AddReq.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE);
                 break;
             case R.id.settings:
                 //TODO
@@ -103,13 +94,22 @@ public class UnireqMainActivity extends AppCompatActivity implements CalendarFra
                 break;
 
         }
+
         return super.onOptionsItemSelected(item);
     }
 
     @Override
-    public void onFragmentInteraction(Uri uri) {
-
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == REQUEST_CODE){
+            if(resultCode == RESULT_OK){
+                requirements = Requirement.listAll(Requirement.class);
+                upcomingFragment.adapter.setRequirements(requirements);
+                upcomingFragment.adapter.notifyDataSetChanged();
+                calendarFragment.mfCalendarView.refreshCalendar();
+            }
+        }
     }
+
     public class MyAdapter extends FragmentPagerAdapter {
         public MyAdapter(FragmentManager fm) {
             super(fm);
@@ -125,13 +125,18 @@ public class UnireqMainActivity extends AppCompatActivity implements CalendarFra
         @Override
         public Fragment getItem(int position) {
             if(position == 0) {
-                UpcomingFragment a = UpcomingFragment.newInstance();
-                a.setSubjects(subjects);
-                return a;
+                upcomingFragment = UpcomingFragment.getInstance();
+                upcomingFragment.setSubjects(requirements);
+
+                return upcomingFragment;
             }
 
-            if(position == 1)
-                return CalendarFragment.newInstance();
+            if(position == 1) {
+                calendarFragment = CalendarFragment.getInstance();
+
+                calendarFragment.setRequirements(requirements);
+                return calendarFragment;
+            }
             return null;
         }
         @Override

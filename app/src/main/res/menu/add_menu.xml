@@ -4,6 +4,7 @@
 
     <item android:title="Save"
         android:icon="@drawable/ic_done_white_24dp"
+        android:id="@+id/confirm"
         app:showAsAction="always"
         android:visible="true"
         android:enabled="true" />

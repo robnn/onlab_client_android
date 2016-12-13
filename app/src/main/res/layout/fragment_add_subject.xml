@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kurovszky.robin.unicalendar.fragment.AddSubject"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textinputlayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/subjectNameText"
+            android:layout_height="48dp"
+            android:hint="@string/enter_subject_name" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_adding"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textinputlayout"
+        />
+    <Button
+        android:id="@+id/addReqButton"
+        android:background="@color/primary"
+        android:textColor="@color/icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_requirement"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
