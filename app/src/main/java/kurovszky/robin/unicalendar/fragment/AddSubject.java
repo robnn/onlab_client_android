@@ -41,7 +41,7 @@ public class AddSubject extends Fragment {
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
     List<Requirement> requirements;
-    AddAdapter adapter;
+    public AddAdapter adapter;
     public AddSubject() {
         // Required empty public constructor
     }
@@ -69,8 +69,8 @@ public class AddSubject extends Fragment {
 
         mRecyclerView = (RecyclerView) v.findViewById(R.id.recycler_view_adding);
         requirements = new ArrayList<>();
-        TextView textView = (TextView) getActivity().findViewById(R.id.toolbar_title);
-        textView.setText(R.string.addReqTitle);
+        //TextView textView = (TextView) getActivity().findViewById(R.id.toolbar_title);
+        //textView.setText(R.string.addReqTitle);
 
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
@@ -82,7 +82,7 @@ public class AddSubject extends Fragment {
         // use a linear layout manager
 
         mRecyclerView.setAdapter(adapter);
-
+        adapter.setContext(getActivity());
 
 
 

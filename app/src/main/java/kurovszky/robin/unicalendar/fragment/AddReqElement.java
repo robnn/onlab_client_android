@@ -33,8 +33,10 @@ import kurovszky.robin.unicalendar.view.CustomViewPager;
 public class AddReqElement extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-    private EditText dateText;
-    private EditText timeText;
+    private TextView dateText;
+    private TextView timeText;
+    private Button datePicker;
+    private Button timePicker;
     private Calendar calendar;
     private Button confirm;
     public AddReqElement() {
@@ -59,15 +61,17 @@ public class AddReqElement extends Fragment {
                              Bundle savedInstanceState) {
         calendar = Calendar.getInstance();
         View v = inflater.inflate(R.layout.fragment_add_req_element, container, false);
-        dateText = (EditText) v.findViewById(R.id.dateText);
-        timeText = (EditText) v.findViewById(R.id.timeText);
+        dateText = (TextView) v.findViewById(R.id.dateText);
+        timeText = (TextView) v.findViewById(R.id.timeText);
+        datePicker = (Button) v.findViewById(R.id.datePickerButton);
+        timePicker = (Button) v.findViewById(R.id.timePickerButton);
 
-        TextView textView = (TextView)getActivity().findViewById(R.id.toolbar_title);
-        textView.setText(R.string.add_a_requ);
+        //TextView textView = (TextView)getActivity().findViewById(R.id.toolbar_title);
+        //textView.setText(R.string.add_a_requ);
 
         final DatePickerFragment datePickerFragment = new DatePickerFragment();
         datePickerFragment.setPickerReference(this);
-        dateText.setOnClickListener(new View.OnClickListener() {
+        datePicker.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -77,7 +81,7 @@ public class AddReqElement extends Fragment {
         });
         final TimePickerFragment timePickerFragment = new TimePickerFragment();
         timePickerFragment.setPickerReference(this);
-        timeText.setOnClickListener(new View.OnClickListener() {
+        timePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

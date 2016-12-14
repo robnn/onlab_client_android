@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kurovszky.robin.unicalendar">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <application
+        android:name="com.orm.SugarApp"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name="com.orm.SugarApp">
-        <meta-data android:name="DATABASE" android:value="sugar_example.db" />
-        <activity android:name="kurovszky.robin.unicalendar.UnireqMainActivity"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="DATABASE"
+            android:value="sugar_example.db" />
+        <receiver
+            android:process=":remote"
+            android:name=".Alarm" />
+        <activity
+            android:name=".UnireqMainActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,10 +27,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="kurovszky.robin.unicalendar.AddReq"
+            android:name=".AddReq"
             android:label="@string/title_activity_add_req"
-            android:parentActivityName="kurovszky.robin.unicalendar.UnireqMainActivity"
+            android:parentActivityName=".UnireqMainActivity"
             android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kurovszky.robin.unicalendar.UnireqMainActivity" />
+        </activity>
+        <activity
+            android:name=".SubjectActivity"
+            android:label="@string/title_activity_subject"
+            android:parentActivityName=".UnireqMainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kurovszky.robin.unicalendar.UnireqMainActivity" />
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:parentActivityName=".UnireqMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kurovszky.robin.unicalendar.UnireqMainActivity" />
+        </activity>
+        <activity android:name=".SettingsActivity"
+            android:parentActivityName=".UnireqMainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kurovszky.robin.unicalendar.UnireqMainActivity" />

@@ -123,7 +123,7 @@ public class CalendarAdapter extends BaseAdapter {
 			dayView.setFocusable(false);
 		} else{
 			// setting curent month's days in blue color.
-			dayView.setTextColor(v.getResources().getColor(R.color.accent));
+			dayView.setTextColor(v.getResources().getColor(R.color.primary_text));
 		}
 
 		if (dayString.get(position).equals(curentDateString)) {

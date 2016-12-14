@@ -34,12 +34,32 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="date"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
         android:ems="10"
-        android:id="@+id/dateText" />
+        android:id="@+id/dateText"
+        android:text="@string/set_the_date"
+        style="@style/ListTextBold"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:background="@color/accent"/>
+    <Button
+        android:id="@+id/datePickerButton"
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/date"/>
+</LinearLayout>
+
+
 
     <TextView
         android:text="@string/time"
@@ -47,10 +67,29 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView3" />
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="time"
-        android:ems="10"
-        android:id="@+id/timeText" />
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            style="@style/ListTextBold"
+            android:text="@string/set_the_time"
+            android:id="@+id/timeText" />
+        <View
+            android:layout_width="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/accent"/>
+        <Button
+            android:id="@+id/timePickerButton"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/time"/>
+    </LinearLayout>
+
 </LinearLayout>

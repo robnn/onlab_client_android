@@ -6,9 +6,12 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 import kurovszky.robin.unicalendar.R;
 
@@ -31,8 +34,12 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
 
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-        EditText time = (EditText) getActivity().findViewById(R.id.timeText);
-        time.setText(Integer.toString(hourOfDay)+":"+Integer.toString(minute));
+        TextView time = (TextView) getActivity().findViewById(R.id.timeText);
+        SimpleDateFormat format = new SimpleDateFormat("HH:mm");
+        Date date = new Date();
+        date.setHours(hourOfDay);
+        date.setMinutes(minute);
+        time.setText(format.format(date));
         aq.setTime(hourOfDay,minute);
     }
     public void setPickerReference(AddReqElement a){

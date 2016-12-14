@@ -13,6 +13,10 @@ import android.view.ViewGroup;
 import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 import kurovszky.robin.unicalendar.R;
@@ -29,6 +33,7 @@ public class UpcomingFragment extends Fragment {
     public RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
     List<Requirement> requirements;
+    List<Requirement> upcoming;
     public UpcomingAdapter adapter;
     static UpcomingFragment upcomingFragment;
     public UpcomingFragment() {
@@ -55,7 +60,7 @@ public class UpcomingFragment extends Fragment {
         mRecyclerView = (RecyclerView) upcomingView.findViewById(R.id.my_recycler_view);
         mLayoutManager = new LinearLayoutManager(this.getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
-        adapter = new UpcomingAdapter(requirements);
+        adapter = new UpcomingAdapter(upcoming);
         mRecyclerView.setAdapter(adapter);
 
         mRecyclerView.setHasFixedSize(true);
@@ -80,9 +85,21 @@ public class UpcomingFragment extends Fragment {
     }
 
 
-    public void setSubjects(List<Requirement> requirements) {
+    public List<Requirement> setSubjects(List<Requirement> requirements) {
 
         this.requirements = new ArrayList<>();
+        this.upcoming = new ArrayList<>();
         this.requirements = requirements;
+        for (Requirement r: requirements){
+            Date current = Calendar.getInstance().getTime();
+            if(r.getTimeInDate().getTime()>= current.getTime()){
+                upcoming.add(r);
+            }
+
+
+        }
+        Collections.sort(upcoming);
+        return upcoming;
     }
+
 }

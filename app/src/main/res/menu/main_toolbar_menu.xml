@@ -8,7 +8,7 @@
         android:visible="true"
         android:enabled="true"
         app:showAsAction="always"/>
-    <item android:title="@string/properties"
+    <item android:title="@string/settings"
         android:id="@+id/settings"
         android:icon="@drawable/ic_settings_white_24dp"
         android:visible="true"

@@ -6,6 +6,7 @@ import com.orm.SugarRecord;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Comparator;
 import java.util.Date;
 
 import kurovszky.robin.unicalendar.R;
@@ -14,12 +15,11 @@ import kurovszky.robin.unicalendar.R;
  * Created by robin on 2016. 11. 26..
  */
 
-public class Requirement extends SugarRecord{
+public class Requirement extends SugarRecord  implements Comparable<Requirement>{
     private String type;
     private Calendar time;
     private int hardiness; //1-5 number
     private String subject;
-    private Calendar time_for_notification;
 
     public Requirement() {
     }
@@ -56,5 +56,16 @@ public class Requirement extends SugarRecord{
         if(subject!=null)
             return subject;
         return "";
+    }
+
+
+    @Override
+    public int compareTo(Requirement o) {
+        if(getTimeInDate().getTime()> o.getTimeInDate().getTime())
+            return 1;
+        if(getTimeInDate().getTime() < o.getTimeInDate().getTime())
+            return -1;
+
+        return 0;
     }
 }

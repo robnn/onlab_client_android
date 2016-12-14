@@ -7,8 +7,11 @@ import android.support.v4.app.DialogFragment;
 import android.app.DatePickerDialog;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 import kurovszky.robin.unicalendar.R;
 
@@ -31,8 +34,14 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-        EditText date = (EditText) getActivity().findViewById(R.id.dateText);
-        date.setText(Integer.toString(year) + "."+Integer.toString(month)+ "." + Integer.toString(dayOfMonth));
+        TextView date = (TextView) getActivity().findViewById(R.id.dateText);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy.MM.dd");
+        Date dateD = new Date();
+        dateD.setYear(year-1900);
+        dateD.setMonth(month);
+        dateD.setDate(dayOfMonth);
+        date.setText(format.format(dateD));
+
         aq.setDate(year,month,dayOfMonth);
     }
     public void setPickerReference(AddReqElement a){

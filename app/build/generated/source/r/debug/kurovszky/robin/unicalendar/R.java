@@ -28,8 +28,17 @@ public final class R {
         public static final int design_snackbar_out=0x7f050010;
     }
     public static final class array {
-        public static final int hardiness_spinner_items=0x7f0c0000;
-        public static final int types=0x7f0c0001;
+        public static final int drawerItems=0x7f0d0000;
+        public static final int hardiness_days=0x7f0d0001;
+        public static final int hardiness_spinner_items=0x7f0d0002;
+        public static final int list_preference_entries=0x7f0d0003;
+        public static final int list_preference_entry_values=0x7f0d0004;
+        public static final int multi_select_list_preference_default_value=0x7f0d0005;
+        public static final int pref_example_list_titles=0x7f0d0006;
+        public static final int pref_example_list_values=0x7f0d0007;
+        public static final int pref_sync_frequency_titles=0x7f0d0008;
+        public static final int pref_sync_frequency_values=0x7f0d0009;
+        public static final int types=0x7f0d000a;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -2273,237 +2282,237 @@ containing a value of this type.
         public static final int windowNoTitle=0x7f010031;
     }
     public static final class bool {
-        public static final int abc_action_bar_embed_tabs=0x7f0a0000;
-        public static final int abc_allow_stacked_button_bar=0x7f0a0001;
-        public static final int abc_config_actionMenuItemAllCaps=0x7f0a0002;
-        public static final int abc_config_closeDialogWhenTouchOutside=0x7f0a0003;
-        public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0a0004;
+        public static final int abc_action_bar_embed_tabs=0x7f0b0000;
+        public static final int abc_allow_stacked_button_bar=0x7f0b0001;
+        public static final int abc_config_actionMenuItemAllCaps=0x7f0b0002;
+        public static final int abc_config_closeDialogWhenTouchOutside=0x7f0b0003;
+        public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0b0004;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f0d004c;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f0d004d;
-        public static final int abc_btn_colored_borderless_text_material=0x7f0d004e;
-        public static final int abc_color_highlight_material=0x7f0d004f;
-        public static final int abc_input_method_navigation_guard=0x7f0d0000;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f0d0050;
-        public static final int abc_primary_text_disable_only_material_light=0x7f0d0051;
-        public static final int abc_primary_text_material_dark=0x7f0d0052;
-        public static final int abc_primary_text_material_light=0x7f0d0053;
-        public static final int abc_search_url_text=0x7f0d0054;
-        public static final int abc_search_url_text_normal=0x7f0d0001;
-        public static final int abc_search_url_text_pressed=0x7f0d0002;
-        public static final int abc_search_url_text_selected=0x7f0d0003;
-        public static final int abc_secondary_text_material_dark=0x7f0d0055;
-        public static final int abc_secondary_text_material_light=0x7f0d0056;
-        public static final int abc_tint_btn_checkable=0x7f0d0057;
-        public static final int abc_tint_default=0x7f0d0058;
-        public static final int abc_tint_edittext=0x7f0d0059;
-        public static final int abc_tint_seek_thumb=0x7f0d005a;
-        public static final int abc_tint_spinner=0x7f0d005b;
-        public static final int abc_tint_switch_thumb=0x7f0d005c;
-        public static final int abc_tint_switch_track=0x7f0d005d;
-        public static final int accent=0x7f0d0004;
-        public static final int accent_material_dark=0x7f0d0005;
-        public static final int accent_material_light=0x7f0d0006;
-        public static final int background_floating_material_dark=0x7f0d0007;
-        public static final int background_floating_material_light=0x7f0d0008;
-        public static final int background_material_dark=0x7f0d0009;
-        public static final int background_material_light=0x7f0d000a;
-        public static final int bright_foreground_disabled_material_dark=0x7f0d000b;
-        public static final int bright_foreground_disabled_material_light=0x7f0d000c;
-        public static final int bright_foreground_inverse_material_dark=0x7f0d000d;
-        public static final int bright_foreground_inverse_material_light=0x7f0d000e;
-        public static final int bright_foreground_material_dark=0x7f0d000f;
-        public static final int bright_foreground_material_light=0x7f0d0010;
-        public static final int button_material_dark=0x7f0d0011;
-        public static final int button_material_light=0x7f0d0012;
-        public static final int design_error=0x7f0d005e;
-        public static final int design_fab_shadow_end_color=0x7f0d0013;
-        public static final int design_fab_shadow_mid_color=0x7f0d0014;
-        public static final int design_fab_shadow_start_color=0x7f0d0015;
-        public static final int design_fab_stroke_end_inner_color=0x7f0d0016;
-        public static final int design_fab_stroke_end_outer_color=0x7f0d0017;
-        public static final int design_fab_stroke_top_inner_color=0x7f0d0018;
-        public static final int design_fab_stroke_top_outer_color=0x7f0d0019;
-        public static final int design_snackbar_background_color=0x7f0d001a;
-        public static final int design_textinput_error_color_dark=0x7f0d001b;
-        public static final int design_textinput_error_color_light=0x7f0d001c;
-        public static final int design_tint_password_toggle=0x7f0d005f;
-        public static final int dim_foreground_disabled_material_dark=0x7f0d001d;
-        public static final int dim_foreground_disabled_material_light=0x7f0d001e;
-        public static final int dim_foreground_material_dark=0x7f0d001f;
-        public static final int dim_foreground_material_light=0x7f0d0020;
-        public static final int divider=0x7f0d0021;
-        public static final int foreground_material_dark=0x7f0d0022;
-        public static final int foreground_material_light=0x7f0d0023;
-        public static final int highlighted_text_material_dark=0x7f0d0024;
-        public static final int highlighted_text_material_light=0x7f0d0025;
-        public static final int hint_foreground_material_dark=0x7f0d0026;
-        public static final int hint_foreground_material_light=0x7f0d0027;
-        public static final int icons=0x7f0d0028;
-        public static final int material_blue_grey_800=0x7f0d0029;
-        public static final int material_blue_grey_900=0x7f0d002a;
-        public static final int material_blue_grey_950=0x7f0d002b;
-        public static final int material_deep_teal_200=0x7f0d002c;
-        public static final int material_deep_teal_500=0x7f0d002d;
-        public static final int material_grey_100=0x7f0d002e;
-        public static final int material_grey_300=0x7f0d002f;
-        public static final int material_grey_50=0x7f0d0030;
-        public static final int material_grey_600=0x7f0d0031;
-        public static final int material_grey_800=0x7f0d0032;
-        public static final int material_grey_850=0x7f0d0033;
-        public static final int material_grey_900=0x7f0d0034;
-        public static final int primary=0x7f0d0035;
-        public static final int primary_dark=0x7f0d0036;
-        public static final int primary_dark_material_dark=0x7f0d0037;
-        public static final int primary_dark_material_light=0x7f0d0038;
-        public static final int primary_light=0x7f0d0039;
-        public static final int primary_material_dark=0x7f0d003a;
-        public static final int primary_material_light=0x7f0d003b;
-        public static final int primary_text=0x7f0d003c;
-        public static final int primary_text_default_material_dark=0x7f0d003d;
-        public static final int primary_text_default_material_light=0x7f0d003e;
-        public static final int primary_text_disabled_material_dark=0x7f0d003f;
-        public static final int primary_text_disabled_material_light=0x7f0d0040;
-        public static final int ripple_material_dark=0x7f0d0041;
-        public static final int ripple_material_light=0x7f0d0042;
-        public static final int secondary_text=0x7f0d0043;
-        public static final int secondary_text_default_material_dark=0x7f0d0044;
-        public static final int secondary_text_default_material_light=0x7f0d0045;
-        public static final int secondary_text_disabled_material_dark=0x7f0d0046;
-        public static final int secondary_text_disabled_material_light=0x7f0d0047;
-        public static final int switch_thumb_disabled_material_dark=0x7f0d0048;
-        public static final int switch_thumb_disabled_material_light=0x7f0d0049;
-        public static final int switch_thumb_material_dark=0x7f0d0060;
-        public static final int switch_thumb_material_light=0x7f0d0061;
-        public static final int switch_thumb_normal_material_dark=0x7f0d004a;
-        public static final int switch_thumb_normal_material_light=0x7f0d004b;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f0e004c;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f0e004d;
+        public static final int abc_btn_colored_borderless_text_material=0x7f0e004e;
+        public static final int abc_color_highlight_material=0x7f0e004f;
+        public static final int abc_input_method_navigation_guard=0x7f0e0000;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f0e0050;
+        public static final int abc_primary_text_disable_only_material_light=0x7f0e0051;
+        public static final int abc_primary_text_material_dark=0x7f0e0052;
+        public static final int abc_primary_text_material_light=0x7f0e0053;
+        public static final int abc_search_url_text=0x7f0e0054;
+        public static final int abc_search_url_text_normal=0x7f0e0001;
+        public static final int abc_search_url_text_pressed=0x7f0e0002;
+        public static final int abc_search_url_text_selected=0x7f0e0003;
+        public static final int abc_secondary_text_material_dark=0x7f0e0055;
+        public static final int abc_secondary_text_material_light=0x7f0e0056;
+        public static final int abc_tint_btn_checkable=0x7f0e0057;
+        public static final int abc_tint_default=0x7f0e0058;
+        public static final int abc_tint_edittext=0x7f0e0059;
+        public static final int abc_tint_seek_thumb=0x7f0e005a;
+        public static final int abc_tint_spinner=0x7f0e005b;
+        public static final int abc_tint_switch_thumb=0x7f0e005c;
+        public static final int abc_tint_switch_track=0x7f0e005d;
+        public static final int accent=0x7f0e0004;
+        public static final int accent_material_dark=0x7f0e0005;
+        public static final int accent_material_light=0x7f0e0006;
+        public static final int background_floating_material_dark=0x7f0e0007;
+        public static final int background_floating_material_light=0x7f0e0008;
+        public static final int background_material_dark=0x7f0e0009;
+        public static final int background_material_light=0x7f0e000a;
+        public static final int bright_foreground_disabled_material_dark=0x7f0e000b;
+        public static final int bright_foreground_disabled_material_light=0x7f0e000c;
+        public static final int bright_foreground_inverse_material_dark=0x7f0e000d;
+        public static final int bright_foreground_inverse_material_light=0x7f0e000e;
+        public static final int bright_foreground_material_dark=0x7f0e000f;
+        public static final int bright_foreground_material_light=0x7f0e0010;
+        public static final int button_material_dark=0x7f0e0011;
+        public static final int button_material_light=0x7f0e0012;
+        public static final int design_error=0x7f0e005e;
+        public static final int design_fab_shadow_end_color=0x7f0e0013;
+        public static final int design_fab_shadow_mid_color=0x7f0e0014;
+        public static final int design_fab_shadow_start_color=0x7f0e0015;
+        public static final int design_fab_stroke_end_inner_color=0x7f0e0016;
+        public static final int design_fab_stroke_end_outer_color=0x7f0e0017;
+        public static final int design_fab_stroke_top_inner_color=0x7f0e0018;
+        public static final int design_fab_stroke_top_outer_color=0x7f0e0019;
+        public static final int design_snackbar_background_color=0x7f0e001a;
+        public static final int design_textinput_error_color_dark=0x7f0e001b;
+        public static final int design_textinput_error_color_light=0x7f0e001c;
+        public static final int design_tint_password_toggle=0x7f0e005f;
+        public static final int dim_foreground_disabled_material_dark=0x7f0e001d;
+        public static final int dim_foreground_disabled_material_light=0x7f0e001e;
+        public static final int dim_foreground_material_dark=0x7f0e001f;
+        public static final int dim_foreground_material_light=0x7f0e0020;
+        public static final int divider=0x7f0e0021;
+        public static final int foreground_material_dark=0x7f0e0022;
+        public static final int foreground_material_light=0x7f0e0023;
+        public static final int highlighted_text_material_dark=0x7f0e0024;
+        public static final int highlighted_text_material_light=0x7f0e0025;
+        public static final int hint_foreground_material_dark=0x7f0e0026;
+        public static final int hint_foreground_material_light=0x7f0e0027;
+        public static final int icons=0x7f0e0028;
+        public static final int material_blue_grey_800=0x7f0e0029;
+        public static final int material_blue_grey_900=0x7f0e002a;
+        public static final int material_blue_grey_950=0x7f0e002b;
+        public static final int material_deep_teal_200=0x7f0e002c;
+        public static final int material_deep_teal_500=0x7f0e002d;
+        public static final int material_grey_100=0x7f0e002e;
+        public static final int material_grey_300=0x7f0e002f;
+        public static final int material_grey_50=0x7f0e0030;
+        public static final int material_grey_600=0x7f0e0031;
+        public static final int material_grey_800=0x7f0e0032;
+        public static final int material_grey_850=0x7f0e0033;
+        public static final int material_grey_900=0x7f0e0034;
+        public static final int primary=0x7f0e0035;
+        public static final int primary_dark=0x7f0e0036;
+        public static final int primary_dark_material_dark=0x7f0e0037;
+        public static final int primary_dark_material_light=0x7f0e0038;
+        public static final int primary_light=0x7f0e0039;
+        public static final int primary_material_dark=0x7f0e003a;
+        public static final int primary_material_light=0x7f0e003b;
+        public static final int primary_text=0x7f0e003c;
+        public static final int primary_text_default_material_dark=0x7f0e003d;
+        public static final int primary_text_default_material_light=0x7f0e003e;
+        public static final int primary_text_disabled_material_dark=0x7f0e003f;
+        public static final int primary_text_disabled_material_light=0x7f0e0040;
+        public static final int ripple_material_dark=0x7f0e0041;
+        public static final int ripple_material_light=0x7f0e0042;
+        public static final int secondary_text=0x7f0e0043;
+        public static final int secondary_text_default_material_dark=0x7f0e0044;
+        public static final int secondary_text_default_material_light=0x7f0e0045;
+        public static final int secondary_text_disabled_material_dark=0x7f0e0046;
+        public static final int secondary_text_disabled_material_light=0x7f0e0047;
+        public static final int switch_thumb_disabled_material_dark=0x7f0e0048;
+        public static final int switch_thumb_disabled_material_light=0x7f0e0049;
+        public static final int switch_thumb_material_dark=0x7f0e0060;
+        public static final int switch_thumb_material_light=0x7f0e0061;
+        public static final int switch_thumb_normal_material_dark=0x7f0e004a;
+        public static final int switch_thumb_normal_material_light=0x7f0e004b;
     }
     public static final class dimen {
-        public static final int abc_action_bar_content_inset_material=0x7f08000c;
-        public static final int abc_action_bar_content_inset_with_nav=0x7f08000d;
-        public static final int abc_action_bar_default_height_material=0x7f080001;
-        public static final int abc_action_bar_default_padding_end_material=0x7f08000e;
-        public static final int abc_action_bar_default_padding_start_material=0x7f08000f;
-        public static final int abc_action_bar_elevation_material=0x7f08001a;
-        public static final int abc_action_bar_icon_vertical_padding_material=0x7f08001b;
-        public static final int abc_action_bar_overflow_padding_end_material=0x7f08001c;
-        public static final int abc_action_bar_overflow_padding_start_material=0x7f08001d;
-        public static final int abc_action_bar_progress_bar_size=0x7f080002;
-        public static final int abc_action_bar_stacked_max_height=0x7f08001e;
-        public static final int abc_action_bar_stacked_tab_max_width=0x7f08001f;
-        public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f080020;
-        public static final int abc_action_bar_subtitle_top_margin_material=0x7f080021;
-        public static final int abc_action_button_min_height_material=0x7f080022;
-        public static final int abc_action_button_min_width_material=0x7f080023;
-        public static final int abc_action_button_min_width_overflow_material=0x7f080024;
-        public static final int abc_alert_dialog_button_bar_height=0x7f080000;
-        public static final int abc_button_inset_horizontal_material=0x7f080025;
-        public static final int abc_button_inset_vertical_material=0x7f080026;
-        public static final int abc_button_padding_horizontal_material=0x7f080027;
-        public static final int abc_button_padding_vertical_material=0x7f080028;
-        public static final int abc_cascading_menus_min_smallest_width=0x7f080029;
-        public static final int abc_config_prefDialogWidth=0x7f080005;
-        public static final int abc_control_corner_material=0x7f08002a;
-        public static final int abc_control_inset_material=0x7f08002b;
-        public static final int abc_control_padding_material=0x7f08002c;
-        public static final int abc_dialog_fixed_height_major=0x7f080006;
-        public static final int abc_dialog_fixed_height_minor=0x7f080007;
-        public static final int abc_dialog_fixed_width_major=0x7f080008;
-        public static final int abc_dialog_fixed_width_minor=0x7f080009;
-        public static final int abc_dialog_list_padding_vertical_material=0x7f08002d;
-        public static final int abc_dialog_min_width_major=0x7f08000a;
-        public static final int abc_dialog_min_width_minor=0x7f08000b;
-        public static final int abc_dialog_padding_material=0x7f08002e;
-        public static final int abc_dialog_padding_top_material=0x7f08002f;
-        public static final int abc_disabled_alpha_material_dark=0x7f080030;
-        public static final int abc_disabled_alpha_material_light=0x7f080031;
-        public static final int abc_dropdownitem_icon_width=0x7f080032;
-        public static final int abc_dropdownitem_text_padding_left=0x7f080033;
-        public static final int abc_dropdownitem_text_padding_right=0x7f080034;
-        public static final int abc_edit_text_inset_bottom_material=0x7f080035;
-        public static final int abc_edit_text_inset_horizontal_material=0x7f080036;
-        public static final int abc_edit_text_inset_top_material=0x7f080037;
-        public static final int abc_floating_window_z=0x7f080038;
-        public static final int abc_list_item_padding_horizontal_material=0x7f080039;
-        public static final int abc_panel_menu_list_width=0x7f08003a;
-        public static final int abc_progress_bar_height_material=0x7f08003b;
-        public static final int abc_search_view_preferred_height=0x7f08003c;
-        public static final int abc_search_view_preferred_width=0x7f08003d;
-        public static final int abc_seekbar_track_background_height_material=0x7f08003e;
-        public static final int abc_seekbar_track_progress_height_material=0x7f08003f;
-        public static final int abc_select_dialog_padding_start_material=0x7f080040;
-        public static final int abc_switch_padding=0x7f080018;
-        public static final int abc_text_size_body_1_material=0x7f080041;
-        public static final int abc_text_size_body_2_material=0x7f080042;
-        public static final int abc_text_size_button_material=0x7f080043;
-        public static final int abc_text_size_caption_material=0x7f080044;
-        public static final int abc_text_size_display_1_material=0x7f080045;
-        public static final int abc_text_size_display_2_material=0x7f080046;
-        public static final int abc_text_size_display_3_material=0x7f080047;
-        public static final int abc_text_size_display_4_material=0x7f080048;
-        public static final int abc_text_size_headline_material=0x7f080049;
-        public static final int abc_text_size_large_material=0x7f08004a;
-        public static final int abc_text_size_medium_material=0x7f08004b;
-        public static final int abc_text_size_menu_header_material=0x7f08004c;
-        public static final int abc_text_size_menu_material=0x7f08004d;
-        public static final int abc_text_size_small_material=0x7f08004e;
-        public static final int abc_text_size_subhead_material=0x7f08004f;
-        public static final int abc_text_size_subtitle_material_toolbar=0x7f080003;
-        public static final int abc_text_size_title_material=0x7f080050;
-        public static final int abc_text_size_title_material_toolbar=0x7f080004;
-        public static final int activity_horizontal_margin=0x7f080019;
-        public static final int activity_vertical_margin=0x7f080051;
-        public static final int design_appbar_elevation=0x7f080052;
-        public static final int design_bottom_navigation_active_item_max_width=0x7f080053;
-        public static final int design_bottom_navigation_active_text_size=0x7f080054;
-        public static final int design_bottom_navigation_height=0x7f080055;
-        public static final int design_bottom_navigation_item_max_width=0x7f080056;
-        public static final int design_bottom_navigation_margin=0x7f080057;
-        public static final int design_bottom_navigation_text_size=0x7f080058;
-        public static final int design_bottom_sheet_modal_elevation=0x7f080059;
-        public static final int design_bottom_sheet_peek_height_min=0x7f08005a;
-        public static final int design_fab_border_width=0x7f08005b;
-        public static final int design_fab_elevation=0x7f08005c;
-        public static final int design_fab_image_size=0x7f08005d;
-        public static final int design_fab_size_mini=0x7f08005e;
-        public static final int design_fab_size_normal=0x7f08005f;
-        public static final int design_fab_translation_z_pressed=0x7f080060;
-        public static final int design_navigation_elevation=0x7f080061;
-        public static final int design_navigation_icon_padding=0x7f080062;
-        public static final int design_navigation_icon_size=0x7f080063;
-        public static final int design_navigation_max_width=0x7f080010;
-        public static final int design_navigation_padding_bottom=0x7f080064;
-        public static final int design_navigation_separator_vertical_padding=0x7f080065;
-        public static final int design_snackbar_action_inline_max_width=0x7f080011;
-        public static final int design_snackbar_background_corner_radius=0x7f080012;
-        public static final int design_snackbar_elevation=0x7f080066;
-        public static final int design_snackbar_extra_spacing_horizontal=0x7f080013;
-        public static final int design_snackbar_max_width=0x7f080014;
-        public static final int design_snackbar_min_width=0x7f080015;
-        public static final int design_snackbar_padding_horizontal=0x7f080067;
-        public static final int design_snackbar_padding_vertical=0x7f080068;
-        public static final int design_snackbar_padding_vertical_2lines=0x7f080016;
-        public static final int design_snackbar_text_size=0x7f080069;
-        public static final int design_tab_max_width=0x7f08006a;
-        public static final int design_tab_scrollable_min_width=0x7f080017;
-        public static final int design_tab_text_size=0x7f08006b;
-        public static final int design_tab_text_size_2line=0x7f08006c;
-        public static final int disabled_alpha_material_dark=0x7f08006d;
-        public static final int disabled_alpha_material_light=0x7f08006e;
-        public static final int divider=0x7f08006f;
-        public static final int fab_margin=0x7f080070;
-        public static final int highlight_alpha_material_colored=0x7f080071;
-        public static final int highlight_alpha_material_dark=0x7f080072;
-        public static final int highlight_alpha_material_light=0x7f080073;
-        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f080074;
-        public static final int item_touch_helper_swipe_escape_max_velocity=0x7f080075;
-        public static final int item_touch_helper_swipe_escape_velocity=0x7f080076;
-        public static final int leftmargin=0x7f080077;
-        public static final int notification_large_icon_height=0x7f080078;
-        public static final int notification_large_icon_width=0x7f080079;
-        public static final int notification_subtext_size=0x7f08007a;
-        public static final int rightmargin=0x7f08007b;
+        public static final int abc_action_bar_content_inset_material=0x7f09000c;
+        public static final int abc_action_bar_content_inset_with_nav=0x7f09000d;
+        public static final int abc_action_bar_default_height_material=0x7f090001;
+        public static final int abc_action_bar_default_padding_end_material=0x7f09000e;
+        public static final int abc_action_bar_default_padding_start_material=0x7f09000f;
+        public static final int abc_action_bar_elevation_material=0x7f09001a;
+        public static final int abc_action_bar_icon_vertical_padding_material=0x7f09001b;
+        public static final int abc_action_bar_overflow_padding_end_material=0x7f09001c;
+        public static final int abc_action_bar_overflow_padding_start_material=0x7f09001d;
+        public static final int abc_action_bar_progress_bar_size=0x7f090002;
+        public static final int abc_action_bar_stacked_max_height=0x7f09001e;
+        public static final int abc_action_bar_stacked_tab_max_width=0x7f09001f;
+        public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f090020;
+        public static final int abc_action_bar_subtitle_top_margin_material=0x7f090021;
+        public static final int abc_action_button_min_height_material=0x7f090022;
+        public static final int abc_action_button_min_width_material=0x7f090023;
+        public static final int abc_action_button_min_width_overflow_material=0x7f090024;
+        public static final int abc_alert_dialog_button_bar_height=0x7f090000;
+        public static final int abc_button_inset_horizontal_material=0x7f090025;
+        public static final int abc_button_inset_vertical_material=0x7f090026;
+        public static final int abc_button_padding_horizontal_material=0x7f090027;
+        public static final int abc_button_padding_vertical_material=0x7f090028;
+        public static final int abc_cascading_menus_min_smallest_width=0x7f090029;
+        public static final int abc_config_prefDialogWidth=0x7f090005;
+        public static final int abc_control_corner_material=0x7f09002a;
+        public static final int abc_control_inset_material=0x7f09002b;
+        public static final int abc_control_padding_material=0x7f09002c;
+        public static final int abc_dialog_fixed_height_major=0x7f090006;
+        public static final int abc_dialog_fixed_height_minor=0x7f090007;
+        public static final int abc_dialog_fixed_width_major=0x7f090008;
+        public static final int abc_dialog_fixed_width_minor=0x7f090009;
+        public static final int abc_dialog_list_padding_vertical_material=0x7f09002d;
+        public static final int abc_dialog_min_width_major=0x7f09000a;
+        public static final int abc_dialog_min_width_minor=0x7f09000b;
+        public static final int abc_dialog_padding_material=0x7f09002e;
+        public static final int abc_dialog_padding_top_material=0x7f09002f;
+        public static final int abc_disabled_alpha_material_dark=0x7f090030;
+        public static final int abc_disabled_alpha_material_light=0x7f090031;
+        public static final int abc_dropdownitem_icon_width=0x7f090032;
+        public static final int abc_dropdownitem_text_padding_left=0x7f090033;
+        public static final int abc_dropdownitem_text_padding_right=0x7f090034;
+        public static final int abc_edit_text_inset_bottom_material=0x7f090035;
+        public static final int abc_edit_text_inset_horizontal_material=0x7f090036;
+        public static final int abc_edit_text_inset_top_material=0x7f090037;
+        public static final int abc_floating_window_z=0x7f090038;
+        public static final int abc_list_item_padding_horizontal_material=0x7f090039;
+        public static final int abc_panel_menu_list_width=0x7f09003a;
+        public static final int abc_progress_bar_height_material=0x7f09003b;
+        public static final int abc_search_view_preferred_height=0x7f09003c;
+        public static final int abc_search_view_preferred_width=0x7f09003d;
+        public static final int abc_seekbar_track_background_height_material=0x7f09003e;
+        public static final int abc_seekbar_track_progress_height_material=0x7f09003f;
+        public static final int abc_select_dialog_padding_start_material=0x7f090040;
+        public static final int abc_switch_padding=0x7f090018;
+        public static final int abc_text_size_body_1_material=0x7f090041;
+        public static final int abc_text_size_body_2_material=0x7f090042;
+        public static final int abc_text_size_button_material=0x7f090043;
+        public static final int abc_text_size_caption_material=0x7f090044;
+        public static final int abc_text_size_display_1_material=0x7f090045;
+        public static final int abc_text_size_display_2_material=0x7f090046;
+        public static final int abc_text_size_display_3_material=0x7f090047;
+        public static final int abc_text_size_display_4_material=0x7f090048;
+        public static final int abc_text_size_headline_material=0x7f090049;
+        public static final int abc_text_size_large_material=0x7f09004a;
+        public static final int abc_text_size_medium_material=0x7f09004b;
+        public static final int abc_text_size_menu_header_material=0x7f09004c;
+        public static final int abc_text_size_menu_material=0x7f09004d;
+        public static final int abc_text_size_small_material=0x7f09004e;
+        public static final int abc_text_size_subhead_material=0x7f09004f;
+        public static final int abc_text_size_subtitle_material_toolbar=0x7f090003;
+        public static final int abc_text_size_title_material=0x7f090050;
+        public static final int abc_text_size_title_material_toolbar=0x7f090004;
+        public static final int activity_horizontal_margin=0x7f090019;
+        public static final int activity_vertical_margin=0x7f090051;
+        public static final int design_appbar_elevation=0x7f090052;
+        public static final int design_bottom_navigation_active_item_max_width=0x7f090053;
+        public static final int design_bottom_navigation_active_text_size=0x7f090054;
+        public static final int design_bottom_navigation_height=0x7f090055;
+        public static final int design_bottom_navigation_item_max_width=0x7f090056;
+        public static final int design_bottom_navigation_margin=0x7f090057;
+        public static final int design_bottom_navigation_text_size=0x7f090058;
+        public static final int design_bottom_sheet_modal_elevation=0x7f090059;
+        public static final int design_bottom_sheet_peek_height_min=0x7f09005a;
+        public static final int design_fab_border_width=0x7f09005b;
+        public static final int design_fab_elevation=0x7f09005c;
+        public static final int design_fab_image_size=0x7f09005d;
+        public static final int design_fab_size_mini=0x7f09005e;
+        public static final int design_fab_size_normal=0x7f09005f;
+        public static final int design_fab_translation_z_pressed=0x7f090060;
+        public static final int design_navigation_elevation=0x7f090061;
+        public static final int design_navigation_icon_padding=0x7f090062;
+        public static final int design_navigation_icon_size=0x7f090063;
+        public static final int design_navigation_max_width=0x7f090010;
+        public static final int design_navigation_padding_bottom=0x7f090064;
+        public static final int design_navigation_separator_vertical_padding=0x7f090065;
+        public static final int design_snackbar_action_inline_max_width=0x7f090011;
+        public static final int design_snackbar_background_corner_radius=0x7f090012;
+        public static final int design_snackbar_elevation=0x7f090066;
+        public static final int design_snackbar_extra_spacing_horizontal=0x7f090013;
+        public static final int design_snackbar_max_width=0x7f090014;
+        public static final int design_snackbar_min_width=0x7f090015;
+        public static final int design_snackbar_padding_horizontal=0x7f090067;
+        public static final int design_snackbar_padding_vertical=0x7f090068;
+        public static final int design_snackbar_padding_vertical_2lines=0x7f090016;
+        public static final int design_snackbar_text_size=0x7f090069;
+        public static final int design_tab_max_width=0x7f09006a;
+        public static final int design_tab_scrollable_min_width=0x7f090017;
+        public static final int design_tab_text_size=0x7f09006b;
+        public static final int design_tab_text_size_2line=0x7f09006c;
+        public static final int disabled_alpha_material_dark=0x7f09006d;
+        public static final int disabled_alpha_material_light=0x7f09006e;
+        public static final int divider=0x7f09006f;
+        public static final int fab_margin=0x7f090070;
+        public static final int highlight_alpha_material_colored=0x7f090071;
+        public static final int highlight_alpha_material_dark=0x7f090072;
+        public static final int highlight_alpha_material_light=0x7f090073;
+        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f090074;
+        public static final int item_touch_helper_swipe_escape_max_velocity=0x7f090075;
+        public static final int item_touch_helper_swipe_escape_velocity=0x7f090076;
+        public static final int leftmargin=0x7f090077;
+        public static final int notification_large_icon_height=0x7f090078;
+        public static final int notification_large_icon_width=0x7f090079;
+        public static final int notification_subtext_size=0x7f09007a;
+        public static final int rightmargin=0x7f09007b;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -2595,194 +2604,210 @@ containing a value of this type.
         public static final int calendar_cell=0x7f020056;
         public static final int calendar_top=0x7f020057;
         public static final int calendarback=0x7f020058;
-        public static final int design_fab_background=0x7f020059;
-        public static final int design_ic_visibility=0x7f02005a;
-        public static final int design_snackbar_background=0x7f02005b;
-        public static final int dot=0x7f02005c;
-        public static final int ic_add_white_24dp=0x7f02005d;
-        public static final int ic_done_white_24dp=0x7f02005e;
-        public static final int ic_info_outline_white_24dp=0x7f02005f;
-        public static final int ic_settings_white_24dp=0x7f020060;
-        public static final int icon=0x7f020061;
-        public static final int list_item_background=0x7f020062;
-        public static final int logo=0x7f020063;
-        public static final int navigation_empty_icon=0x7f020064;
-        public static final int notification_template_icon_bg=0x7f020065;
+        public static final int date=0x7f020059;
+        public static final int design_fab_background=0x7f02005a;
+        public static final int design_ic_visibility=0x7f02005b;
+        public static final int design_snackbar_background=0x7f02005c;
+        public static final int dot=0x7f02005d;
+        public static final int ic_add_white_24dp=0x7f02005e;
+        public static final int ic_done_white_24dp=0x7f02005f;
+        public static final int ic_info_black_24dp=0x7f020060;
+        public static final int ic_info_outline_white_24dp=0x7f020061;
+        public static final int ic_notifications_black_24dp=0x7f020062;
+        public static final int ic_settings_white_24dp=0x7f020063;
+        public static final int ic_sync_black_24dp=0x7f020064;
+        public static final int icon=0x7f020065;
+        public static final int img=0x7f020066;
+        public static final int list_item_background=0x7f020067;
+        public static final int logo=0x7f020068;
+        public static final int navigation_empty_icon=0x7f020069;
+        public static final int notification_template_icon_bg=0x7f02006b;
+        public static final int time=0x7f02006a;
     }
     public static final class id {
-        public static final int action0=0x7f0e0090;
-        public static final int action_bar=0x7f0e005e;
-        public static final int action_bar_activity_content=0x7f0e0000;
-        public static final int action_bar_container=0x7f0e005d;
-        public static final int action_bar_root=0x7f0e0059;
-        public static final int action_bar_spinner=0x7f0e0001;
-        public static final int action_bar_subtitle=0x7f0e003e;
-        public static final int action_bar_title=0x7f0e003d;
-        public static final int action_context_bar=0x7f0e005f;
-        public static final int action_divider=0x7f0e0094;
-        public static final int action_menu_divider=0x7f0e0002;
-        public static final int action_menu_presenter=0x7f0e0003;
-        public static final int action_mode_bar=0x7f0e005b;
-        public static final int action_mode_bar_stub=0x7f0e005a;
-        public static final int action_mode_close_button=0x7f0e003f;
-        public static final int activity_chooser_view_content=0x7f0e0040;
-        public static final int add=0x7f0e001a;
-        public static final int addReqButton=0x7f0e0088;
-        public static final int add_pager=0x7f0e006e;
-        public static final int add_subject=0x7f0e00a2;
-        public static final int alertTitle=0x7f0e004c;
-        public static final int all=0x7f0e0032;
-        public static final int always=0x7f0e0036;
-        public static final int auto=0x7f0e0021;
-        public static final int beginning=0x7f0e0034;
-        public static final int bottom=0x7f0e0022;
-        public static final int buttonPanel=0x7f0e0047;
-        public static final int cancel_action=0x7f0e0091;
-        public static final int center=0x7f0e0023;
-        public static final int center_horizontal=0x7f0e0024;
-        public static final int center_vertical=0x7f0e0025;
-        public static final int checkbox=0x7f0e0055;
-        public static final int chronometer=0x7f0e0097;
-        public static final int clip_horizontal=0x7f0e002e;
-        public static final int clip_vertical=0x7f0e002f;
-        public static final int collapseActionView=0x7f0e0037;
-        public static final int confirm=0x7f0e00a1;
-        public static final int contentPanel=0x7f0e004d;
-        public static final int custom=0x7f0e0053;
-        public static final int customPanel=0x7f0e0052;
-        public static final int date=0x7f0e0072;
-        public static final int dateText=0x7f0e0082;
-        public static final int date_icon=0x7f0e0073;
-        public static final int decor_content_parent=0x7f0e005c;
-        public static final int default_activity_button=0x7f0e0043;
-        public static final int design_bottom_sheet=0x7f0e0075;
-        public static final int design_menu_item_action_area=0x7f0e007c;
-        public static final int design_menu_item_action_area_stub=0x7f0e007b;
-        public static final int design_menu_item_text=0x7f0e007a;
-        public static final int design_navigation_view=0x7f0e0079;
-        public static final int disableHome=0x7f0e000e;
-        public static final int edit_query=0x7f0e0060;
-        public static final int end=0x7f0e0026;
-        public static final int end_padder=0x7f0e009c;
-        public static final int enterAlways=0x7f0e0015;
-        public static final int enterAlwaysCollapsed=0x7f0e0016;
-        public static final int exitUntilCollapsed=0x7f0e0017;
-        public static final int expand_activities_button=0x7f0e0041;
-        public static final int expanded_menu=0x7f0e0054;
-        public static final int fill=0x7f0e0030;
-        public static final int fill_horizontal=0x7f0e0031;
-        public static final int fill_vertical=0x7f0e0027;
-        public static final int fixed=0x7f0e003b;
-        public static final int gridview=0x7f0e008f;
-        public static final int hardinessSpinner=0x7f0e0080;
-        public static final int hardinessText=0x7f0e009e;
-        public static final int header=0x7f0e008c;
-        public static final int home=0x7f0e0004;
-        public static final int homeAsUp=0x7f0e000f;
-        public static final int icon=0x7f0e0045;
-        public static final int ifRoom=0x7f0e0038;
-        public static final int image=0x7f0e0042;
-        public static final int info=0x7f0e009b;
-        public static final int item_touch_helper_previous_elevation=0x7f0e0005;
-        public static final int left=0x7f0e0028;
-        public static final int line1=0x7f0e0095;
-        public static final int line3=0x7f0e0099;
-        public static final int listMode=0x7f0e000b;
-        public static final int list_item=0x7f0e0044;
-        public static final int mFCalendarView=0x7f0e0089;
-        public static final int main_toolbar=0x7f0e006f;
-        public static final int main_toolbar_button=0x7f0e009f;
-        public static final int media_actions=0x7f0e0093;
-        public static final int middle=0x7f0e0035;
-        public static final int mini=0x7f0e0033;
-        public static final int multiply=0x7f0e001b;
-        public static final int my_recycler_view=0x7f0e008a;
-        public static final int navigation_header_container=0x7f0e0078;
-        public static final int never=0x7f0e0039;
-        public static final int next=0x7f0e008e;
-        public static final int none=0x7f0e0010;
-        public static final int normal=0x7f0e000c;
-        public static final int pager=0x7f0e0070;
-        public static final int parallax=0x7f0e002c;
-        public static final int parentPanel=0x7f0e0049;
-        public static final int pin=0x7f0e002d;
-        public static final int previous=0x7f0e008d;
-        public static final int progress_circular=0x7f0e0006;
-        public static final int progress_horizontal=0x7f0e0007;
-        public static final int radio=0x7f0e0057;
-        public static final int recycler_view_adding=0x7f0e0087;
-        public static final int right=0x7f0e0029;
-        public static final int screen=0x7f0e001c;
-        public static final int scroll=0x7f0e0018;
-        public static final int scrollIndicatorDown=0x7f0e0051;
-        public static final int scrollIndicatorUp=0x7f0e004e;
-        public static final int scrollView=0x7f0e004f;
-        public static final int scrollView1=0x7f0e008b;
-        public static final int scrollable=0x7f0e003c;
-        public static final int search_badge=0x7f0e0062;
-        public static final int search_bar=0x7f0e0061;
-        public static final int search_button=0x7f0e0063;
-        public static final int search_close_btn=0x7f0e0068;
-        public static final int search_edit_frame=0x7f0e0064;
-        public static final int search_go_btn=0x7f0e006a;
-        public static final int search_mag_icon=0x7f0e0065;
-        public static final int search_plate=0x7f0e0066;
-        public static final int search_src_text=0x7f0e0067;
-        public static final int search_voice_btn=0x7f0e006b;
-        public static final int select_dialog_listview=0x7f0e006c;
-        public static final int settings=0x7f0e00a3;
-        public static final int shortcut=0x7f0e0056;
-        public static final int showCustom=0x7f0e0011;
-        public static final int showHome=0x7f0e0012;
-        public static final int showTitle=0x7f0e0013;
-        public static final int snackbar_action=0x7f0e0077;
-        public static final int snackbar_text=0x7f0e0076;
-        public static final int snap=0x7f0e0019;
-        public static final int spacer=0x7f0e0048;
-        public static final int split_action_bar=0x7f0e0008;
-        public static final int src_atop=0x7f0e001d;
-        public static final int src_in=0x7f0e001e;
-        public static final int src_over=0x7f0e001f;
-        public static final int start=0x7f0e002a;
-        public static final int status_bar_latest_event_content=0x7f0e0092;
-        public static final int subjectNameText=0x7f0e0086;
-        public static final int submenuarrow=0x7f0e0058;
-        public static final int submit_area=0x7f0e0069;
-        public static final int tabMode=0x7f0e000d;
-        public static final int tabStrip=0x7f0e0071;
-        public static final int text=0x7f0e009a;
-        public static final int text2=0x7f0e0098;
-        public static final int textSpacerNoButtons=0x7f0e0050;
-        public static final int textView=0x7f0e0081;
-        public static final int textView2=0x7f0e007e;
-        public static final int textView3=0x7f0e0083;
-        public static final int text_input_password_toggle=0x7f0e007d;
-        public static final int textinputlayout=0x7f0e0085;
-        public static final int time=0x7f0e0096;
-        public static final int timeText=0x7f0e0084;
-        public static final int title=0x7f0e0046;
-        public static final int title_template=0x7f0e004b;
-        public static final int toolbar=0x7f0e006d;
-        public static final int toolbar_title=0x7f0e00a0;
-        public static final int top=0x7f0e002b;
-        public static final int topPanel=0x7f0e004a;
-        public static final int touch_outside=0x7f0e0074;
-        public static final int typeSpinner=0x7f0e007f;
-        public static final int typeText=0x7f0e009d;
-        public static final int up=0x7f0e0009;
-        public static final int useLogo=0x7f0e0014;
-        public static final int view_offset_helper=0x7f0e000a;
-        public static final int withText=0x7f0e003a;
-        public static final int wrap_content=0x7f0e0020;
+        public static final int action0=0x7f0f009a;
+        public static final int action_bar=0x7f0f005e;
+        public static final int action_bar_activity_content=0x7f0f0000;
+        public static final int action_bar_container=0x7f0f005d;
+        public static final int action_bar_root=0x7f0f0059;
+        public static final int action_bar_spinner=0x7f0f0001;
+        public static final int action_bar_subtitle=0x7f0f003e;
+        public static final int action_bar_title=0x7f0f003d;
+        public static final int action_context_bar=0x7f0f005f;
+        public static final int action_divider=0x7f0f009e;
+        public static final int action_menu_divider=0x7f0f0002;
+        public static final int action_menu_presenter=0x7f0f0003;
+        public static final int action_mode_bar=0x7f0f005b;
+        public static final int action_mode_bar_stub=0x7f0f005a;
+        public static final int action_mode_close_button=0x7f0f003f;
+        public static final int activity_chooser_view_content=0x7f0f0040;
+        public static final int activity_info=0x7f0f006f;
+        public static final int activity_settings=0x7f0f0071;
+        public static final int add=0x7f0f001a;
+        public static final int addReqButton=0x7f0f0091;
+        public static final int add_pager=0x7f0f006e;
+        public static final int add_subject=0x7f0f00ac;
+        public static final int alertTitle=0x7f0f004c;
+        public static final int all=0x7f0f0032;
+        public static final int always=0x7f0f0036;
+        public static final int auto=0x7f0f0021;
+        public static final int beginning=0x7f0f0034;
+        public static final int bottom=0x7f0f0022;
+        public static final int buttonPanel=0x7f0f0047;
+        public static final int calendarRecyclerView=0x7f0f0093;
+        public static final int cancel_action=0x7f0f009b;
+        public static final int center=0x7f0f0023;
+        public static final int center_horizontal=0x7f0f0024;
+        public static final int center_vertical=0x7f0f0025;
+        public static final int checkbox=0x7f0f0055;
+        public static final int chronometer=0x7f0f00a1;
+        public static final int clip_horizontal=0x7f0f002e;
+        public static final int clip_vertical=0x7f0f002f;
+        public static final int collapseActionView=0x7f0f0037;
+        public static final int confirm=0x7f0f00ab;
+        public static final int contentPanel=0x7f0f004d;
+        public static final int content_frame=0x7f0f0072;
+        public static final int custom=0x7f0f0053;
+        public static final int customPanel=0x7f0f0052;
+        public static final int date=0x7f0f0078;
+        public static final int datePickerButton=0x7f0f008a;
+        public static final int dateText=0x7f0f0089;
+        public static final int date_icon=0x7f0f0079;
+        public static final int decor_content_parent=0x7f0f005c;
+        public static final int default_activity_button=0x7f0f0043;
+        public static final int design_bottom_sheet=0x7f0f007b;
+        public static final int design_menu_item_action_area=0x7f0f0082;
+        public static final int design_menu_item_action_area_stub=0x7f0f0081;
+        public static final int design_menu_item_text=0x7f0f0080;
+        public static final int design_navigation_view=0x7f0f007f;
+        public static final int disableHome=0x7f0f000e;
+        public static final int drawer_layout=0x7f0f0074;
+        public static final int edit_query=0x7f0f0060;
+        public static final int end=0x7f0f0026;
+        public static final int end_padder=0x7f0f00a6;
+        public static final int enterAlways=0x7f0f0015;
+        public static final int enterAlwaysCollapsed=0x7f0f0016;
+        public static final int exitUntilCollapsed=0x7f0f0017;
+        public static final int expand_activities_button=0x7f0f0041;
+        public static final int expanded_menu=0x7f0f0054;
+        public static final int fill=0x7f0f0030;
+        public static final int fill_horizontal=0x7f0f0031;
+        public static final int fill_vertical=0x7f0f0027;
+        public static final int fixed=0x7f0f003b;
+        public static final int gridview=0x7f0f0099;
+        public static final int hardinessSpinner=0x7f0f0087;
+        public static final int hardinessText=0x7f0f00a8;
+        public static final int header=0x7f0f0096;
+        public static final int home=0x7f0f0004;
+        public static final int homeAsUp=0x7f0f000f;
+        public static final int icon=0x7f0f0045;
+        public static final int ifRoom=0x7f0f0038;
+        public static final int image=0x7f0f0042;
+        public static final int info=0x7f0f00a5;
+        public static final int infos=0x7f0f0070;
+        public static final int item_touch_helper_previous_elevation=0x7f0f0005;
+        public static final int left=0x7f0f0028;
+        public static final int left_drawer=0x7f0f0084;
+        public static final int line1=0x7f0f009f;
+        public static final int line3=0x7f0f00a3;
+        public static final int listMode=0x7f0f000b;
+        public static final int list_item=0x7f0f0044;
+        public static final int mFCalendarView=0x7f0f0092;
+        public static final int main_toolbar=0x7f0f0075;
+        public static final int main_toolbar_button=0x7f0f00a9;
+        public static final int media_actions=0x7f0f009d;
+        public static final int middle=0x7f0f0035;
+        public static final int mini=0x7f0f0033;
+        public static final int multiply=0x7f0f001b;
+        public static final int my_recycler_view=0x7f0f0094;
+        public static final int navigation_header_container=0x7f0f007e;
+        public static final int never=0x7f0f0039;
+        public static final int next=0x7f0f0098;
+        public static final int none=0x7f0f0010;
+        public static final int normal=0x7f0f000c;
+        public static final int pager=0x7f0f0076;
+        public static final int parallax=0x7f0f002c;
+        public static final int parentPanel=0x7f0f0049;
+        public static final int pin=0x7f0f002d;
+        public static final int previous=0x7f0f0097;
+        public static final int progress_circular=0x7f0f0006;
+        public static final int progress_horizontal=0x7f0f0007;
+        public static final int radio=0x7f0f0057;
+        public static final int recycler_view_adding=0x7f0f0090;
+        public static final int right=0x7f0f0029;
+        public static final int screen=0x7f0f001c;
+        public static final int scroll=0x7f0f0018;
+        public static final int scrollIndicatorDown=0x7f0f0051;
+        public static final int scrollIndicatorUp=0x7f0f004e;
+        public static final int scrollView=0x7f0f004f;
+        public static final int scrollView1=0x7f0f0095;
+        public static final int scrollable=0x7f0f003c;
+        public static final int search_badge=0x7f0f0062;
+        public static final int search_bar=0x7f0f0061;
+        public static final int search_button=0x7f0f0063;
+        public static final int search_close_btn=0x7f0f0068;
+        public static final int search_edit_frame=0x7f0f0064;
+        public static final int search_go_btn=0x7f0f006a;
+        public static final int search_mag_icon=0x7f0f0065;
+        public static final int search_plate=0x7f0f0066;
+        public static final int search_src_text=0x7f0f0067;
+        public static final int search_voice_btn=0x7f0f006b;
+        public static final int select_dialog_listview=0x7f0f006c;
+        public static final int settings=0x7f0f00ad;
+        public static final int shortcut=0x7f0f0056;
+        public static final int showCustom=0x7f0f0011;
+        public static final int showHome=0x7f0f0012;
+        public static final int showTitle=0x7f0f0013;
+        public static final int snackbar_action=0x7f0f007d;
+        public static final int snackbar_text=0x7f0f007c;
+        public static final int snap=0x7f0f0019;
+        public static final int spacer=0x7f0f0048;
+        public static final int split_action_bar=0x7f0f0008;
+        public static final int src_atop=0x7f0f001d;
+        public static final int src_in=0x7f0f001e;
+        public static final int src_over=0x7f0f001f;
+        public static final int start=0x7f0f002a;
+        public static final int status_bar_latest_event_content=0x7f0f009c;
+        public static final int subjectNameText=0x7f0f008f;
+        public static final int subjectRecyclerView=0x7f0f0073;
+        public static final int submenuarrow=0x7f0f0058;
+        public static final int submit_area=0x7f0f0069;
+        public static final int tabMode=0x7f0f000d;
+        public static final int tabStrip=0x7f0f0077;
+        public static final int text=0x7f0f00a4;
+        public static final int text2=0x7f0f00a2;
+        public static final int textSpacerNoButtons=0x7f0f0050;
+        public static final int textView=0x7f0f0088;
+        public static final int textView2=0x7f0f0085;
+        public static final int textView3=0x7f0f008b;
+        public static final int text_input_password_toggle=0x7f0f0083;
+        public static final int textinputlayout=0x7f0f008e;
+        public static final int time=0x7f0f00a0;
+        public static final int timePickerButton=0x7f0f008d;
+        public static final int timeText=0x7f0f008c;
+        public static final int title=0x7f0f0046;
+        public static final int title_template=0x7f0f004b;
+        public static final int toolbar=0x7f0f006d;
+        public static final int toolbar_title=0x7f0f00aa;
+        public static final int top=0x7f0f002b;
+        public static final int topPanel=0x7f0f004a;
+        public static final int touch_outside=0x7f0f007a;
+        public static final int typeSpinner=0x7f0f0086;
+        public static final int typeText=0x7f0f00a7;
+        public static final int up=0x7f0f0009;
+        public static final int useLogo=0x7f0f0014;
+        public static final int view_offset_helper=0x7f0f000a;
+        public static final int withText=0x7f0f003a;
+        public static final int wrap_content=0x7f0f0020;
     }
     public static final class integer {
-        public static final int abc_config_activityDefaultDur=0x7f0b0001;
-        public static final int abc_config_activityShortDur=0x7f0b0002;
-        public static final int app_bar_elevation_anim_duration=0x7f0b0003;
-        public static final int bottom_sheet_slide_duration=0x7f0b0004;
-        public static final int cancel_button_image_alpha=0x7f0b0005;
-        public static final int design_snackbar_text_max_lines=0x7f0b0000;
-        public static final int status_bar_notification_info_maxnum=0x7f0b0006;
+        public static final int abc_config_activityDefaultDur=0x7f0c0001;
+        public static final int abc_config_activityShortDur=0x7f0c0002;
+        public static final int app_bar_elevation_anim_duration=0x7f0c0003;
+        public static final int bottom_sheet_slide_duration=0x7f0c0004;
+        public static final int cancel_button_image_alpha=0x7f0c0005;
+        public static final int design_snackbar_text_max_lines=0x7f0c0000;
+        public static final int status_bar_notification_info_maxnum=0x7f0c0006;
     }
     public static final class layout {
         public static final int abc_action_bar_title_item=0x7f040000;
@@ -2812,481 +2837,524 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040018;
         public static final int abc_select_dialog_material=0x7f040019;
         public static final int activity_add_req=0x7f04001a;
-        public static final int activity_unireq_main=0x7f04001b;
-        public static final int calendar_item=0x7f04001c;
-        public static final int design_bottom_sheet_dialog=0x7f04001d;
-        public static final int design_layout_snackbar=0x7f04001e;
-        public static final int design_layout_snackbar_include=0x7f04001f;
-        public static final int design_layout_tab_icon=0x7f040020;
-        public static final int design_layout_tab_text=0x7f040021;
-        public static final int design_menu_item_action_area=0x7f040022;
-        public static final int design_navigation_item=0x7f040023;
-        public static final int design_navigation_item_header=0x7f040024;
-        public static final int design_navigation_item_separator=0x7f040025;
-        public static final int design_navigation_item_subheader=0x7f040026;
-        public static final int design_navigation_menu=0x7f040027;
-        public static final int design_navigation_menu_item=0x7f040028;
-        public static final int design_text_input_password_icon=0x7f040029;
-        public static final int fragment_add_req_element=0x7f04002a;
-        public static final int fragment_add_subject=0x7f04002b;
-        public static final int fragment_calendar=0x7f04002c;
-        public static final int fragment_upcoming=0x7f04002d;
-        public static final int mf_calendarview=0x7f04002e;
-        public static final int notification_media_action=0x7f04002f;
-        public static final int notification_media_cancel_action=0x7f040030;
-        public static final int notification_template_big_media=0x7f040031;
-        public static final int notification_template_big_media_narrow=0x7f040032;
-        public static final int notification_template_lines=0x7f040033;
-        public static final int notification_template_media=0x7f040034;
-        public static final int notification_template_part_chronometer=0x7f040035;
-        public static final int notification_template_part_time=0x7f040036;
-        public static final int req_row=0x7f040037;
-        public static final int select_dialog_item_material=0x7f040038;
-        public static final int select_dialog_multichoice_material=0x7f040039;
-        public static final int select_dialog_singlechoice_material=0x7f04003a;
-        public static final int support_simple_spinner_dropdown_item=0x7f04003b;
-        public static final int toolbar=0x7f04003c;
+        public static final int activity_info=0x7f04001b;
+        public static final int activity_settings=0x7f04001c;
+        public static final int activity_subject=0x7f04001d;
+        public static final int activity_unireq_main=0x7f04001e;
+        public static final int calendar_item=0x7f04001f;
+        public static final int design_bottom_sheet_dialog=0x7f040020;
+        public static final int design_layout_snackbar=0x7f040021;
+        public static final int design_layout_snackbar_include=0x7f040022;
+        public static final int design_layout_tab_icon=0x7f040023;
+        public static final int design_layout_tab_text=0x7f040024;
+        public static final int design_menu_item_action_area=0x7f040025;
+        public static final int design_navigation_item=0x7f040026;
+        public static final int design_navigation_item_header=0x7f040027;
+        public static final int design_navigation_item_separator=0x7f040028;
+        public static final int design_navigation_item_subheader=0x7f040029;
+        public static final int design_navigation_menu=0x7f04002a;
+        public static final int design_navigation_menu_item=0x7f04002b;
+        public static final int design_text_input_password_icon=0x7f04002c;
+        public static final int drawer=0x7f04002d;
+        public static final int drawer_list_item=0x7f04002e;
+        public static final int fragment_add_req_element=0x7f04002f;
+        public static final int fragment_add_subject=0x7f040030;
+        public static final int fragment_calendar=0x7f040031;
+        public static final int fragment_upcoming=0x7f040032;
+        public static final int mf_calendarview=0x7f040033;
+        public static final int notification_media_action=0x7f040034;
+        public static final int notification_media_cancel_action=0x7f040035;
+        public static final int notification_template_big_media=0x7f040036;
+        public static final int notification_template_big_media_narrow=0x7f040037;
+        public static final int notification_template_lines=0x7f040038;
+        public static final int notification_template_media=0x7f040039;
+        public static final int notification_template_part_chronometer=0x7f04003a;
+        public static final int notification_template_part_time=0x7f04003b;
+        public static final int req_row=0x7f04003c;
+        public static final int select_dialog_item_material=0x7f04003d;
+        public static final int select_dialog_multichoice_material=0x7f04003e;
+        public static final int select_dialog_singlechoice_material=0x7f04003f;
+        public static final int support_simple_spinner_dropdown_item=0x7f040040;
+        public static final int toolbar=0x7f040041;
     }
     public static final class menu {
-        public static final int add_menu=0x7f0f0000;
-        public static final int main_toolbar_menu=0x7f0f0001;
+        public static final int add_menu=0x7f100000;
+        public static final int main_toolbar_menu=0x7f100001;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
     }
     public static final class raw {
-        public static final int subject=0x7f060000;
-        public static final int testsubject=0x7f060001;
+        public static final int notif=0x7f070000;
     }
     public static final class string {
-        public static final int abc_action_bar_home_description=0x7f070000;
-        public static final int abc_action_bar_home_description_format=0x7f070001;
-        public static final int abc_action_bar_home_subtitle_description_format=0x7f070002;
-        public static final int abc_action_bar_up_description=0x7f070003;
-        public static final int abc_action_menu_overflow_description=0x7f070004;
-        public static final int abc_action_mode_done=0x7f070005;
-        public static final int abc_activity_chooser_view_see_all=0x7f070006;
-        public static final int abc_activitychooserview_choose_application=0x7f070007;
-        public static final int abc_capital_off=0x7f070008;
-        public static final int abc_capital_on=0x7f070009;
-        public static final int abc_font_family_body_1_material=0x7f070015;
-        public static final int abc_font_family_body_2_material=0x7f070016;
-        public static final int abc_font_family_button_material=0x7f070017;
-        public static final int abc_font_family_caption_material=0x7f070018;
-        public static final int abc_font_family_display_1_material=0x7f070019;
-        public static final int abc_font_family_display_2_material=0x7f07001a;
-        public static final int abc_font_family_display_3_material=0x7f07001b;
-        public static final int abc_font_family_display_4_material=0x7f07001c;
-        public static final int abc_font_family_headline_material=0x7f07001d;
-        public static final int abc_font_family_menu_material=0x7f07001e;
-        public static final int abc_font_family_subhead_material=0x7f07001f;
-        public static final int abc_font_family_title_material=0x7f070020;
-        public static final int abc_search_hint=0x7f07000a;
-        public static final int abc_searchview_description_clear=0x7f07000b;
-        public static final int abc_searchview_description_query=0x7f07000c;
-        public static final int abc_searchview_description_search=0x7f07000d;
-        public static final int abc_searchview_description_submit=0x7f07000e;
-        public static final int abc_searchview_description_voice=0x7f07000f;
-        public static final int abc_shareactionprovider_share_with=0x7f070010;
-        public static final int abc_shareactionprovider_share_with_application=0x7f070011;
-        public static final int abc_toolbar_collapse_description=0x7f070012;
-        public static final int addReqTitle=0x7f070021;
-        public static final int add_a_requ=0x7f070022;
-        public static final int add_requirement=0x7f070023;
-        public static final int add_subject=0x7f070024;
-        public static final int app_name=0x7f070025;
-        public static final int appbar_scrolling_view_behavior=0x7f070026;
-        public static final int asd=0x7f070027;
-        public static final int bad_string=0x7f070028;
-        public static final int bottom_sheet_behavior=0x7f070029;
-        public static final int calendar=0x7f07002a;
-        public static final int character_counter_pattern=0x7f07002b;
-        public static final int date=0x7f07002c;
-        public static final int easy=0x7f07002d;
-        public static final int enter_subject_name=0x7f07002e;
-        public static final int hard=0x7f07002f;
-        public static final int hardiness=0x7f070030;
-        public static final int hello_blank_fragment=0x7f070031;
-        public static final int info=0x7f070032;
-        public static final int moderate=0x7f070033;
-        public static final int properties=0x7f070034;
-        public static final int search_menu_title=0x7f070013;
-        public static final int status_bar_notification_info_overflow=0x7f070014;
-        public static final int time=0x7f070035;
-        public static final int title_activity_add_req=0x7f070036;
-        public static final int type=0x7f070037;
-        public static final int upcoming=0x7f070038;
-        public static final int veryeasy=0x7f070039;
-        public static final int veryhard=0x7f07003a;
+        public static final int abc_action_bar_home_description=0x7f080000;
+        public static final int abc_action_bar_home_description_format=0x7f080001;
+        public static final int abc_action_bar_home_subtitle_description_format=0x7f080002;
+        public static final int abc_action_bar_up_description=0x7f080003;
+        public static final int abc_action_menu_overflow_description=0x7f080004;
+        public static final int abc_action_mode_done=0x7f080005;
+        public static final int abc_activity_chooser_view_see_all=0x7f080006;
+        public static final int abc_activitychooserview_choose_application=0x7f080007;
+        public static final int abc_capital_off=0x7f080008;
+        public static final int abc_capital_on=0x7f080009;
+        public static final int abc_font_family_body_1_material=0x7f080015;
+        public static final int abc_font_family_body_2_material=0x7f080016;
+        public static final int abc_font_family_button_material=0x7f080017;
+        public static final int abc_font_family_caption_material=0x7f080018;
+        public static final int abc_font_family_display_1_material=0x7f080019;
+        public static final int abc_font_family_display_2_material=0x7f08001a;
+        public static final int abc_font_family_display_3_material=0x7f08001b;
+        public static final int abc_font_family_display_4_material=0x7f08001c;
+        public static final int abc_font_family_headline_material=0x7f08001d;
+        public static final int abc_font_family_menu_material=0x7f08001e;
+        public static final int abc_font_family_subhead_material=0x7f08001f;
+        public static final int abc_font_family_title_material=0x7f080020;
+        public static final int abc_search_hint=0x7f08000a;
+        public static final int abc_searchview_description_clear=0x7f08000b;
+        public static final int abc_searchview_description_query=0x7f08000c;
+        public static final int abc_searchview_description_search=0x7f08000d;
+        public static final int abc_searchview_description_submit=0x7f08000e;
+        public static final int abc_searchview_description_voice=0x7f08000f;
+        public static final int abc_shareactionprovider_share_with=0x7f080010;
+        public static final int abc_shareactionprovider_share_with_application=0x7f080011;
+        public static final int abc_toolbar_collapse_description=0x7f080012;
+        public static final int addReqTitle=0x7f080021;
+        public static final int add_a_requ=0x7f080022;
+        public static final int add_requirement=0x7f080023;
+        public static final int add_subject=0x7f080024;
+        public static final int app_name=0x7f080025;
+        public static final int appbar_scrolling_view_behavior=0x7f080026;
+        public static final int asd=0x7f080027;
+        public static final int at=0x7f080028;
+        public static final int bad_string=0x7f080029;
+        public static final int bottom_sheet_behavior=0x7f08002a;
+        public static final int calendar=0x7f08002b;
+        public static final int cancel=0x7f08002c;
+        public static final int character_counter_pattern=0x7f08002d;
+        public static final int date=0x7f08002e;
+        public static final int easy=0x7f08002f;
+        public static final int enter_subject_name=0x7f080030;
+        public static final int from=0x7f080031;
+        public static final int hard=0x7f080032;
+        public static final int hardiness=0x7f080033;
+        public static final int hardiness_settings=0x7f080034;
+        public static final int hardiness_sum=0x7f080035;
+        public static final int hello_blank_fragment=0x7f080036;
+        public static final int info=0x7f080037;
+        public static final int information=0x7f080038;
+        public static final int infotext=0x7f080039;
+        public static final int its=0x7f08003a;
+        public static final int moderate=0x7f08003b;
+        public static final int notification=0x7f08003c;
+        public static final int notificationTitle=0x7f08003d;
+        public static final int notifications=0x7f08003e;
+        public static final int pref_default_display_name=0x7f08003f;
+        public static final int pref_description_social_recommendations=0x7f080040;
+        public static final int pref_header_data_sync=0x7f080041;
+        public static final int pref_header_general=0x7f080042;
+        public static final int pref_header_notifications=0x7f080043;
+        public static final int pref_ringtone_silent=0x7f080044;
+        public static final int pref_title_add_friends_to_messages=0x7f080045;
+        public static final int pref_title_display_name=0x7f080046;
+        public static final int pref_title_new_message_notifications=0x7f080047;
+        public static final int pref_title_ringtone=0x7f080048;
+        public static final int pref_title_social_recommendations=0x7f080049;
+        public static final int pref_title_sync_frequency=0x7f08004a;
+        public static final int pref_title_system_sync_settings=0x7f08004b;
+        public static final int pref_title_vibrate=0x7f08004c;
+        public static final int search_menu_title=0x7f080013;
+        public static final int set=0x7f08004d;
+        public static final int set_the_date=0x7f08004e;
+        public static final int set_the_time=0x7f08004f;
+        public static final int settings=0x7f080050;
+        public static final int soundSum=0x7f080051;
+        public static final int soundTitle=0x7f080052;
+        public static final int status_bar_notification_info_overflow=0x7f080014;
+        public static final int time=0x7f080053;
+        public static final int timeSummary=0x7f080054;
+        public static final int timeToNotify=0x7f080055;
+        public static final int title_activity_add_req=0x7f080056;
+        public static final int title_activity_settings=0x7f080057;
+        public static final int title_activity_subject=0x7f080058;
+        public static final int turnonsummary=0x7f080059;
+        public static final int type=0x7f08005a;
+        public static final int upcoming=0x7f08005b;
+        public static final int veryeasy=0x7f08005c;
+        public static final int veryhard=0x7f08005d;
     }
     public static final class style {
-        public static final int AlertDialog_AppCompat=0x7f09008e;
-        public static final int AlertDialog_AppCompat_Light=0x7f09008f;
-        public static final int Animation_AppCompat_Dialog=0x7f090090;
-        public static final int Animation_AppCompat_DropDownUp=0x7f090091;
-        public static final int Animation_Design_BottomSheetDialog=0x7f090092;
-        public static final int AppTheme=0x7f090039;
-        public static final int AppTheme_ActionBar=0x7f090093;
-        public static final int AppTheme_AppBarOverlay=0x7f090094;
-        public static final int AppTheme_NoActionBar=0x7f09003a;
-        public static final int AppTheme_PopupOverlay=0x7f090095;
-        public static final int Base_AlertDialog_AppCompat=0x7f090096;
-        public static final int Base_AlertDialog_AppCompat_Light=0x7f090097;
-        public static final int Base_Animation_AppCompat_Dialog=0x7f090098;
-        public static final int Base_Animation_AppCompat_DropDownUp=0x7f090099;
-        public static final int Base_DialogWindowTitle_AppCompat=0x7f09009a;
-        public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f09009b;
-        public static final int Base_TextAppearance_AppCompat=0x7f09003b;
-        public static final int Base_TextAppearance_AppCompat_Body1=0x7f09003c;
-        public static final int Base_TextAppearance_AppCompat_Body2=0x7f09003d;
-        public static final int Base_TextAppearance_AppCompat_Button=0x7f090023;
-        public static final int Base_TextAppearance_AppCompat_Caption=0x7f09003e;
-        public static final int Base_TextAppearance_AppCompat_Display1=0x7f09003f;
-        public static final int Base_TextAppearance_AppCompat_Display2=0x7f090040;
-        public static final int Base_TextAppearance_AppCompat_Display3=0x7f090041;
-        public static final int Base_TextAppearance_AppCompat_Display4=0x7f090042;
-        public static final int Base_TextAppearance_AppCompat_Headline=0x7f090043;
-        public static final int Base_TextAppearance_AppCompat_Inverse=0x7f09000c;
-        public static final int Base_TextAppearance_AppCompat_Large=0x7f090044;
-        public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f09000d;
-        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f090045;
-        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f090046;
-        public static final int Base_TextAppearance_AppCompat_Medium=0x7f090047;
-        public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f09000e;
-        public static final int Base_TextAppearance_AppCompat_Menu=0x7f090048;
-        public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f09009c;
-        public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f090049;
-        public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f09004a;
-        public static final int Base_TextAppearance_AppCompat_Small=0x7f09004b;
-        public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f09000f;
-        public static final int Base_TextAppearance_AppCompat_Subhead=0x7f09004c;
-        public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f090010;
-        public static final int Base_TextAppearance_AppCompat_Title=0x7f09004d;
-        public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f090011;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f090087;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f09004e;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f09004f;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f090050;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f090051;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f090052;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f090053;
-        public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f090054;
-        public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f090088;
-        public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f09009d;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f090055;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f090056;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f090057;
-        public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f090058;
-        public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f090059;
-        public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f09009e;
-        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f09005a;
-        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f09005b;
-        public static final int Base_Theme_AppCompat=0x7f09005c;
-        public static final int Base_Theme_AppCompat_CompactMenu=0x7f09009f;
-        public static final int Base_Theme_AppCompat_Dialog=0x7f090012;
-        public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0900a0;
-        public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0900a1;
-        public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0900a2;
-        public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f090002;
-        public static final int Base_Theme_AppCompat_Light=0x7f09005d;
-        public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0900a3;
-        public static final int Base_Theme_AppCompat_Light_Dialog=0x7f090013;
-        public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0900a4;
-        public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0900a5;
-        public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0900a6;
-        public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f090003;
-        public static final int Base_ThemeOverlay_AppCompat=0x7f0900a7;
-        public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0900a8;
-        public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0900a9;
-        public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0900aa;
-        public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f090014;
-        public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0900ab;
-        public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0900ac;
-        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f090015;
-        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f090016;
-        public static final int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f090017;
-        public static final int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f09001f;
-        public static final int Base_V12_Widget_AppCompat_EditText=0x7f090020;
-        public static final int Base_V21_Theme_AppCompat=0x7f09005e;
-        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f09005f;
-        public static final int Base_V21_Theme_AppCompat_Light=0x7f090060;
-        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f090061;
-        public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f090062;
-        public static final int Base_V22_Theme_AppCompat=0x7f090085;
-        public static final int Base_V22_Theme_AppCompat_Light=0x7f090086;
-        public static final int Base_V23_Theme_AppCompat=0x7f090089;
-        public static final int Base_V23_Theme_AppCompat_Light=0x7f09008a;
-        public static final int Base_V7_Theme_AppCompat=0x7f0900ad;
-        public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0900ae;
-        public static final int Base_V7_Theme_AppCompat_Light=0x7f0900af;
-        public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0900b0;
-        public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0900b1;
-        public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0900b2;
-        public static final int Base_V7_Widget_AppCompat_EditText=0x7f0900b3;
-        public static final int Base_Widget_AppCompat_ActionBar=0x7f0900b4;
-        public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0900b5;
-        public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0900b6;
-        public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f090063;
-        public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f090064;
-        public static final int Base_Widget_AppCompat_ActionButton=0x7f090065;
-        public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f090066;
-        public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f090067;
-        public static final int Base_Widget_AppCompat_ActionMode=0x7f0900b7;
-        public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0900b8;
-        public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f090021;
-        public static final int Base_Widget_AppCompat_Button=0x7f090068;
-        public static final int Base_Widget_AppCompat_Button_Borderless=0x7f090069;
-        public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f09006a;
-        public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0900b9;
-        public static final int Base_Widget_AppCompat_Button_Colored=0x7f09008b;
-        public static final int Base_Widget_AppCompat_Button_Small=0x7f09006b;
-        public static final int Base_Widget_AppCompat_ButtonBar=0x7f09006c;
-        public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0900ba;
-        public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f09006d;
-        public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f09006e;
-        public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0900bb;
-        public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f090000;
-        public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0900bc;
-        public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f09006f;
-        public static final int Base_Widget_AppCompat_EditText=0x7f090022;
-        public static final int Base_Widget_AppCompat_ImageButton=0x7f090070;
-        public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0900bd;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0900be;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0900bf;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f090071;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f090072;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f090073;
-        public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f090074;
-        public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f090075;
-        public static final int Base_Widget_AppCompat_ListMenuView=0x7f0900c0;
-        public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f090076;
-        public static final int Base_Widget_AppCompat_ListView=0x7f090077;
-        public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f090078;
-        public static final int Base_Widget_AppCompat_ListView_Menu=0x7f090079;
-        public static final int Base_Widget_AppCompat_PopupMenu=0x7f09007a;
-        public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f09007b;
-        public static final int Base_Widget_AppCompat_PopupWindow=0x7f0900c1;
-        public static final int Base_Widget_AppCompat_ProgressBar=0x7f090018;
-        public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f090019;
-        public static final int Base_Widget_AppCompat_RatingBar=0x7f09007c;
-        public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f09008c;
-        public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f09008d;
-        public static final int Base_Widget_AppCompat_SearchView=0x7f0900c2;
-        public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0900c3;
-        public static final int Base_Widget_AppCompat_SeekBar=0x7f09007d;
-        public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0900c4;
-        public static final int Base_Widget_AppCompat_Spinner=0x7f09007e;
-        public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f090004;
-        public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f09007f;
-        public static final int Base_Widget_AppCompat_Toolbar=0x7f0900c5;
-        public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f090080;
-        public static final int Base_Widget_Design_AppBarLayout=0x7f0900c6;
-        public static final int Base_Widget_Design_TabLayout=0x7f0900c7;
-        public static final int ListTextBold=0x7f0900c8;
-        public static final int Platform_AppCompat=0x7f09001a;
-        public static final int Platform_AppCompat_Light=0x7f09001b;
-        public static final int Platform_ThemeOverlay_AppCompat=0x7f090081;
-        public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f090082;
-        public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f090083;
-        public static final int Platform_V11_AppCompat=0x7f09001c;
-        public static final int Platform_V11_AppCompat_Light=0x7f09001d;
-        public static final int Platform_V14_AppCompat=0x7f090024;
-        public static final int Platform_V14_AppCompat_Light=0x7f090025;
-        public static final int Platform_Widget_AppCompat_Spinner=0x7f09001e;
-        public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f09002b;
-        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f09002c;
-        public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f09002d;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f09002e;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f09002f;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f090030;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f090031;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f090032;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f090033;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f090034;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f090035;
-        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f090036;
-        public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f090037;
-        public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f090038;
-        public static final int SpinnerDropdownStyle=0x7f0900c9;
-        public static final int SpinnerStyle=0x7f0900ca;
-        public static final int TabStrip=0x7f0900cb;
-        public static final int TextAppearance_AppCompat=0x7f0900cc;
-        public static final int TextAppearance_AppCompat_Body1=0x7f0900cd;
-        public static final int TextAppearance_AppCompat_Body2=0x7f0900ce;
-        public static final int TextAppearance_AppCompat_Button=0x7f0900cf;
-        public static final int TextAppearance_AppCompat_Caption=0x7f0900d0;
-        public static final int TextAppearance_AppCompat_Display1=0x7f0900d1;
-        public static final int TextAppearance_AppCompat_Display2=0x7f0900d2;
-        public static final int TextAppearance_AppCompat_Display3=0x7f0900d3;
-        public static final int TextAppearance_AppCompat_Display4=0x7f0900d4;
-        public static final int TextAppearance_AppCompat_Headline=0x7f0900d5;
-        public static final int TextAppearance_AppCompat_Inverse=0x7f0900d6;
-        public static final int TextAppearance_AppCompat_Large=0x7f0900d7;
-        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0900d8;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0900d9;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0900da;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0900db;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0900dc;
-        public static final int TextAppearance_AppCompat_Medium=0x7f0900dd;
-        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0900de;
-        public static final int TextAppearance_AppCompat_Menu=0x7f0900df;
-        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0900e0;
-        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0900e1;
-        public static final int TextAppearance_AppCompat_Small=0x7f0900e2;
-        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0900e3;
-        public static final int TextAppearance_AppCompat_Subhead=0x7f0900e4;
-        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0900e5;
-        public static final int TextAppearance_AppCompat_Title=0x7f0900e6;
-        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0900e7;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0900e8;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0900e9;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0900ea;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0900eb;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0900ec;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0900ed;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0900ee;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0900ef;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0900f0;
-        public static final int TextAppearance_AppCompat_Widget_Button=0x7f0900f1;
-        public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0900f2;
-        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0900f3;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0900f4;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0900f5;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0900f6;
-        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0900f7;
-        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0900f8;
-        public static final int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f0900f9;
-        public static final int TextAppearance_Design_Counter=0x7f0900fa;
-        public static final int TextAppearance_Design_Counter_Overflow=0x7f0900fb;
-        public static final int TextAppearance_Design_Error=0x7f0900fc;
-        public static final int TextAppearance_Design_Hint=0x7f0900fd;
-        public static final int TextAppearance_Design_Snackbar_Message=0x7f0900fe;
-        public static final int TextAppearance_Design_Tab=0x7f0900ff;
-        public static final int TextAppearance_StatusBar_EventContent=0x7f090026;
-        public static final int TextAppearance_StatusBar_EventContent_Info=0x7f090027;
-        public static final int TextAppearance_StatusBar_EventContent_Line2=0x7f090028;
-        public static final int TextAppearance_StatusBar_EventContent_Time=0x7f090029;
-        public static final int TextAppearance_StatusBar_EventContent_Title=0x7f09002a;
-        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f090100;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f090101;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f090102;
-        public static final int Theme_AppCompat=0x7f090103;
-        public static final int Theme_AppCompat_CompactMenu=0x7f090104;
-        public static final int Theme_AppCompat_DayNight=0x7f090005;
-        public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f090006;
-        public static final int Theme_AppCompat_DayNight_Dialog=0x7f090007;
-        public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f090008;
-        public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f090009;
-        public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f09000a;
-        public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f09000b;
-        public static final int Theme_AppCompat_Dialog=0x7f090105;
-        public static final int Theme_AppCompat_Dialog_Alert=0x7f090106;
-        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f090107;
-        public static final int Theme_AppCompat_DialogWhenLarge=0x7f090108;
-        public static final int Theme_AppCompat_Light=0x7f090109;
-        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f09010a;
-        public static final int Theme_AppCompat_Light_Dialog=0x7f09010b;
-        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f09010c;
-        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f09010d;
-        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f09010e;
-        public static final int Theme_AppCompat_Light_NoActionBar=0x7f09010f;
-        public static final int Theme_AppCompat_NoActionBar=0x7f090110;
-        public static final int Theme_Design=0x7f090111;
-        public static final int Theme_Design_BottomSheetDialog=0x7f090112;
-        public static final int Theme_Design_Light=0x7f090113;
-        public static final int Theme_Design_Light_BottomSheetDialog=0x7f090114;
-        public static final int Theme_Design_Light_NoActionBar=0x7f090115;
-        public static final int Theme_Design_NoActionBar=0x7f090116;
-        public static final int ThemeOverlay_AppCompat=0x7f090117;
-        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f090118;
-        public static final int ThemeOverlay_AppCompat_Dark=0x7f090119;
-        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f09011a;
-        public static final int ThemeOverlay_AppCompat_Dialog=0x7f09011b;
-        public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f09011c;
-        public static final int ThemeOverlay_AppCompat_Light=0x7f09011d;
-        public static final int ToolbarStyle=0x7f09011e;
-        public static final int Widget_AppCompat_ActionBar=0x7f09011f;
-        public static final int Widget_AppCompat_ActionBar_Solid=0x7f090120;
-        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f090121;
-        public static final int Widget_AppCompat_ActionBar_TabText=0x7f090122;
-        public static final int Widget_AppCompat_ActionBar_TabView=0x7f090123;
-        public static final int Widget_AppCompat_ActionButton=0x7f090124;
-        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f090125;
-        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f090126;
-        public static final int Widget_AppCompat_ActionMode=0x7f090127;
-        public static final int Widget_AppCompat_ActivityChooserView=0x7f090128;
-        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f090129;
-        public static final int Widget_AppCompat_Button=0x7f09012a;
-        public static final int Widget_AppCompat_Button_Borderless=0x7f09012b;
-        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f09012c;
-        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f09012d;
-        public static final int Widget_AppCompat_Button_Colored=0x7f09012e;
-        public static final int Widget_AppCompat_Button_Small=0x7f09012f;
-        public static final int Widget_AppCompat_ButtonBar=0x7f090130;
-        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f090131;
-        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f090132;
-        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f090133;
-        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f090134;
-        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f090135;
-        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f090136;
-        public static final int Widget_AppCompat_EditText=0x7f090137;
-        public static final int Widget_AppCompat_ImageButton=0x7f090138;
-        public static final int Widget_AppCompat_Light_ActionBar=0x7f090139;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f09013a;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f09013b;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f09013c;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f09013d;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f09013e;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f09013f;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f090140;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f090141;
-        public static final int Widget_AppCompat_Light_ActionButton=0x7f090142;
-        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f090143;
-        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f090144;
-        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f090145;
-        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f090146;
-        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f090147;
-        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f090148;
-        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f090149;
-        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f09014a;
-        public static final int Widget_AppCompat_Light_PopupMenu=0x7f09014b;
-        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f09014c;
-        public static final int Widget_AppCompat_Light_SearchView=0x7f09014d;
-        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f09014e;
-        public static final int Widget_AppCompat_ListMenuView=0x7f09014f;
-        public static final int Widget_AppCompat_ListPopupWindow=0x7f090150;
-        public static final int Widget_AppCompat_ListView=0x7f090151;
-        public static final int Widget_AppCompat_ListView_DropDown=0x7f090152;
-        public static final int Widget_AppCompat_ListView_Menu=0x7f090153;
-        public static final int Widget_AppCompat_PopupMenu=0x7f090154;
-        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f090155;
-        public static final int Widget_AppCompat_PopupWindow=0x7f090156;
-        public static final int Widget_AppCompat_ProgressBar=0x7f090157;
-        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f090158;
-        public static final int Widget_AppCompat_RatingBar=0x7f090159;
-        public static final int Widget_AppCompat_RatingBar_Indicator=0x7f09015a;
-        public static final int Widget_AppCompat_RatingBar_Small=0x7f09015b;
-        public static final int Widget_AppCompat_SearchView=0x7f09015c;
-        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f09015d;
-        public static final int Widget_AppCompat_SeekBar=0x7f09015e;
-        public static final int Widget_AppCompat_SeekBar_Discrete=0x7f09015f;
-        public static final int Widget_AppCompat_Spinner=0x7f090160;
-        public static final int Widget_AppCompat_Spinner_DropDown=0x7f090161;
-        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f090162;
-        public static final int Widget_AppCompat_Spinner_Underlined=0x7f090163;
-        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f090164;
-        public static final int Widget_AppCompat_Toolbar=0x7f090165;
-        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f090166;
-        public static final int Widget_Design_AppBarLayout=0x7f090084;
-        public static final int Widget_Design_BottomSheet_Modal=0x7f090167;
-        public static final int Widget_Design_CollapsingToolbar=0x7f090168;
-        public static final int Widget_Design_CoordinatorLayout=0x7f090169;
-        public static final int Widget_Design_FloatingActionButton=0x7f09016a;
-        public static final int Widget_Design_NavigationView=0x7f09016b;
-        public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f09016c;
-        public static final int Widget_Design_Snackbar=0x7f09016d;
-        public static final int Widget_Design_TabLayout=0x7f090001;
-        public static final int Widget_Design_TextInputLayout=0x7f09016e;
+        public static final int AlertDialog_AppCompat=0x7f0a008e;
+        public static final int AlertDialog_AppCompat_Light=0x7f0a008f;
+        public static final int Animation_AppCompat_Dialog=0x7f0a0090;
+        public static final int Animation_AppCompat_DropDownUp=0x7f0a0091;
+        public static final int Animation_Design_BottomSheetDialog=0x7f0a0092;
+        public static final int AppTheme=0x7f0a0039;
+        public static final int AppTheme_ActionBar=0x7f0a0093;
+        public static final int AppTheme_AppBarOverlay=0x7f0a0094;
+        public static final int AppTheme_NoActionBar=0x7f0a003a;
+        public static final int AppTheme_PopupOverlay=0x7f0a0095;
+        public static final int Base_AlertDialog_AppCompat=0x7f0a0096;
+        public static final int Base_AlertDialog_AppCompat_Light=0x7f0a0097;
+        public static final int Base_Animation_AppCompat_Dialog=0x7f0a0098;
+        public static final int Base_Animation_AppCompat_DropDownUp=0x7f0a0099;
+        public static final int Base_DialogWindowTitle_AppCompat=0x7f0a009a;
+        public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0a009b;
+        public static final int Base_TextAppearance_AppCompat=0x7f0a003b;
+        public static final int Base_TextAppearance_AppCompat_Body1=0x7f0a003c;
+        public static final int Base_TextAppearance_AppCompat_Body2=0x7f0a003d;
+        public static final int Base_TextAppearance_AppCompat_Button=0x7f0a0023;
+        public static final int Base_TextAppearance_AppCompat_Caption=0x7f0a003e;
+        public static final int Base_TextAppearance_AppCompat_Display1=0x7f0a003f;
+        public static final int Base_TextAppearance_AppCompat_Display2=0x7f0a0040;
+        public static final int Base_TextAppearance_AppCompat_Display3=0x7f0a0041;
+        public static final int Base_TextAppearance_AppCompat_Display4=0x7f0a0042;
+        public static final int Base_TextAppearance_AppCompat_Headline=0x7f0a0043;
+        public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0a000c;
+        public static final int Base_TextAppearance_AppCompat_Large=0x7f0a0044;
+        public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0a000d;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0a0045;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0a0046;
+        public static final int Base_TextAppearance_AppCompat_Medium=0x7f0a0047;
+        public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0a000e;
+        public static final int Base_TextAppearance_AppCompat_Menu=0x7f0a0048;
+        public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0a009c;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0a0049;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0a004a;
+        public static final int Base_TextAppearance_AppCompat_Small=0x7f0a004b;
+        public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0a000f;
+        public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0a004c;
+        public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0a0010;
+        public static final int Base_TextAppearance_AppCompat_Title=0x7f0a004d;
+        public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0a0011;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0a0087;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0a004e;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0a004f;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0a0050;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0a0051;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0a0052;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0a0053;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0a0054;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0a0088;
+        public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0a009d;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0a0055;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0a0056;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0a0057;
+        public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0a0058;
+        public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0a0059;
+        public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0a009e;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0a005a;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0a005b;
+        public static final int Base_Theme_AppCompat=0x7f0a005c;
+        public static final int Base_Theme_AppCompat_CompactMenu=0x7f0a009f;
+        public static final int Base_Theme_AppCompat_Dialog=0x7f0a0012;
+        public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0a00a0;
+        public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0a00a1;
+        public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0a00a2;
+        public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0a0002;
+        public static final int Base_Theme_AppCompat_Light=0x7f0a005d;
+        public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0a00a3;
+        public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0a0013;
+        public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0a00a4;
+        public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0a00a5;
+        public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0a00a6;
+        public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0a0003;
+        public static final int Base_ThemeOverlay_AppCompat=0x7f0a00a7;
+        public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0a00a8;
+        public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0a00a9;
+        public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0a00aa;
+        public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0a0014;
+        public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0a00ab;
+        public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0a00ac;
+        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0a0015;
+        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0a0016;
+        public static final int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f0a0017;
+        public static final int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f0a001f;
+        public static final int Base_V12_Widget_AppCompat_EditText=0x7f0a0020;
+        public static final int Base_V21_Theme_AppCompat=0x7f0a005e;
+        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0a005f;
+        public static final int Base_V21_Theme_AppCompat_Light=0x7f0a0060;
+        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0a0061;
+        public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0a0062;
+        public static final int Base_V22_Theme_AppCompat=0x7f0a0085;
+        public static final int Base_V22_Theme_AppCompat_Light=0x7f0a0086;
+        public static final int Base_V23_Theme_AppCompat=0x7f0a0089;
+        public static final int Base_V23_Theme_AppCompat_Light=0x7f0a008a;
+        public static final int Base_V7_Theme_AppCompat=0x7f0a00ad;
+        public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0a00ae;
+        public static final int Base_V7_Theme_AppCompat_Light=0x7f0a00af;
+        public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0a00b0;
+        public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0a00b1;
+        public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0a00b2;
+        public static final int Base_V7_Widget_AppCompat_EditText=0x7f0a00b3;
+        public static final int Base_Widget_AppCompat_ActionBar=0x7f0a00b4;
+        public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0a00b5;
+        public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0a00b6;
+        public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0a0063;
+        public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0a0064;
+        public static final int Base_Widget_AppCompat_ActionButton=0x7f0a0065;
+        public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0a0066;
+        public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0a0067;
+        public static final int Base_Widget_AppCompat_ActionMode=0x7f0a00b7;
+        public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0a00b8;
+        public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0a0021;
+        public static final int Base_Widget_AppCompat_Button=0x7f0a0068;
+        public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0a0069;
+        public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0a006a;
+        public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0a00b9;
+        public static final int Base_Widget_AppCompat_Button_Colored=0x7f0a008b;
+        public static final int Base_Widget_AppCompat_Button_Small=0x7f0a006b;
+        public static final int Base_Widget_AppCompat_ButtonBar=0x7f0a006c;
+        public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0a00ba;
+        public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0a006d;
+        public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0a006e;
+        public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0a00bb;
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0a0000;
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0a00bc;
+        public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0a006f;
+        public static final int Base_Widget_AppCompat_EditText=0x7f0a0022;
+        public static final int Base_Widget_AppCompat_ImageButton=0x7f0a0070;
+        public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0a00bd;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0a00be;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0a00bf;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0a0071;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0a0072;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0a0073;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0a0074;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0a0075;
+        public static final int Base_Widget_AppCompat_ListMenuView=0x7f0a00c0;
+        public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0a0076;
+        public static final int Base_Widget_AppCompat_ListView=0x7f0a0077;
+        public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0a0078;
+        public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0a0079;
+        public static final int Base_Widget_AppCompat_PopupMenu=0x7f0a007a;
+        public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0a007b;
+        public static final int Base_Widget_AppCompat_PopupWindow=0x7f0a00c1;
+        public static final int Base_Widget_AppCompat_ProgressBar=0x7f0a0018;
+        public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0a0019;
+        public static final int Base_Widget_AppCompat_RatingBar=0x7f0a007c;
+        public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0a008c;
+        public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0a008d;
+        public static final int Base_Widget_AppCompat_SearchView=0x7f0a00c2;
+        public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0a00c3;
+        public static final int Base_Widget_AppCompat_SeekBar=0x7f0a007d;
+        public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0a00c4;
+        public static final int Base_Widget_AppCompat_Spinner=0x7f0a007e;
+        public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0a0004;
+        public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0a007f;
+        public static final int Base_Widget_AppCompat_Toolbar=0x7f0a00c5;
+        public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0a0080;
+        public static final int Base_Widget_Design_AppBarLayout=0x7f0a00c6;
+        public static final int Base_Widget_Design_TabLayout=0x7f0a00c7;
+        public static final int DrawerTitle=0x7f0a00c8;
+        public static final int ListTextBold=0x7f0a00c9;
+        public static final int Platform_AppCompat=0x7f0a001a;
+        public static final int Platform_AppCompat_Light=0x7f0a001b;
+        public static final int Platform_ThemeOverlay_AppCompat=0x7f0a0081;
+        public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0a0082;
+        public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0a0083;
+        public static final int Platform_V11_AppCompat=0x7f0a001c;
+        public static final int Platform_V11_AppCompat_Light=0x7f0a001d;
+        public static final int Platform_V14_AppCompat=0x7f0a0024;
+        public static final int Platform_V14_AppCompat_Light=0x7f0a0025;
+        public static final int Platform_Widget_AppCompat_Spinner=0x7f0a001e;
+        public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0a002b;
+        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0a002c;
+        public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0a002d;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0a002e;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0a002f;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0a0030;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0a0031;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0a0032;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0a0033;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0a0034;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0a0035;
+        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0a0036;
+        public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0a0037;
+        public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0a0038;
+        public static final int SpinnerDropdownStyle=0x7f0a00ca;
+        public static final int SpinnerStyle=0x7f0a00cb;
+        public static final int TabStrip=0x7f0a00cc;
+        public static final int TextAppearance_AppCompat=0x7f0a00cd;
+        public static final int TextAppearance_AppCompat_Body1=0x7f0a00ce;
+        public static final int TextAppearance_AppCompat_Body2=0x7f0a00cf;
+        public static final int TextAppearance_AppCompat_Button=0x7f0a00d0;
+        public static final int TextAppearance_AppCompat_Caption=0x7f0a00d1;
+        public static final int TextAppearance_AppCompat_Display1=0x7f0a00d2;
+        public static final int TextAppearance_AppCompat_Display2=0x7f0a00d3;
+        public static final int TextAppearance_AppCompat_Display3=0x7f0a00d4;
+        public static final int TextAppearance_AppCompat_Display4=0x7f0a00d5;
+        public static final int TextAppearance_AppCompat_Headline=0x7f0a00d6;
+        public static final int TextAppearance_AppCompat_Inverse=0x7f0a00d7;
+        public static final int TextAppearance_AppCompat_Large=0x7f0a00d8;
+        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0a00d9;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0a00da;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0a00db;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0a00dc;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0a00dd;
+        public static final int TextAppearance_AppCompat_Medium=0x7f0a00de;
+        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0a00df;
+        public static final int TextAppearance_AppCompat_Menu=0x7f0a00e0;
+        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0a00e1;
+        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0a00e2;
+        public static final int TextAppearance_AppCompat_Small=0x7f0a00e3;
+        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0a00e4;
+        public static final int TextAppearance_AppCompat_Subhead=0x7f0a00e5;
+        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0a00e6;
+        public static final int TextAppearance_AppCompat_Title=0x7f0a00e7;
+        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0a00e8;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0a00e9;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0a00ea;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0a00eb;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0a00ec;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0a00ed;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0a00ee;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0a00ef;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0a00f0;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0a00f1;
+        public static final int TextAppearance_AppCompat_Widget_Button=0x7f0a00f2;
+        public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0a00f3;
+        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0a00f4;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0a00f5;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0a00f6;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0a00f7;
+        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0a00f8;
+        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0a00f9;
+        public static final int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f0a00fa;
+        public static final int TextAppearance_Design_Counter=0x7f0a00fb;
+        public static final int TextAppearance_Design_Counter_Overflow=0x7f0a00fc;
+        public static final int TextAppearance_Design_Error=0x7f0a00fd;
+        public static final int TextAppearance_Design_Hint=0x7f0a00fe;
+        public static final int TextAppearance_Design_Snackbar_Message=0x7f0a00ff;
+        public static final int TextAppearance_Design_Tab=0x7f0a0100;
+        public static final int TextAppearance_StatusBar_EventContent=0x7f0a0026;
+        public static final int TextAppearance_StatusBar_EventContent_Info=0x7f0a0027;
+        public static final int TextAppearance_StatusBar_EventContent_Line2=0x7f0a0028;
+        public static final int TextAppearance_StatusBar_EventContent_Time=0x7f0a0029;
+        public static final int TextAppearance_StatusBar_EventContent_Title=0x7f0a002a;
+        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0a0101;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0a0102;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0a0103;
+        public static final int Theme_AppCompat=0x7f0a0104;
+        public static final int Theme_AppCompat_CompactMenu=0x7f0a0105;
+        public static final int Theme_AppCompat_DayNight=0x7f0a0005;
+        public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0a0006;
+        public static final int Theme_AppCompat_DayNight_Dialog=0x7f0a0007;
+        public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0a0008;
+        public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0a0009;
+        public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0a000a;
+        public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0a000b;
+        public static final int Theme_AppCompat_Dialog=0x7f0a0106;
+        public static final int Theme_AppCompat_Dialog_Alert=0x7f0a0107;
+        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0a0108;
+        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0a0109;
+        public static final int Theme_AppCompat_Light=0x7f0a010a;
+        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0a010b;
+        public static final int Theme_AppCompat_Light_Dialog=0x7f0a010c;
+        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0a010d;
+        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0a010e;
+        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0a010f;
+        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0a0110;
+        public static final int Theme_AppCompat_NoActionBar=0x7f0a0111;
+        public static final int Theme_Design=0x7f0a0112;
+        public static final int Theme_Design_BottomSheetDialog=0x7f0a0113;
+        public static final int Theme_Design_Light=0x7f0a0114;
+        public static final int Theme_Design_Light_BottomSheetDialog=0x7f0a0115;
+        public static final int Theme_Design_Light_NoActionBar=0x7f0a0116;
+        public static final int Theme_Design_NoActionBar=0x7f0a0117;
+        public static final int ThemeOverlay_AppCompat=0x7f0a0118;
+        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0a0119;
+        public static final int ThemeOverlay_AppCompat_Dark=0x7f0a011a;
+        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0a011b;
+        public static final int ThemeOverlay_AppCompat_Dialog=0x7f0a011c;
+        public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0a011d;
+        public static final int ThemeOverlay_AppCompat_Light=0x7f0a011e;
+        public static final int ToolbarStyle=0x7f0a011f;
+        public static final int Widget_AppCompat_ActionBar=0x7f0a0120;
+        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0a0121;
+        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0a0122;
+        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0a0123;
+        public static final int Widget_AppCompat_ActionBar_TabView=0x7f0a0124;
+        public static final int Widget_AppCompat_ActionButton=0x7f0a0125;
+        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0a0126;
+        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0a0127;
+        public static final int Widget_AppCompat_ActionMode=0x7f0a0128;
+        public static final int Widget_AppCompat_ActivityChooserView=0x7f0a0129;
+        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0a012a;
+        public static final int Widget_AppCompat_Button=0x7f0a012b;
+        public static final int Widget_AppCompat_Button_Borderless=0x7f0a012c;
+        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0a012d;
+        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0a012e;
+        public static final int Widget_AppCompat_Button_Colored=0x7f0a012f;
+        public static final int Widget_AppCompat_Button_Small=0x7f0a0130;
+        public static final int Widget_AppCompat_ButtonBar=0x7f0a0131;
+        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0a0132;
+        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0a0133;
+        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0a0134;
+        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0a0135;
+        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0a0136;
+        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0a0137;
+        public static final int Widget_AppCompat_EditText=0x7f0a0138;
+        public static final int Widget_AppCompat_ImageButton=0x7f0a0139;
+        public static final int Widget_AppCompat_Light_ActionBar=0x7f0a013a;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0a013b;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0a013c;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0a013d;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0a013e;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0a013f;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0a0140;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0a0141;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0a0142;
+        public static final int Widget_AppCompat_Light_ActionButton=0x7f0a0143;
+        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0a0144;
+        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0a0145;
+        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0a0146;
+        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0a0147;
+        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0a0148;
+        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0a0149;
+        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0a014a;
+        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0a014b;
+        public static final int Widget_AppCompat_Light_PopupMenu=0x7f0a014c;
+        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0a014d;
+        public static final int Widget_AppCompat_Light_SearchView=0x7f0a014e;
+        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0a014f;
+        public static final int Widget_AppCompat_ListMenuView=0x7f0a0150;
+        public static final int Widget_AppCompat_ListPopupWindow=0x7f0a0151;
+        public static final int Widget_AppCompat_ListView=0x7f0a0152;
+        public static final int Widget_AppCompat_ListView_DropDown=0x7f0a0153;
+        public static final int Widget_AppCompat_ListView_Menu=0x7f0a0154;
+        public static final int Widget_AppCompat_PopupMenu=0x7f0a0155;
+        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0a0156;
+        public static final int Widget_AppCompat_PopupWindow=0x7f0a0157;
+        public static final int Widget_AppCompat_ProgressBar=0x7f0a0158;
+        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0a0159;
+        public static final int Widget_AppCompat_RatingBar=0x7f0a015a;
+        public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0a015b;
+        public static final int Widget_AppCompat_RatingBar_Small=0x7f0a015c;
+        public static final int Widget_AppCompat_SearchView=0x7f0a015d;
+        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0a015e;
+        public static final int Widget_AppCompat_SeekBar=0x7f0a015f;
+        public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0a0160;
+        public static final int Widget_AppCompat_Spinner=0x7f0a0161;
+        public static final int Widget_AppCompat_Spinner_DropDown=0x7f0a0162;
+        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0a0163;
+        public static final int Widget_AppCompat_Spinner_Underlined=0x7f0a0164;
+        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0a0165;
+        public static final int Widget_AppCompat_Toolbar=0x7f0a0166;
+        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0a0167;
+        public static final int Widget_Design_AppBarLayout=0x7f0a0084;
+        public static final int Widget_Design_BottomSheet_Modal=0x7f0a0168;
+        public static final int Widget_Design_CollapsingToolbar=0x7f0a0169;
+        public static final int Widget_Design_CoordinatorLayout=0x7f0a016a;
+        public static final int Widget_Design_FloatingActionButton=0x7f0a016b;
+        public static final int Widget_Design_NavigationView=0x7f0a016c;
+        public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f0a016d;
+        public static final int Widget_Design_Snackbar=0x7f0a016e;
+        public static final int Widget_Design_TabLayout=0x7f0a0001;
+        public static final int Widget_Design_TextInputLayout=0x7f0a016f;
+    }
+    public static final class xml {
+        public static final int preferences=0x7f060000;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -3295,35 +3363,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background kurovszky.robin.unireq:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit kurovszky.robin.unireq:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked kurovszky.robin.unireq:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd kurovszky.robin.unireq:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions kurovszky.robin.unireq:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft kurovszky.robin.unireq:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight kurovszky.robin.unireq:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart kurovszky.robin.unireq:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation kurovszky.robin.unireq:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout kurovszky.robin.unireq:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions kurovszky.robin.unireq:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider kurovszky.robin.unireq:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation kurovszky.robin.unireq:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height kurovszky.robin.unireq:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll kurovszky.robin.unireq:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator kurovszky.robin.unireq:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout kurovszky.robin.unireq:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon kurovszky.robin.unireq:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle kurovszky.robin.unireq:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding kurovszky.robin.unireq:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo kurovszky.robin.unireq:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode kurovszky.robin.unireq:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme kurovszky.robin.unireq:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding kurovszky.robin.unireq:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle kurovszky.robin.unireq:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle kurovszky.robin.unireq:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle kurovszky.robin.unireq:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title kurovszky.robin.unireq:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle kurovszky.robin.unireq:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background kurovszky.robin.unicalendar:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit kurovszky.robin.unicalendar:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked kurovszky.robin.unicalendar:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd kurovszky.robin.unicalendar:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions kurovszky.robin.unicalendar:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft kurovszky.robin.unicalendar:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight kurovszky.robin.unicalendar:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart kurovszky.robin.unicalendar:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation kurovszky.robin.unicalendar:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout kurovszky.robin.unicalendar:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions kurovszky.robin.unicalendar:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider kurovszky.robin.unicalendar:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation kurovszky.robin.unicalendar:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height kurovszky.robin.unicalendar:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll kurovszky.robin.unicalendar:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator kurovszky.robin.unicalendar:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout kurovszky.robin.unicalendar:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon kurovszky.robin.unicalendar:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle kurovszky.robin.unicalendar:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding kurovszky.robin.unicalendar:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo kurovszky.robin.unicalendar:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode kurovszky.robin.unicalendar:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme kurovszky.robin.unicalendar:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding kurovszky.robin.unicalendar:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle kurovszky.robin.unicalendar:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle kurovszky.robin.unicalendar:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle kurovszky.robin.unicalendar:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title kurovszky.robin.unicalendar:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle kurovszky.robin.unicalendar:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3366,17 +3434,17 @@ containing a value of this type.
             0x7f01005f
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#background}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:background
+          @attr name kurovszky.robin.unicalendar:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3384,11 +3452,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kurovszky.robin.unireq:backgroundSplit
+          @attr name kurovszky.robin.unicalendar:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3396,11 +3464,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kurovszky.robin.unireq:backgroundStacked
+          @attr name kurovszky.robin.unicalendar:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3412,11 +3480,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetEnd
+          @attr name kurovszky.robin.unicalendar:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3428,11 +3496,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetEndWithActions
+          @attr name kurovszky.robin.unicalendar:contentInsetEndWithActions
         */
         public static final int ActionBar_contentInsetEndWithActions = 25;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3444,11 +3512,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetLeft
+          @attr name kurovszky.robin.unicalendar:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3460,11 +3528,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetRight
+          @attr name kurovszky.robin.unicalendar:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3476,11 +3544,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetStart
+          @attr name kurovszky.robin.unicalendar:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3492,21 +3560,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetStartWithNavigation
+          @attr name kurovszky.robin.unicalendar:contentInsetStartWithNavigation
         */
         public static final int ActionBar_contentInsetStartWithNavigation = 24;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:customNavigationLayout
+          @attr name kurovszky.robin.unicalendar:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3524,21 +3592,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:displayOptions
+          @attr name kurovszky.robin.unicalendar:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#divider}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:divider
+          @attr name kurovszky.robin.unicalendar:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#elevation}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3550,11 +3618,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:elevation
+          @attr name kurovszky.robin.unicalendar:elevation
         */
         public static final int ActionBar_elevation = 26;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#height}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3566,11 +3634,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:height
+          @attr name kurovszky.robin.unicalendar:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3580,51 +3648,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:hideOnContentScroll
+          @attr name kurovszky.robin.unicalendar:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:homeAsUpIndicator
+          @attr name kurovszky.robin.unicalendar:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 28;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:homeLayout
+          @attr name kurovszky.robin.unicalendar:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#icon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:icon
+          @attr name kurovszky.robin.unicalendar:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:indeterminateProgressStyle
+          @attr name kurovszky.robin.unicalendar:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3636,21 +3704,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:itemPadding
+          @attr name kurovszky.robin.unicalendar:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#logo}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:logo
+          @attr name kurovszky.robin.unicalendar:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3664,21 +3732,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:navigationMode
+          @attr name kurovszky.robin.unicalendar:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:popupTheme
+          @attr name kurovszky.robin.unicalendar:popupTheme
         */
         public static final int ActionBar_popupTheme = 27;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3690,21 +3758,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:progressBarPadding
+          @attr name kurovszky.robin.unicalendar:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:progressBarStyle
+          @attr name kurovszky.robin.unicalendar:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3714,21 +3782,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:subtitle
+          @attr name kurovszky.robin.unicalendar:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:subtitleTextStyle
+          @attr name kurovszky.robin.unicalendar:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#title}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3738,17 +3806,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:title
+          @attr name kurovszky.robin.unicalendar:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:titleTextStyle
+          @attr name kurovszky.robin.unicalendar:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -3800,12 +3868,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background kurovszky.robin.unireq:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit kurovszky.robin.unireq:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout kurovszky.robin.unireq:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height kurovszky.robin.unireq:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle kurovszky.robin.unireq:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle kurovszky.robin.unireq:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background kurovszky.robin.unicalendar:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit kurovszky.robin.unicalendar:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout kurovszky.robin.unicalendar:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height kurovszky.robin.unicalendar:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle kurovszky.robin.unicalendar:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle kurovszky.robin.unicalendar:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -3819,17 +3887,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#background}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:background
+          @attr name kurovszky.robin.unicalendar:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3837,21 +3905,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kurovszky.robin.unireq:backgroundSplit
+          @attr name kurovszky.robin.unicalendar:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:closeItemLayout
+          @attr name kurovszky.robin.unicalendar:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#height}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3863,27 +3931,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:height
+          @attr name kurovszky.robin.unicalendar:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:subtitleTextStyle
+          @attr name kurovszky.robin.unicalendar:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:titleTextStyle
+          @attr name kurovszky.robin.unicalendar:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -3892,8 +3960,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable kurovszky.robin.unireq:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount kurovszky.robin.unireq:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable kurovszky.robin.unicalendar:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount kurovszky.robin.unicalendar:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -3902,17 +3970,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001f, 0x7f010020
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:expandActivityOverflowButtonDrawable
+          @attr name kurovszky.robin.unicalendar:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -3922,7 +3990,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:initialActivityCount
+          @attr name kurovszky.robin.unicalendar:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -3932,11 +4000,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout kurovszky.robin.unireq:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout kurovszky.robin.unireq:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout kurovszky.robin.unireq:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout kurovszky.robin.unireq:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout kurovszky.robin.unireq:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout kurovszky.robin.unicalendar:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout kurovszky.robin.unicalendar:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout kurovszky.robin.unicalendar:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout kurovszky.robin.unicalendar:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout kurovszky.robin.unicalendar:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -3956,53 +4024,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:buttonPanelSideLayout
+          @attr name kurovszky.robin.unicalendar:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:listItemLayout
+          @attr name kurovszky.robin.unicalendar:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:listLayout
+          @attr name kurovszky.robin.unicalendar:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:multiChoiceItemLayout
+          @attr name kurovszky.robin.unicalendar:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:singleChoiceItemLayout
+          @attr name kurovszky.robin.unicalendar:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -4012,8 +4080,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation kurovszky.robin.unireq:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded kurovszky.robin.unireq:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation kurovszky.robin.unicalendar:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded kurovszky.robin.unicalendar:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -4029,7 +4097,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#elevation}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4041,11 +4109,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:elevation
+          @attr name kurovszky.robin.unicalendar:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expanded}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4055,7 +4123,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:expanded
+          @attr name kurovszky.robin.unicalendar:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayoutStates.
@@ -4064,8 +4132,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed kurovszky.robin.unireq:state_collapsed}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible kurovszky.robin.unireq:state_collapsible}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed kurovszky.robin.unicalendar:state_collapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible kurovszky.robin.unicalendar:state_collapsible}</code></td><td></td></tr>
            </table>
            @see #AppBarLayoutStates_state_collapsed
            @see #AppBarLayoutStates_state_collapsible
@@ -4074,7 +4142,7 @@ containing a value of this type.
             0x7f010027, 0x7f010028
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#state_collapsed}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#state_collapsed}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4084,11 +4152,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:state_collapsed
+          @attr name kurovszky.robin.unicalendar:state_collapsed
         */
         public static final int AppBarLayoutStates_state_collapsed = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#state_collapsible}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#state_collapsible}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4098,7 +4166,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:state_collapsible
+          @attr name kurovszky.robin.unicalendar:state_collapsible
         */
         public static final int AppBarLayoutStates_state_collapsible = 1;
         /** Attributes that can be used with a AppBarLayout_Layout.
@@ -4107,8 +4175,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags kurovszky.robin.unireq:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator kurovszky.robin.unireq:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags kurovszky.robin.unicalendar:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator kurovszky.robin.unicalendar:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_Layout_layout_scrollFlags
            @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -4117,7 +4185,7 @@ containing a value of this type.
             0x7f010029, 0x7f01002a
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
@@ -4133,17 +4201,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:layout_scrollFlags
+          @attr name kurovszky.robin.unicalendar:layout_scrollFlags
         */
         public static final int AppBarLayout_Layout_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:layout_scrollInterpolator
+          @attr name kurovszky.robin.unicalendar:layout_scrollInterpolator
         */
         public static final int AppBarLayout_Layout_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -4153,7 +4221,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat kurovszky.robin.unireq:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat kurovszky.robin.unicalendar:srcCompat}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -4168,13 +4236,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:srcCompat
+          @attr name kurovszky.robin.unicalendar:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /** Attributes that can be used with a AppCompatSeekBar.
@@ -4184,9 +4252,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMark kurovszky.robin.unireq:tickMark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint kurovszky.robin.unireq:tickMarkTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode kurovszky.robin.unireq:tickMarkTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMark kurovszky.robin.unicalendar:tickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint kurovszky.robin.unicalendar:tickMarkTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode kurovszky.robin.unicalendar:tickMarkTintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatSeekBar_android_thumb
            @see #AppCompatSeekBar_tickMark
@@ -4203,17 +4271,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatSeekBar_android_thumb = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tickMark}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tickMark}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:tickMark
+          @attr name kurovszky.robin.unicalendar:tickMark
         */
         public static final int AppCompatSeekBar_tickMark = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tickMarkTint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tickMarkTint}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -4224,11 +4292,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tickMarkTint
+          @attr name kurovszky.robin.unicalendar:tickMarkTint
         */
         public static final int AppCompatSeekBar_tickMarkTint = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tickMarkTintMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tickMarkTintMode}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -4245,7 +4313,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:tickMarkTintMode
+          @attr name kurovszky.robin.unicalendar:tickMarkTintMode
         */
         public static final int AppCompatSeekBar_tickMarkTintMode = 3;
         /** Attributes that can be used with a AppCompatTextHelper.
@@ -4323,7 +4391,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps kurovszky.robin.unireq:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps kurovszky.robin.unicalendar:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -4338,14 +4406,14 @@ containing a value of this type.
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name kurovszky.robin.unireq:textAllCaps
+          @attr name kurovszky.robin.unicalendar:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -4354,121 +4422,121 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider kurovszky.robin.unireq:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground kurovszky.robin.unireq:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme kurovszky.robin.unireq:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize kurovszky.robin.unireq:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle kurovszky.robin.unireq:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle kurovszky.robin.unireq:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle kurovszky.robin.unireq:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle kurovszky.robin.unireq:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle kurovszky.robin.unireq:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme kurovszky.robin.unireq:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme kurovszky.robin.unireq:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle kurovszky.robin.unireq:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle kurovszky.robin.unireq:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance kurovszky.robin.unireq:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor kurovszky.robin.unireq:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground kurovszky.robin.unireq:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle kurovszky.robin.unireq:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable kurovszky.robin.unireq:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable kurovszky.robin.unireq:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable kurovszky.robin.unireq:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable kurovszky.robin.unireq:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable kurovszky.robin.unireq:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle kurovszky.robin.unireq:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable kurovszky.robin.unireq:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable kurovszky.robin.unireq:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground kurovszky.robin.unireq:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle kurovszky.robin.unireq:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable kurovszky.robin.unireq:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle kurovszky.robin.unireq:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle kurovszky.robin.unireq:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle kurovszky.robin.unireq:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle kurovszky.robin.unireq:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons kurovszky.robin.unireq:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle kurovszky.robin.unireq:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme kurovszky.robin.unireq:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider kurovszky.robin.unicalendar:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground kurovszky.robin.unicalendar:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme kurovszky.robin.unicalendar:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize kurovszky.robin.unicalendar:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle kurovszky.robin.unicalendar:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle kurovszky.robin.unicalendar:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle kurovszky.robin.unicalendar:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle kurovszky.robin.unicalendar:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle kurovszky.robin.unicalendar:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme kurovszky.robin.unicalendar:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme kurovszky.robin.unicalendar:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle kurovszky.robin.unicalendar:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle kurovszky.robin.unicalendar:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance kurovszky.robin.unicalendar:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor kurovszky.robin.unicalendar:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground kurovszky.robin.unicalendar:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle kurovszky.robin.unicalendar:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable kurovszky.robin.unicalendar:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable kurovszky.robin.unicalendar:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable kurovszky.robin.unicalendar:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable kurovszky.robin.unicalendar:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable kurovszky.robin.unicalendar:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle kurovszky.robin.unicalendar:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable kurovszky.robin.unicalendar:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable kurovszky.robin.unicalendar:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground kurovszky.robin.unicalendar:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle kurovszky.robin.unicalendar:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable kurovszky.robin.unicalendar:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle kurovszky.robin.unicalendar:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle kurovszky.robin.unicalendar:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle kurovszky.robin.unicalendar:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle kurovszky.robin.unicalendar:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons kurovszky.robin.unicalendar:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle kurovszky.robin.unicalendar:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme kurovszky.robin.unicalendar:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle kurovszky.robin.unireq:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle kurovszky.robin.unireq:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle kurovszky.robin.unireq:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle kurovszky.robin.unireq:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle kurovszky.robin.unireq:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle kurovszky.robin.unireq:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle kurovszky.robin.unireq:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle kurovszky.robin.unireq:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall kurovszky.robin.unireq:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle kurovszky.robin.unireq:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle kurovszky.robin.unireq:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent kurovszky.robin.unireq:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating kurovszky.robin.unireq:colorBackgroundFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal kurovszky.robin.unireq:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated kurovszky.robin.unireq:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight kurovszky.robin.unireq:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal kurovszky.robin.unireq:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary kurovszky.robin.unireq:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark kurovszky.robin.unireq:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal kurovszky.robin.unireq:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground kurovszky.robin.unireq:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding kurovszky.robin.unireq:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme kurovszky.robin.unireq:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal kurovszky.robin.unireq:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical kurovszky.robin.unireq:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle kurovszky.robin.unireq:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight kurovszky.robin.unireq:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground kurovszky.robin.unireq:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor kurovszky.robin.unireq:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle kurovszky.robin.unireq:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator kurovszky.robin.unireq:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle kurovszky.robin.unireq:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator kurovszky.robin.unireq:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog kurovszky.robin.unireq:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle kurovszky.robin.unireq:listMenuViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle kurovszky.robin.unireq:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight kurovszky.robin.unireq:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge kurovszky.robin.unireq:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall kurovszky.robin.unireq:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft kurovszky.robin.unireq:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight kurovszky.robin.unireq:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground kurovszky.robin.unireq:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme kurovszky.robin.unireq:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth kurovszky.robin.unireq:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle kurovszky.robin.unireq:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle kurovszky.robin.unireq:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle kurovszky.robin.unireq:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle kurovszky.robin.unireq:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator kurovszky.robin.unireq:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall kurovszky.robin.unireq:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle kurovszky.robin.unireq:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle kurovszky.robin.unireq:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground kurovszky.robin.unireq:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless kurovszky.robin.unireq:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle kurovszky.robin.unireq:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle kurovszky.robin.unireq:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle kurovszky.robin.unireq:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu kurovszky.robin.unireq:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem kurovszky.robin.unireq:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall kurovszky.robin.unireq:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader kurovszky.robin.unireq:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle kurovszky.robin.unireq:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle kurovszky.robin.unireq:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu kurovszky.robin.unireq:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem kurovszky.robin.unireq:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl kurovszky.robin.unireq:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle kurovszky.robin.unireq:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle kurovszky.robin.unireq:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar kurovszky.robin.unireq:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay kurovszky.robin.unireq:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay kurovszky.robin.unireq:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor kurovszky.robin.unireq:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor kurovszky.robin.unireq:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor kurovszky.robin.unireq:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor kurovszky.robin.unireq:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor kurovszky.robin.unireq:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor kurovszky.robin.unireq:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle kurovszky.robin.unireq:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle kurovszky.robin.unicalendar:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle kurovszky.robin.unicalendar:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle kurovszky.robin.unicalendar:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle kurovszky.robin.unicalendar:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle kurovszky.robin.unicalendar:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle kurovszky.robin.unicalendar:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle kurovszky.robin.unicalendar:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle kurovszky.robin.unicalendar:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall kurovszky.robin.unicalendar:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle kurovszky.robin.unicalendar:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle kurovszky.robin.unicalendar:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent kurovszky.robin.unicalendar:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating kurovszky.robin.unicalendar:colorBackgroundFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal kurovszky.robin.unicalendar:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated kurovszky.robin.unicalendar:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight kurovszky.robin.unicalendar:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal kurovszky.robin.unicalendar:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary kurovszky.robin.unicalendar:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark kurovszky.robin.unicalendar:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal kurovszky.robin.unicalendar:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground kurovszky.robin.unicalendar:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding kurovszky.robin.unicalendar:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme kurovszky.robin.unicalendar:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal kurovszky.robin.unicalendar:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical kurovszky.robin.unicalendar:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle kurovszky.robin.unicalendar:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight kurovszky.robin.unicalendar:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground kurovszky.robin.unicalendar:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor kurovszky.robin.unicalendar:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle kurovszky.robin.unicalendar:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator kurovszky.robin.unicalendar:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle kurovszky.robin.unicalendar:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator kurovszky.robin.unicalendar:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog kurovszky.robin.unicalendar:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle kurovszky.robin.unicalendar:listMenuViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle kurovszky.robin.unicalendar:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight kurovszky.robin.unicalendar:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge kurovszky.robin.unicalendar:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall kurovszky.robin.unicalendar:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft kurovszky.robin.unicalendar:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight kurovszky.robin.unicalendar:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground kurovszky.robin.unicalendar:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme kurovszky.robin.unicalendar:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth kurovszky.robin.unicalendar:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle kurovszky.robin.unicalendar:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle kurovszky.robin.unicalendar:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle kurovszky.robin.unicalendar:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle kurovszky.robin.unicalendar:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator kurovszky.robin.unicalendar:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall kurovszky.robin.unicalendar:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle kurovszky.robin.unicalendar:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle kurovszky.robin.unicalendar:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground kurovszky.robin.unicalendar:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless kurovszky.robin.unicalendar:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle kurovszky.robin.unicalendar:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle kurovszky.robin.unicalendar:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle kurovszky.robin.unicalendar:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu kurovszky.robin.unicalendar:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem kurovszky.robin.unicalendar:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall kurovszky.robin.unicalendar:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader kurovszky.robin.unicalendar:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle kurovszky.robin.unicalendar:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle kurovszky.robin.unicalendar:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu kurovszky.robin.unicalendar:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem kurovszky.robin.unicalendar:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl kurovszky.robin.unicalendar:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle kurovszky.robin.unicalendar:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle kurovszky.robin.unicalendar:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar kurovszky.robin.unicalendar:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay kurovszky.robin.unicalendar:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay kurovszky.robin.unicalendar:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor kurovszky.robin.unicalendar:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor kurovszky.robin.unicalendar:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor kurovszky.robin.unicalendar:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor kurovszky.robin.unicalendar:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor kurovszky.robin.unicalendar:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor kurovszky.robin.unicalendar:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle kurovszky.robin.unicalendar:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -4618,37 +4686,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01009e, 0x7f01009f, 0x7f0100a0
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarDivider
+          @attr name kurovszky.robin.unicalendar:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarItemBackground
+          @attr name kurovszky.robin.unicalendar:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarPopupTheme
+          @attr name kurovszky.robin.unicalendar:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4668,111 +4736,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:actionBarSize
+          @attr name kurovszky.robin.unicalendar:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarSplitStyle
+          @attr name kurovszky.robin.unicalendar:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarStyle
+          @attr name kurovszky.robin.unicalendar:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarTabBarStyle
+          @attr name kurovszky.robin.unicalendar:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarTabStyle
+          @attr name kurovszky.robin.unicalendar:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarTabTextStyle
+          @attr name kurovszky.robin.unicalendar:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarTheme
+          @attr name kurovszky.robin.unicalendar:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionBarWidgetTheme
+          @attr name kurovszky.robin.unicalendar:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionButtonStyle
+          @attr name kurovszky.robin.unicalendar:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionDropDownStyle
+          @attr name kurovszky.robin.unicalendar:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionMenuTextAppearance
+          @attr name kurovszky.robin.unicalendar:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4780,181 +4848,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kurovszky.robin.unireq:actionMenuTextColor
+          @attr name kurovszky.robin.unicalendar:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeBackground
+          @attr name kurovszky.robin.unicalendar:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeCloseButtonStyle
+          @attr name kurovszky.robin.unicalendar:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeCloseDrawable
+          @attr name kurovszky.robin.unicalendar:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeCopyDrawable
+          @attr name kurovszky.robin.unicalendar:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeCutDrawable
+          @attr name kurovszky.robin.unicalendar:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeFindDrawable
+          @attr name kurovszky.robin.unicalendar:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModePasteDrawable
+          @attr name kurovszky.robin.unicalendar:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModePopupWindowStyle
+          @attr name kurovszky.robin.unicalendar:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeSelectAllDrawable
+          @attr name kurovszky.robin.unicalendar:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeShareDrawable
+          @attr name kurovszky.robin.unicalendar:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeSplitBackground
+          @attr name kurovszky.robin.unicalendar:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeStyle
+          @attr name kurovszky.robin.unicalendar:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionModeWebSearchDrawable
+          @attr name kurovszky.robin.unicalendar:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionOverflowButtonStyle
+          @attr name kurovszky.robin.unicalendar:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionOverflowMenuStyle
+          @attr name kurovszky.robin.unicalendar:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:activityChooserViewStyle
+          @attr name kurovszky.robin.unicalendar:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:alertDialogButtonGroupStyle
+          @attr name kurovszky.robin.unicalendar:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4964,27 +5032,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:alertDialogCenterButtons
+          @attr name kurovszky.robin.unicalendar:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 95;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:alertDialogStyle
+          @attr name kurovszky.robin.unicalendar:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 93;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:alertDialogTheme
+          @attr name kurovszky.robin.unicalendar:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 96;
         /**
@@ -5000,117 +5068,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:autoCompleteTextViewStyle
+          @attr name kurovszky.robin.unicalendar:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:borderlessButtonStyle
+          @attr name kurovszky.robin.unicalendar:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:buttonBarButtonStyle
+          @attr name kurovszky.robin.unicalendar:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:buttonBarNegativeButtonStyle
+          @attr name kurovszky.robin.unicalendar:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:buttonBarNeutralButtonStyle
+          @attr name kurovszky.robin.unicalendar:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:buttonBarPositiveButtonStyle
+          @attr name kurovszky.robin.unicalendar:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:buttonBarStyle
+          @attr name kurovszky.robin.unicalendar:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:buttonStyle
+          @attr name kurovszky.robin.unicalendar:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:buttonStyleSmall
+          @attr name kurovszky.robin.unicalendar:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 103;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:checkboxStyle
+          @attr name kurovszky.robin.unicalendar:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:checkedTextViewStyle
+          @attr name kurovszky.robin.unicalendar:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5121,11 +5189,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorAccent
+          @attr name kurovszky.robin.unicalendar:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 85;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorBackgroundFloating}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorBackgroundFloating}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5136,11 +5204,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorBackgroundFloating
+          @attr name kurovszky.robin.unicalendar:colorBackgroundFloating
         */
         public static final int AppCompatTheme_colorBackgroundFloating = 92;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5151,11 +5219,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorButtonNormal
+          @attr name kurovszky.robin.unicalendar:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5166,11 +5234,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorControlActivated
+          @attr name kurovszky.robin.unicalendar:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 87;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5181,11 +5249,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorControlHighlight
+          @attr name kurovszky.robin.unicalendar:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 88;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5196,11 +5264,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorControlNormal
+          @attr name kurovszky.robin.unicalendar:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 86;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5211,11 +5279,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorPrimary
+          @attr name kurovszky.robin.unicalendar:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 83;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5226,11 +5294,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorPrimaryDark
+          @attr name kurovszky.robin.unicalendar:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 84;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5241,21 +5309,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:colorSwitchThumbNormal
+          @attr name kurovszky.robin.unicalendar:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 90;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:controlBackground
+          @attr name kurovszky.robin.unicalendar:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 91;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5267,51 +5335,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:dialogPreferredPadding
+          @attr name kurovszky.robin.unicalendar:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 44;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:dialogTheme
+          @attr name kurovszky.robin.unicalendar:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 43;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:dividerHorizontal
+          @attr name kurovszky.robin.unicalendar:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 57;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:dividerVertical
+          @attr name kurovszky.robin.unicalendar:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 56;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:dropDownListViewStyle
+          @attr name kurovszky.robin.unicalendar:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5323,21 +5391,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:dropdownListPreferredItemHeight
+          @attr name kurovszky.robin.unicalendar:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 47;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:editTextBackground
+          @attr name kurovszky.robin.unicalendar:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 64;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5345,81 +5413,81 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kurovszky.robin.unireq:editTextColor
+          @attr name kurovszky.robin.unicalendar:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 63;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:editTextStyle
+          @attr name kurovszky.robin.unicalendar:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:homeAsUpIndicator
+          @attr name kurovszky.robin.unicalendar:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 49;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:imageButtonStyle
+          @attr name kurovszky.robin.unicalendar:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 65;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:listChoiceBackgroundIndicator
+          @attr name kurovszky.robin.unicalendar:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 82;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:listDividerAlertDialog
+          @attr name kurovszky.robin.unicalendar:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 45;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listMenuViewStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listMenuViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:listMenuViewStyle
+          @attr name kurovszky.robin.unicalendar:listMenuViewStyle
         */
         public static final int AppCompatTheme_listMenuViewStyle = 114;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:listPopupWindowStyle
+          @attr name kurovszky.robin.unicalendar:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 76;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5431,11 +5499,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:listPreferredItemHeight
+          @attr name kurovszky.robin.unicalendar:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 70;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5447,11 +5515,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:listPreferredItemHeightLarge
+          @attr name kurovszky.robin.unicalendar:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 72;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5463,11 +5531,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:listPreferredItemHeightSmall
+          @attr name kurovszky.robin.unicalendar:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5479,11 +5547,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:listPreferredItemPaddingLeft
+          @attr name kurovszky.robin.unicalendar:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 73;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5495,31 +5563,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:listPreferredItemPaddingRight
+          @attr name kurovszky.robin.unicalendar:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 74;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:panelBackground
+          @attr name kurovszky.robin.unicalendar:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 79;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:panelMenuListTheme
+          @attr name kurovszky.robin.unicalendar:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 81;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5531,211 +5599,211 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:panelMenuListWidth
+          @attr name kurovszky.robin.unicalendar:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 80;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:popupMenuStyle
+          @attr name kurovszky.robin.unicalendar:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:popupWindowStyle
+          @attr name kurovszky.robin.unicalendar:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:radioButtonStyle
+          @attr name kurovszky.robin.unicalendar:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:ratingBarStyle
+          @attr name kurovszky.robin.unicalendar:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:ratingBarStyleIndicator
+          @attr name kurovszky.robin.unicalendar:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 109;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:ratingBarStyleSmall
+          @attr name kurovszky.robin.unicalendar:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 110;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:searchViewStyle
+          @attr name kurovszky.robin.unicalendar:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:seekBarStyle
+          @attr name kurovszky.robin.unicalendar:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 111;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:selectableItemBackground
+          @attr name kurovszky.robin.unicalendar:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 53;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:selectableItemBackgroundBorderless
+          @attr name kurovszky.robin.unicalendar:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 54;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:spinnerDropDownItemStyle
+          @attr name kurovszky.robin.unicalendar:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 48;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:spinnerStyle
+          @attr name kurovszky.robin.unicalendar:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 112;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:switchStyle
+          @attr name kurovszky.robin.unicalendar:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 113;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:textAppearanceLargePopupMenu
+          @attr name kurovszky.robin.unicalendar:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:textAppearanceListItem
+          @attr name kurovszky.robin.unicalendar:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 77;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:textAppearanceListItemSmall
+          @attr name kurovszky.robin.unicalendar:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 78;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAppearancePopupMenuHeader}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAppearancePopupMenuHeader}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:textAppearancePopupMenuHeader
+          @attr name kurovszky.robin.unicalendar:textAppearancePopupMenuHeader
         */
         public static final int AppCompatTheme_textAppearancePopupMenuHeader = 42;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:textAppearanceSearchResultSubtitle
+          @attr name kurovszky.robin.unicalendar:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 67;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:textAppearanceSearchResultTitle
+          @attr name kurovszky.robin.unicalendar:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 66;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:textAppearanceSmallPopupMenu
+          @attr name kurovszky.robin.unicalendar:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5743,11 +5811,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kurovszky.robin.unireq:textColorAlertDialogListItem
+          @attr name kurovszky.robin.unicalendar:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 97;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5755,31 +5823,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kurovszky.robin.unireq:textColorSearchUrl
+          @attr name kurovszky.robin.unicalendar:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 68;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:toolbarNavigationButtonStyle
+          @attr name kurovszky.robin.unicalendar:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:toolbarStyle
+          @attr name kurovszky.robin.unicalendar:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5789,11 +5857,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowActionBar
+          @attr name kurovszky.robin.unicalendar:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5803,11 +5871,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowActionBarOverlay
+          @attr name kurovszky.robin.unicalendar:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5817,11 +5885,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowActionModeOverlay
+          @attr name kurovszky.robin.unicalendar:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5836,11 +5904,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowFixedHeightMajor
+          @attr name kurovszky.robin.unicalendar:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5855,11 +5923,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowFixedHeightMinor
+          @attr name kurovszky.robin.unicalendar:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5874,11 +5942,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowFixedWidthMajor
+          @attr name kurovszky.robin.unicalendar:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5893,11 +5961,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowFixedWidthMinor
+          @attr name kurovszky.robin.unicalendar:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5912,11 +5980,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowMinWidthMajor
+          @attr name kurovszky.robin.unicalendar:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5931,11 +5999,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowMinWidthMinor
+          @attr name kurovszky.robin.unicalendar:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5945,7 +6013,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:windowNoTitle
+          @attr name kurovszky.robin.unicalendar:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomSheetBehavior_Layout.
@@ -5954,9 +6022,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable kurovszky.robin.unireq:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight kurovszky.robin.unireq:behavior_peekHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed kurovszky.robin.unireq:behavior_skipCollapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable kurovszky.robin.unicalendar:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight kurovszky.robin.unicalendar:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed kurovszky.robin.unicalendar:behavior_skipCollapsed}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Layout_behavior_hideable
            @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -5966,7 +6034,7 @@ containing a value of this type.
             0x7f0100a1, 0x7f0100a2, 0x7f0100a3
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -5976,11 +6044,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:behavior_hideable
+          @attr name kurovszky.robin.unicalendar:behavior_hideable
         */
         public static final int BottomSheetBehavior_Layout_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -6000,11 +6068,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>auto</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:behavior_peekHeight
+          @attr name kurovszky.robin.unicalendar:behavior_peekHeight
         */
         public static final int BottomSheetBehavior_Layout_behavior_peekHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#behavior_skipCollapsed}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#behavior_skipCollapsed}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -6014,7 +6082,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:behavior_skipCollapsed
+          @attr name kurovszky.robin.unicalendar:behavior_skipCollapsed
         */
         public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -6023,7 +6091,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking kurovszky.robin.unireq:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking kurovszky.robin.unicalendar:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -6031,7 +6099,7 @@ containing a value of this type.
             0x7f0100a4
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -6041,7 +6109,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:allowStacking
+          @attr name kurovszky.robin.unicalendar:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6050,22 +6118,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity kurovszky.robin.unireq:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance kurovszky.robin.unireq:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim kurovszky.robin.unireq:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity kurovszky.robin.unireq:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin kurovszky.robin.unireq:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom kurovszky.robin.unireq:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd kurovszky.robin.unireq:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart kurovszky.robin.unireq:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop kurovszky.robin.unireq:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance kurovszky.robin.unireq:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration kurovszky.robin.unireq:scrimAnimationDuration}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger kurovszky.robin.unireq:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim kurovszky.robin.unireq:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title kurovszky.robin.unireq:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled kurovszky.robin.unireq:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId kurovszky.robin.unireq:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity kurovszky.robin.unicalendar:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance kurovszky.robin.unicalendar:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim kurovszky.robin.unicalendar:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity kurovszky.robin.unicalendar:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin kurovszky.robin.unicalendar:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom kurovszky.robin.unicalendar:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd kurovszky.robin.unicalendar:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart kurovszky.robin.unicalendar:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop kurovszky.robin.unicalendar:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance kurovszky.robin.unicalendar:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration kurovszky.robin.unicalendar:scrimAnimationDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger kurovszky.robin.unicalendar:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim kurovszky.robin.unicalendar:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title kurovszky.robin.unicalendar:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled kurovszky.robin.unicalendar:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId kurovszky.robin.unicalendar:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6091,7 +6159,7 @@ containing a value of this type.
             0x7f0100b0, 0x7f0100b1, 0x7f0100b2, 0x7f0100b3
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6112,21 +6180,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:collapsedTitleGravity
+          @attr name kurovszky.robin.unicalendar:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 13;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:collapsedTitleTextAppearance
+          @attr name kurovszky.robin.unicalendar:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6137,11 +6205,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentScrim
+          @attr name kurovszky.robin.unicalendar:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6162,11 +6230,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:expandedTitleGravity
+          @attr name kurovszky.robin.unicalendar:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 14;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6178,11 +6246,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:expandedTitleMargin
+          @attr name kurovszky.robin.unicalendar:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6194,11 +6262,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:expandedTitleMarginBottom
+          @attr name kurovszky.robin.unicalendar:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6210,11 +6278,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:expandedTitleMarginEnd
+          @attr name kurovszky.robin.unicalendar:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6226,11 +6294,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:expandedTitleMarginStart
+          @attr name kurovszky.robin.unicalendar:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6242,21 +6310,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:expandedTitleMarginTop
+          @attr name kurovszky.robin.unicalendar:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:expandedTitleTextAppearance
+          @attr name kurovszky.robin.unicalendar:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#scrimAnimationDuration}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#scrimAnimationDuration}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6266,11 +6334,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:scrimAnimationDuration
+          @attr name kurovszky.robin.unicalendar:scrimAnimationDuration
         */
         public static final int CollapsingToolbarLayout_scrimAnimationDuration = 12;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#scrimVisibleHeightTrigger}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#scrimVisibleHeightTrigger}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6282,11 +6350,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:scrimVisibleHeightTrigger
+          @attr name kurovszky.robin.unicalendar:scrimVisibleHeightTrigger
         */
         public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 11;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6297,11 +6365,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:statusBarScrim
+          @attr name kurovszky.robin.unicalendar:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#title}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6311,11 +6379,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:title
+          @attr name kurovszky.robin.unicalendar:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6325,17 +6393,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:titleEnabled
+          @attr name kurovszky.robin.unicalendar:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 15;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:toolbarId
+          @attr name kurovszky.robin.unicalendar:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CollapsingToolbarLayout_Layout.
@@ -6344,8 +6412,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode kurovszky.robin.unireq:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier kurovszky.robin.unireq:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode kurovszky.robin.unicalendar:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier kurovszky.robin.unicalendar:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_Layout_layout_collapseMode
            @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -6354,7 +6422,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100b4, 0x7f0100b5
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -6368,11 +6436,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:layout_collapseMode
+          @attr name kurovszky.robin.unicalendar:layout_collapseMode
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -6382,7 +6450,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:layout_collapseParallaxMultiplier
+          @attr name kurovszky.robin.unicalendar:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a ColorStateListItem.
@@ -6391,7 +6459,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ColorStateListItem_alpha kurovszky.robin.unireq:alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorStateListItem_alpha kurovszky.robin.unicalendar:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
            </table>
@@ -6403,7 +6471,7 @@ containing a value of this type.
             0x010101a5, 0x0101031f, 0x7f0100b6
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#alpha}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#alpha}
           attribute's value can be found in the {@link #ColorStateListItem} array.
 
 
@@ -6413,7 +6481,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:alpha
+          @attr name kurovszky.robin.unicalendar:alpha
         */
         public static final int ColorStateListItem_alpha = 2;
         /**
@@ -6435,8 +6503,8 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint kurovszky.robin.unireq:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode kurovszky.robin.unireq:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint kurovszky.robin.unicalendar:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode kurovszky.robin.unicalendar:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -6452,7 +6520,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6463,11 +6531,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:buttonTint
+          @attr name kurovszky.robin.unicalendar:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6483,7 +6551,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:buttonTintMode
+          @attr name kurovszky.robin.unicalendar:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -6492,8 +6560,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines kurovszky.robin.unireq:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground kurovszky.robin.unireq:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines kurovszky.robin.unicalendar:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground kurovszky.robin.unicalendar:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -6502,23 +6570,23 @@ containing a value of this type.
             0x7f0100b9, 0x7f0100ba
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#keylines}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:keylines
+          @attr name kurovszky.robin.unicalendar:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:statusBarBackground
+          @attr name kurovszky.robin.unicalendar:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_Layout.
@@ -6528,12 +6596,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor kurovszky.robin.unireq:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity kurovszky.robin.unireq:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior kurovszky.robin.unireq:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges kurovszky.robin.unireq:layout_dodgeInsetEdges}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge kurovszky.robin.unireq:layout_insetEdge}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline kurovszky.robin.unireq:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor kurovszky.robin.unicalendar:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity kurovszky.robin.unicalendar:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior kurovszky.robin.unicalendar:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges kurovszky.robin.unicalendar:layout_dodgeInsetEdges}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge kurovszky.robin.unicalendar:layout_insetEdge}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline kurovszky.robin.unicalendar:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_Layout_android_layout_gravity
            @see #CoordinatorLayout_Layout_layout_anchor
@@ -6554,17 +6622,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:layout_anchor
+          @attr name kurovszky.robin.unicalendar:layout_anchor
         */
         public static final int CoordinatorLayout_Layout_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6589,11 +6657,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:layout_anchorGravity
+          @attr name kurovszky.robin.unicalendar:layout_anchorGravity
         */
         public static final int CoordinatorLayout_Layout_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6603,11 +6671,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:layout_behavior
+          @attr name kurovszky.robin.unicalendar:layout_behavior
         */
         public static final int CoordinatorLayout_Layout_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_dodgeInsetEdges}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_dodgeInsetEdges}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6626,11 +6694,11 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 <tr><td><code>all</code></td><td>0x77</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:layout_dodgeInsetEdges
+          @attr name kurovszky.robin.unicalendar:layout_dodgeInsetEdges
         */
         public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_insetEdge}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_insetEdge}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6648,11 +6716,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:layout_insetEdge
+          @attr name kurovszky.robin.unicalendar:layout_insetEdge
         */
         public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6662,7 +6730,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:layout_keyline
+          @attr name kurovszky.robin.unicalendar:layout_keyline
         */
         public static final int CoordinatorLayout_Layout_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -6671,9 +6739,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme kurovszky.robin.unireq:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle kurovszky.robin.unireq:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError kurovszky.robin.unireq:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme kurovszky.robin.unicalendar:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle kurovszky.robin.unicalendar:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError kurovszky.robin.unicalendar:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -6683,27 +6751,27 @@ containing a value of this type.
             0x7f0100c1, 0x7f0100c2, 0x7f0100c3
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:bottomSheetDialogTheme
+          @attr name kurovszky.robin.unicalendar:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:bottomSheetStyle
+          @attr name kurovszky.robin.unicalendar:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -6714,7 +6782,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:textColorError
+          @attr name kurovszky.robin.unicalendar:textColorError
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -6723,14 +6791,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength kurovszky.robin.unireq:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength kurovszky.robin.unireq:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength kurovszky.robin.unireq:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color kurovszky.robin.unireq:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize kurovszky.robin.unireq:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars kurovszky.robin.unireq:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars kurovszky.robin.unireq:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness kurovszky.robin.unireq:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength kurovszky.robin.unicalendar:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength kurovszky.robin.unicalendar:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength kurovszky.robin.unicalendar:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color kurovszky.robin.unicalendar:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize kurovszky.robin.unicalendar:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars kurovszky.robin.unicalendar:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars kurovszky.robin.unicalendar:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness kurovszky.robin.unicalendar:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -6746,7 +6814,7 @@ containing a value of this type.
             0x7f0100c8, 0x7f0100c9, 0x7f0100ca, 0x7f0100cb
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6758,11 +6826,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:arrowHeadLength
+          @attr name kurovszky.robin.unicalendar:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6774,11 +6842,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:arrowShaftLength
+          @attr name kurovszky.robin.unicalendar:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#barLength}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6790,11 +6858,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:barLength
+          @attr name kurovszky.robin.unicalendar:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#color}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6805,11 +6873,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:color
+          @attr name kurovszky.robin.unicalendar:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6821,11 +6889,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:drawableSize
+          @attr name kurovszky.robin.unicalendar:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6837,11 +6905,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:gapBetweenBars
+          @attr name kurovszky.robin.unicalendar:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6851,11 +6919,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:spinBars
+          @attr name kurovszky.robin.unicalendar:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#thickness}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6867,7 +6935,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:thickness
+          @attr name kurovszky.robin.unicalendar:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -6876,14 +6944,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint kurovszky.robin.unireq:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode kurovszky.robin.unireq:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth kurovszky.robin.unireq:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation kurovszky.robin.unireq:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize kurovszky.robin.unireq:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ kurovszky.robin.unireq:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor kurovszky.robin.unireq:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding kurovszky.robin.unireq:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint kurovszky.robin.unicalendar:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode kurovszky.robin.unicalendar:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth kurovszky.robin.unicalendar:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation kurovszky.robin.unicalendar:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize kurovszky.robin.unicalendar:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ kurovszky.robin.unicalendar:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor kurovszky.robin.unicalendar:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding kurovszky.robin.unicalendar:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -6899,7 +6967,7 @@ containing a value of this type.
             0x7f0100cf, 0x7f0100d0, 0x7f010135, 0x7f010136
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6910,11 +6978,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:backgroundTint
+          @attr name kurovszky.robin.unicalendar:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6930,11 +6998,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:backgroundTintMode
+          @attr name kurovszky.robin.unicalendar:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6946,11 +7014,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:borderWidth
+          @attr name kurovszky.robin.unicalendar:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#elevation}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6962,11 +7030,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:elevation
+          @attr name kurovszky.robin.unicalendar:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6980,11 +7048,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:fabSize
+          @attr name kurovszky.robin.unicalendar:fabSize
         */
         public static final int FloatingActionButton_fabSize = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6996,11 +7064,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:pressedTranslationZ
+          @attr name kurovszky.robin.unicalendar:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7011,11 +7079,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:rippleColor
+          @attr name kurovszky.robin.unicalendar:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7025,7 +7093,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:useCompatPadding
+          @attr name kurovszky.robin.unicalendar:useCompatPadding
         */
         public static final int FloatingActionButton_useCompatPadding = 5;
         /** Attributes that can be used with a FloatingActionButton_Behavior_Layout.
@@ -7034,7 +7102,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide kurovszky.robin.unireq:behavior_autoHide}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide kurovszky.robin.unicalendar:behavior_autoHide}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
          */
@@ -7042,7 +7110,7 @@ containing a value of this type.
             0x7f0100d1
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#behavior_autoHide}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#behavior_autoHide}
           attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
 
 
@@ -7052,7 +7120,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:behavior_autoHide
+          @attr name kurovszky.robin.unicalendar:behavior_autoHide
         */
         public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -7063,7 +7131,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding kurovszky.robin.unireq:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding kurovszky.robin.unicalendar:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -7085,7 +7153,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -7095,7 +7163,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:foregroundInsidePadding
+          @attr name kurovszky.robin.unicalendar:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -7109,10 +7177,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider kurovszky.robin.unireq:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding kurovszky.robin.unireq:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild kurovszky.robin.unireq:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers kurovszky.robin.unireq:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider kurovszky.robin.unicalendar:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding kurovszky.robin.unicalendar:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild kurovszky.robin.unicalendar:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers kurovszky.robin.unicalendar:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -7160,17 +7228,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#divider}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:divider
+          @attr name kurovszky.robin.unicalendar:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7182,11 +7250,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:dividerPadding
+          @attr name kurovszky.robin.unicalendar:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7196,11 +7264,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:measureWithLargestChild
+          @attr name kurovszky.robin.unicalendar:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7215,7 +7283,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:showDividers
+          @attr name kurovszky.robin.unicalendar:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -7354,9 +7422,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout kurovszky.robin.unireq:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass kurovszky.robin.unireq:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass kurovszky.robin.unireq:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout kurovszky.robin.unicalendar:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass kurovszky.robin.unicalendar:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass kurovszky.robin.unicalendar:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -7370,7 +7438,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction kurovszky.robin.unireq:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction kurovszky.robin.unicalendar:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -7398,17 +7466,17 @@ containing a value of this type.
             0x7f0100d9
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:actionLayout
+          @attr name kurovszky.robin.unicalendar:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7418,11 +7486,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:actionProviderClass
+          @attr name kurovszky.robin.unicalendar:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7432,7 +7500,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:actionViewClass
+          @attr name kurovszky.robin.unicalendar:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -7514,7 +7582,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7530,7 +7598,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:showAsAction
+          @attr name kurovszky.robin.unicalendar:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -7546,8 +7614,8 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing kurovszky.robin.unireq:preserveIconSpacing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_subMenuArrow kurovszky.robin.unireq:subMenuArrow}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing kurovszky.robin.unicalendar:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_subMenuArrow kurovszky.robin.unicalendar:subMenuArrow}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -7607,7 +7675,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -7617,17 +7685,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:preserveIconSpacing
+          @attr name kurovszky.robin.unicalendar:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#subMenuArrow}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#subMenuArrow}
           attribute's value can be found in the {@link #MenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:subMenuArrow
+          @attr name kurovszky.robin.unicalendar:subMenuArrow
         */
         public static final int MenuView_subMenuArrow = 8;
         /** Attributes that can be used with a NavigationView.
@@ -7639,13 +7707,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation kurovszky.robin.unireq:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout kurovszky.robin.unireq:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground kurovszky.robin.unireq:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint kurovszky.robin.unireq:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance kurovszky.robin.unireq:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor kurovszky.robin.unireq:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu kurovszky.robin.unireq:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation kurovszky.robin.unicalendar:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout kurovszky.robin.unicalendar:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground kurovszky.robin.unicalendar:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint kurovszky.robin.unicalendar:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance kurovszky.robin.unicalendar:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor kurovszky.robin.unicalendar:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu kurovszky.robin.unicalendar:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -7682,7 +7750,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#elevation}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7694,31 +7762,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:elevation
+          @attr name kurovszky.robin.unicalendar:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:headerLayout
+          @attr name kurovszky.robin.unicalendar:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:itemBackground
+          @attr name kurovszky.robin.unicalendar:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7729,21 +7797,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:itemIconTint
+          @attr name kurovszky.robin.unicalendar:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:itemTextAppearance
+          @attr name kurovszky.robin.unicalendar:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7754,17 +7822,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:itemTextColor
+          @attr name kurovszky.robin.unicalendar:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#menu}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:menu
+          @attr name kurovszky.robin.unicalendar:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -7775,7 +7843,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor kurovszky.robin.unireq:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor kurovszky.robin.unicalendar:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupAnimationStyle
            @see #PopupWindow_android_popupBackground
@@ -7797,7 +7865,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -7807,7 +7875,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:overlapAnchor
+          @attr name kurovszky.robin.unicalendar:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 2;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -7816,7 +7884,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor kurovszky.robin.unireq:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor kurovszky.robin.unicalendar:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -7824,7 +7892,7 @@ containing a value of this type.
             0x7f0100e3
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -7834,7 +7902,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:state_above_anchor
+          @attr name kurovszky.robin.unicalendar:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -7845,10 +7913,10 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager kurovszky.robin.unireq:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout kurovszky.robin.unireq:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount kurovszky.robin.unireq:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd kurovszky.robin.unireq:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager kurovszky.robin.unicalendar:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout kurovszky.robin.unicalendar:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount kurovszky.robin.unicalendar:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd kurovszky.robin.unicalendar:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_descendantFocusability
            @see #RecyclerView_android_orientation
@@ -7874,7 +7942,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7884,11 +7952,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:layoutManager
+          @attr name kurovszky.robin.unicalendar:layoutManager
         */
         public static final int RecyclerView_layoutManager = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7898,11 +7966,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:reverseLayout
+          @attr name kurovszky.robin.unicalendar:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7912,11 +7980,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:spanCount
+          @attr name kurovszky.robin.unicalendar:spanCount
         */
         public static final int RecyclerView_spanCount = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7926,7 +7994,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:stackFromEnd
+          @attr name kurovszky.robin.unicalendar:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 5;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -7935,7 +8003,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground kurovszky.robin.unireq:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground kurovszky.robin.unicalendar:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -7943,7 +8011,7 @@ containing a value of this type.
             0x7f0100e8
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -7951,7 +8019,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kurovszky.robin.unireq:insetForeground
+          @attr name kurovszky.robin.unicalendar:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Layout.
@@ -7960,7 +8028,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop kurovszky.robin.unireq:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop kurovszky.robin.unicalendar:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Layout_behavior_overlapTop
          */
@@ -7968,7 +8036,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100e9
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
 
 
@@ -7980,7 +8048,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:behavior_overlapTop
+          @attr name kurovszky.robin.unicalendar:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -7993,19 +8061,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon kurovszky.robin.unireq:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon kurovszky.robin.unireq:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint kurovszky.robin.unireq:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon kurovszky.robin.unireq:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault kurovszky.robin.unireq:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout kurovszky.robin.unireq:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground kurovszky.robin.unireq:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint kurovszky.robin.unireq:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon kurovszky.robin.unireq:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon kurovszky.robin.unireq:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground kurovszky.robin.unireq:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout kurovszky.robin.unireq:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon kurovszky.robin.unireq:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon kurovszky.robin.unicalendar:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon kurovszky.robin.unicalendar:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint kurovszky.robin.unicalendar:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon kurovszky.robin.unicalendar:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault kurovszky.robin.unicalendar:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout kurovszky.robin.unicalendar:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground kurovszky.robin.unicalendar:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint kurovszky.robin.unicalendar:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon kurovszky.robin.unicalendar:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon kurovszky.robin.unicalendar:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground kurovszky.robin.unicalendar:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout kurovszky.robin.unicalendar:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon kurovszky.robin.unicalendar:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -8057,27 +8125,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:closeIcon
+          @attr name kurovszky.robin.unicalendar:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:commitIcon
+          @attr name kurovszky.robin.unicalendar:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8087,21 +8155,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:defaultQueryHint
+          @attr name kurovszky.robin.unicalendar:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:goIcon
+          @attr name kurovszky.robin.unicalendar:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8111,31 +8179,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:iconifiedByDefault
+          @attr name kurovszky.robin.unicalendar:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#layout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:layout
+          @attr name kurovszky.robin.unicalendar:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:queryBackground
+          @attr name kurovszky.robin.unicalendar:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8145,57 +8213,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:queryHint
+          @attr name kurovszky.robin.unicalendar:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:searchHintIcon
+          @attr name kurovszky.robin.unicalendar:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:searchIcon
+          @attr name kurovszky.robin.unicalendar:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:submitBackground
+          @attr name kurovszky.robin.unicalendar:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:suggestionRowLayout
+          @attr name kurovszky.robin.unicalendar:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:voiceIcon
+          @attr name kurovszky.robin.unicalendar:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -8205,8 +8273,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation kurovszky.robin.unireq:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth kurovszky.robin.unireq:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation kurovszky.robin.unicalendar:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth kurovszky.robin.unicalendar:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -8222,7 +8290,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#elevation}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8234,11 +8302,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:elevation
+          @attr name kurovszky.robin.unicalendar:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8250,7 +8318,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:maxActionInlineWidth
+          @attr name kurovszky.robin.unicalendar:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -8263,7 +8331,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme kurovszky.robin.unireq:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme kurovszky.robin.unicalendar:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -8300,13 +8368,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:popupTheme
+          @attr name kurovszky.robin.unicalendar:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -8318,17 +8386,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText kurovszky.robin.unireq:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack kurovszky.robin.unireq:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth kurovszky.robin.unireq:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding kurovszky.robin.unireq:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance kurovszky.robin.unireq:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding kurovszky.robin.unireq:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTint kurovszky.robin.unireq:thumbTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTintMode kurovszky.robin.unireq:thumbTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track kurovszky.robin.unireq:track}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTint kurovszky.robin.unireq:trackTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTintMode kurovszky.robin.unireq:trackTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText kurovszky.robin.unicalendar:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack kurovszky.robin.unicalendar:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth kurovszky.robin.unicalendar:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding kurovszky.robin.unicalendar:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance kurovszky.robin.unicalendar:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding kurovszky.robin.unicalendar:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTint kurovszky.robin.unicalendar:thumbTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTintMode kurovszky.robin.unicalendar:thumbTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track kurovszky.robin.unicalendar:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTint kurovszky.robin.unicalendar:trackTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTintMode kurovszky.robin.unicalendar:trackTintMode}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -8370,7 +8438,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#showText}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8380,11 +8448,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:showText
+          @attr name kurovszky.robin.unicalendar:showText
         */
         public static final int SwitchCompat_showText = 13;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8394,11 +8462,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:splitTrack
+          @attr name kurovszky.robin.unicalendar:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 12;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8410,11 +8478,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:switchMinWidth
+          @attr name kurovszky.robin.unicalendar:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 10;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8426,21 +8494,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:switchPadding
+          @attr name kurovszky.robin.unicalendar:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 11;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:switchTextAppearance
+          @attr name kurovszky.robin.unicalendar:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8452,11 +8520,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:thumbTextPadding
+          @attr name kurovszky.robin.unicalendar:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#thumbTint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#thumbTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8467,11 +8535,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:thumbTint
+          @attr name kurovszky.robin.unicalendar:thumbTint
         */
         public static final int SwitchCompat_thumbTint = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#thumbTintMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#thumbTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8488,21 +8556,21 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:thumbTintMode
+          @attr name kurovszky.robin.unicalendar:thumbTintMode
         */
         public static final int SwitchCompat_thumbTintMode = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#track}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:track
+          @attr name kurovszky.robin.unicalendar:track
         */
         public static final int SwitchCompat_track = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#trackTint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#trackTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8513,11 +8581,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:trackTint
+          @attr name kurovszky.robin.unicalendar:trackTint
         */
         public static final int SwitchCompat_trackTint = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#trackTintMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#trackTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8534,7 +8602,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:trackTintMode
+          @attr name kurovszky.robin.unicalendar:trackTintMode
         */
         public static final int SwitchCompat_trackTintMode = 7;
         /** Attributes that can be used with a TabItem.
@@ -8578,22 +8646,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground kurovszky.robin.unireq:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart kurovszky.robin.unireq:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity kurovszky.robin.unireq:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor kurovszky.robin.unireq:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight kurovszky.robin.unireq:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth kurovszky.robin.unireq:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth kurovszky.robin.unireq:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode kurovszky.robin.unireq:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding kurovszky.robin.unireq:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom kurovszky.robin.unireq:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd kurovszky.robin.unireq:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart kurovszky.robin.unireq:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop kurovszky.robin.unireq:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor kurovszky.robin.unireq:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance kurovszky.robin.unireq:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor kurovszky.robin.unireq:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground kurovszky.robin.unicalendar:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart kurovszky.robin.unicalendar:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity kurovszky.robin.unicalendar:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor kurovszky.robin.unicalendar:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight kurovszky.robin.unicalendar:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth kurovszky.robin.unicalendar:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth kurovszky.robin.unicalendar:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode kurovszky.robin.unicalendar:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding kurovszky.robin.unicalendar:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom kurovszky.robin.unicalendar:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd kurovszky.robin.unicalendar:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart kurovszky.robin.unicalendar:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop kurovszky.robin.unicalendar:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor kurovszky.robin.unicalendar:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance kurovszky.robin.unicalendar:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor kurovszky.robin.unicalendar:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -8619,17 +8687,17 @@ containing a value of this type.
             0x7f01010f, 0x7f010110, 0x7f010111, 0x7f010112
         };
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:tabBackground
+          @attr name kurovszky.robin.unicalendar:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8641,11 +8709,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabContentStart
+          @attr name kurovszky.robin.unicalendar:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8658,11 +8726,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:tabGravity
+          @attr name kurovszky.robin.unicalendar:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8673,11 +8741,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabIndicatorColor
+          @attr name kurovszky.robin.unicalendar:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8689,11 +8757,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabIndicatorHeight
+          @attr name kurovszky.robin.unicalendar:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8705,11 +8773,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabMaxWidth
+          @attr name kurovszky.robin.unicalendar:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8721,11 +8789,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabMinWidth
+          @attr name kurovszky.robin.unicalendar:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8738,11 +8806,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:tabMode
+          @attr name kurovszky.robin.unicalendar:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8754,11 +8822,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabPadding
+          @attr name kurovszky.robin.unicalendar:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8770,11 +8838,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabPaddingBottom
+          @attr name kurovszky.robin.unicalendar:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8786,11 +8854,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabPaddingEnd
+          @attr name kurovszky.robin.unicalendar:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8802,11 +8870,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabPaddingStart
+          @attr name kurovszky.robin.unicalendar:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8818,11 +8886,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabPaddingTop
+          @attr name kurovszky.robin.unicalendar:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8833,21 +8901,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabSelectedTextColor
+          @attr name kurovszky.robin.unicalendar:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:tabTextAppearance
+          @attr name kurovszky.robin.unicalendar:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8858,7 +8926,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:tabTextColor
+          @attr name kurovszky.robin.unicalendar:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -8875,7 +8943,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps kurovszky.robin.unireq:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps kurovszky.robin.unicalendar:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -8941,14 +9009,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name kurovszky.robin.unireq:textAllCaps
+          @attr name kurovszky.robin.unicalendar:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -8959,20 +9027,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled kurovszky.robin.unireq:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength kurovszky.robin.unireq:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance kurovszky.robin.unireq:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance kurovszky.robin.unireq:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled kurovszky.robin.unireq:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance kurovszky.robin.unireq:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled kurovszky.robin.unireq:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled kurovszky.robin.unireq:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance kurovszky.robin.unireq:hintTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription kurovszky.robin.unireq:passwordToggleContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable kurovszky.robin.unireq:passwordToggleDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled kurovszky.robin.unireq:passwordToggleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTint kurovszky.robin.unireq:passwordToggleTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode kurovszky.robin.unireq:passwordToggleTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled kurovszky.robin.unicalendar:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength kurovszky.robin.unicalendar:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance kurovszky.robin.unicalendar:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance kurovszky.robin.unicalendar:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled kurovszky.robin.unicalendar:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance kurovszky.robin.unicalendar:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled kurovszky.robin.unicalendar:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled kurovszky.robin.unicalendar:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance kurovszky.robin.unicalendar:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription kurovszky.robin.unicalendar:passwordToggleContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable kurovszky.robin.unicalendar:passwordToggleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled kurovszky.robin.unicalendar:passwordToggleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTint kurovszky.robin.unicalendar:passwordToggleTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode kurovszky.robin.unicalendar:passwordToggleTintMode}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -9010,7 +9078,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9020,11 +9088,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:counterEnabled
+          @attr name kurovszky.robin.unicalendar:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9034,31 +9102,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:counterMaxLength
+          @attr name kurovszky.robin.unicalendar:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:counterOverflowTextAppearance
+          @attr name kurovszky.robin.unicalendar:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:counterTextAppearance
+          @attr name kurovszky.robin.unicalendar:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9068,21 +9136,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:errorEnabled
+          @attr name kurovszky.robin.unicalendar:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:errorTextAppearance
+          @attr name kurovszky.robin.unicalendar:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9092,11 +9160,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:hintAnimationEnabled
+          @attr name kurovszky.robin.unicalendar:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9106,21 +9174,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:hintEnabled
+          @attr name kurovszky.robin.unicalendar:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:hintTextAppearance
+          @attr name kurovszky.robin.unicalendar:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#passwordToggleContentDescription}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#passwordToggleContentDescription}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9130,21 +9198,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:passwordToggleContentDescription
+          @attr name kurovszky.robin.unicalendar:passwordToggleContentDescription
         */
         public static final int TextInputLayout_passwordToggleContentDescription = 13;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#passwordToggleDrawable}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#passwordToggleDrawable}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:passwordToggleDrawable
+          @attr name kurovszky.robin.unicalendar:passwordToggleDrawable
         */
         public static final int TextInputLayout_passwordToggleDrawable = 12;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#passwordToggleEnabled}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#passwordToggleEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9154,11 +9222,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:passwordToggleEnabled
+          @attr name kurovszky.robin.unicalendar:passwordToggleEnabled
         */
         public static final int TextInputLayout_passwordToggleEnabled = 11;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#passwordToggleTint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#passwordToggleTint}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9169,11 +9237,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:passwordToggleTint
+          @attr name kurovszky.robin.unicalendar:passwordToggleTint
         */
         public static final int TextInputLayout_passwordToggleTint = 14;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#passwordToggleTintMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#passwordToggleTintMode}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9189,7 +9257,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:passwordToggleTintMode
+          @attr name kurovszky.robin.unicalendar:passwordToggleTintMode
         */
         public static final int TextInputLayout_passwordToggleTintMode = 15;
         /** Attributes that can be used with a Toolbar.
@@ -9200,33 +9268,33 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_buttonGravity kurovszky.robin.unireq:buttonGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription kurovszky.robin.unireq:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon kurovszky.robin.unireq:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd kurovszky.robin.unireq:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions kurovszky.robin.unireq:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft kurovszky.robin.unireq:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight kurovszky.robin.unireq:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart kurovszky.robin.unireq:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation kurovszky.robin.unireq:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo kurovszky.robin.unireq:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription kurovszky.robin.unireq:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight kurovszky.robin.unireq:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription kurovszky.robin.unireq:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon kurovszky.robin.unireq:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme kurovszky.robin.unireq:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle kurovszky.robin.unireq:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance kurovszky.robin.unireq:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor kurovszky.robin.unireq:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title kurovszky.robin.unireq:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargin kurovszky.robin.unireq:titleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom kurovszky.robin.unireq:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd kurovszky.robin.unireq:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart kurovszky.robin.unireq:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop kurovszky.robin.unireq:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins kurovszky.robin.unireq:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance kurovszky.robin.unireq:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor kurovszky.robin.unireq:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_buttonGravity kurovszky.robin.unicalendar:buttonGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription kurovszky.robin.unicalendar:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon kurovszky.robin.unicalendar:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd kurovszky.robin.unicalendar:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions kurovszky.robin.unicalendar:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft kurovszky.robin.unicalendar:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight kurovszky.robin.unicalendar:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart kurovszky.robin.unicalendar:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation kurovszky.robin.unicalendar:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo kurovszky.robin.unicalendar:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription kurovszky.robin.unicalendar:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight kurovszky.robin.unicalendar:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription kurovszky.robin.unicalendar:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon kurovszky.robin.unicalendar:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme kurovszky.robin.unicalendar:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle kurovszky.robin.unicalendar:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance kurovszky.robin.unicalendar:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor kurovszky.robin.unicalendar:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title kurovszky.robin.unicalendar:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargin kurovszky.robin.unicalendar:titleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom kurovszky.robin.unicalendar:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd kurovszky.robin.unicalendar:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart kurovszky.robin.unicalendar:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop kurovszky.robin.unicalendar:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins kurovszky.robin.unicalendar:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance kurovszky.robin.unicalendar:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor kurovszky.robin.unicalendar:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -9281,7 +9349,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#buttonGravity}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9294,11 +9362,11 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>0x30</td><td></td></tr>
 <tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:buttonGravity
+          @attr name kurovszky.robin.unicalendar:buttonGravity
         */
         public static final int Toolbar_buttonGravity = 21;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9308,21 +9376,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:collapseContentDescription
+          @attr name kurovszky.robin.unicalendar:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 23;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:collapseIcon
+          @attr name kurovszky.robin.unicalendar:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 22;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9334,11 +9402,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetEnd
+          @attr name kurovszky.robin.unicalendar:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9350,11 +9418,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetEndWithActions
+          @attr name kurovszky.robin.unicalendar:contentInsetEndWithActions
         */
         public static final int Toolbar_contentInsetEndWithActions = 10;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9366,11 +9434,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetLeft
+          @attr name kurovszky.robin.unicalendar:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9382,11 +9450,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetRight
+          @attr name kurovszky.robin.unicalendar:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9398,11 +9466,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetStart
+          @attr name kurovszky.robin.unicalendar:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9414,21 +9482,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:contentInsetStartWithNavigation
+          @attr name kurovszky.robin.unicalendar:contentInsetStartWithNavigation
         */
         public static final int Toolbar_contentInsetStartWithNavigation = 9;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#logo}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:logo
+          @attr name kurovszky.robin.unicalendar:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9438,11 +9506,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:logoDescription
+          @attr name kurovszky.robin.unicalendar:logoDescription
         */
         public static final int Toolbar_logoDescription = 26;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9454,11 +9522,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:maxButtonHeight
+          @attr name kurovszky.robin.unicalendar:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 20;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9468,31 +9536,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:navigationContentDescription
+          @attr name kurovszky.robin.unicalendar:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 25;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:navigationIcon
+          @attr name kurovszky.robin.unicalendar:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 24;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:popupTheme
+          @attr name kurovszky.robin.unicalendar:popupTheme
         */
         public static final int Toolbar_popupTheme = 11;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9502,21 +9570,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:subtitle
+          @attr name kurovszky.robin.unicalendar:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:subtitleTextAppearance
+          @attr name kurovszky.robin.unicalendar:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 13;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9527,11 +9595,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:subtitleTextColor
+          @attr name kurovszky.robin.unicalendar:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 28;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#title}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9541,11 +9609,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:title
+          @attr name kurovszky.robin.unicalendar:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleMargin}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleMargin}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9557,11 +9625,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:titleMargin
+          @attr name kurovszky.robin.unicalendar:titleMargin
         */
         public static final int Toolbar_titleMargin = 14;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9573,11 +9641,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:titleMarginBottom
+          @attr name kurovszky.robin.unicalendar:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 18;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9589,11 +9657,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:titleMarginEnd
+          @attr name kurovszky.robin.unicalendar:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 16;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9605,11 +9673,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:titleMarginStart
+          @attr name kurovszky.robin.unicalendar:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 15;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9621,11 +9689,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:titleMarginTop
+          @attr name kurovszky.robin.unicalendar:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 17;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9637,21 +9705,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:titleMargins
+          @attr name kurovszky.robin.unicalendar:titleMargins
         */
         public static final int Toolbar_titleMargins = 19;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:titleTextAppearance
+          @attr name kurovszky.robin.unicalendar:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 12;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9662,7 +9730,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:titleTextColor
+          @attr name kurovszky.robin.unicalendar:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 27;
         /** Attributes that can be used with a View.
@@ -9673,9 +9741,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd kurovszky.robin.unireq:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart kurovszky.robin.unireq:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme kurovszky.robin.unireq:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd kurovszky.robin.unicalendar:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart kurovszky.robin.unicalendar:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme kurovszky.robin.unicalendar:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -9700,7 +9768,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -9712,11 +9780,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:paddingEnd
+          @attr name kurovszky.robin.unicalendar:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -9728,17 +9796,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:paddingStart
+          @attr name kurovszky.robin.unicalendar:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#theme}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kurovszky.robin.unireq:theme
+          @attr name kurovszky.robin.unicalendar:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -9748,8 +9816,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint kurovszky.robin.unireq:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode kurovszky.robin.unireq:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint kurovszky.robin.unicalendar:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode kurovszky.robin.unicalendar:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -9765,7 +9833,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -9776,11 +9844,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name kurovszky.robin.unireq:backgroundTint
+          @attr name kurovszky.robin.unicalendar:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link kurovszky.robin.unireq.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link kurovszky.robin.unicalendar.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -9796,7 +9864,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name kurovszky.robin.unireq:backgroundTintMode
+          @attr name kurovszky.robin.unicalendar:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

@@ -1,7 +1,10 @@
 package kurovszky.robin.unicalendar;
 
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -10,8 +13,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import kurovszky.robin.unicalendar.fragment.AddReqElement;
 import kurovszky.robin.unicalendar.fragment.AddSubject;
@@ -34,10 +44,14 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         addSubject = new AddSubject();
-
+        adapter = new MyAdapter(getSupportFragmentManager());
+        adapter.setActivityCompat(this);
+        pager = (CustomViewPager)findViewById(R.id.add_pager);
+        pager.setPagingEnabled(false);
+        pager.setAdapter(adapter);
 
 
 
@@ -47,11 +61,7 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
     @Override
     protected void onResume() {
         super.onResume();
-        adapter = new MyAdapter(getSupportFragmentManager());
 
-        pager = (CustomViewPager)findViewById(R.id.add_pager);
-        pager.setPagingEnabled(false);
-        pager.setAdapter(adapter);
     }
 
     @Override
@@ -83,7 +93,7 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
             super(fm);
         }
         AddReqElement aq;
-
+        AppCompatActivity activityCompat;
 
         @Override
         public int getCount() {
@@ -93,11 +103,12 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
         @Override
         public Fragment getItem(int position) {
             if(position == 0) {
-
+                ((TextView)activityCompat.findViewById(R.id.toolbar_title)).setText(R.string.add_subject);
                 return addSubject;
             }
 
             if(position == 1) {
+                ((TextView)activityCompat.findViewById(R.id.toolbar_title)).setText(R.string.add_requirement);
                 aq = new AddReqElement();
                 return aq;
             }
@@ -126,6 +137,10 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
                 });
             }
         }
+
+        public void setActivityCompat(AppCompatActivity activityCompat) {
+            this.activityCompat = activityCompat;
+        }
     }
 
     String readSubjectName(){
@@ -135,6 +150,41 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
     void finishAddActivity(){
         for(Requirement requirement: addSubject.getRequirements()){
             requirement.setSubject(readSubjectName());
+            if(PreferenceManager.getDefaultSharedPreferences(this).getBoolean("notification", false)) {
+                String days =null;
+                switch (requirement.getHardiness()) {
+                    case 0:
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("very_easy_days","1");
+                        break;
+                    case 1:
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("easy_days","3");
+                        break;
+                    case 2:
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("moderate_days","5");
+                        break;
+                    case 3:
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("hard_days","7");
+                        break;
+                    case 4:
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("very_hard_days","9");
+                        break;
+                }
+                int daysBefore = Integer.parseInt(days);
+                long before = TimeUnit.DAYS.toMillis(daysBefore);
+                Alarm alarm = new Alarm();
+                long time = requirement.getTimeInDate().getTime()-before;
+                Date date = new Date(time);
+                Long timeToNotify = PreferenceManager.getDefaultSharedPreferences(this).getLong("notification_time", 0);
+
+                Date timeToNotifyDate = new Date(timeToNotify);
+
+                date.setHours(timeToNotifyDate.getHours());
+                date.setMinutes(timeToNotifyDate.getMinutes());
+                date.setSeconds(0);
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+                String s = simpleDateFormat.format(date);
+                alarm.setAlarm(this, date.getTime(), requirement);
+            }
             requirement.save();
         }
         this.setResult(RESULT_OK);
@@ -142,5 +192,8 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
     }
     public CustomViewPager getPager() {
         return pager;
+    }
+    public void startSubjectActivity(View view) {
+
     }
 }
