@@ -2617,12 +2617,13 @@ containing a value of this type.
         public static final int ic_settings_white_24dp=0x7f020063;
         public static final int ic_sync_black_24dp=0x7f020064;
         public static final int icon=0x7f020065;
-        public static final int img=0x7f020066;
-        public static final int list_item_background=0x7f020067;
-        public static final int logo=0x7f020068;
-        public static final int navigation_empty_icon=0x7f020069;
-        public static final int notification_template_icon_bg=0x7f02006b;
-        public static final int time=0x7f02006a;
+        public static final int icon_doksiba=0x7f020066;
+        public static final int img=0x7f020067;
+        public static final int list_item_background=0x7f020068;
+        public static final int logo=0x7f020069;
+        public static final int navigation_empty_icon=0x7f02006a;
+        public static final int notification_template_icon_bg=0x7f02006c;
+        public static final int time=0x7f02006b;
     }
     public static final class id {
         public static final int action0=0x7f0f009a;
