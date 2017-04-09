@@ -98,7 +98,7 @@ public class UnireqMainActivity extends AppCompatActivity {
             Intent intent = null;
            switch (position){
                case 0:
-                   intent = new Intent(getApplicationContext(), AddReq.class);
+                   intent = new Intent(getApplicationContext(), SelectSubject.class);
                    startActivityForResult(intent, REQUEST_CODE);
                    break;
                case 1:
@@ -127,7 +127,7 @@ public class UnireqMainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.add_subject:
-                Intent intent = new Intent(this, AddReq.class);
+                Intent intent = new Intent(this, SelectSubject.class);
                 startActivityForResult(intent, REQUEST_CODE);
                 break;
             case R.id.settings:

@@ -37,12 +37,14 @@
         <item name="android:textSize">20dp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
     <style name="DrawerTitle">
         <item name="android:textColor">@color/accent</item>
         <item name="android:textSize">30dp</item>
         <item name="android:textStyle">bold</item>
 
     </style>
+
     <style name="SpinnerStyle">
         <item name="android:textColor">@color/primary_text</item>
         <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropdownStyle</item>

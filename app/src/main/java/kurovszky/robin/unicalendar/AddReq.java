@@ -1,10 +1,8 @@
 package kurovszky.robin.unicalendar;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -18,7 +16,6 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -27,6 +24,11 @@ import kurovszky.robin.unicalendar.fragment.AddReqElement;
 import kurovszky.robin.unicalendar.fragment.AddSubject;
 import kurovszky.robin.unicalendar.model.Requirement;
 import kurovszky.robin.unicalendar.view.CustomViewPager;
+import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
+import kurovszky.robin.unicalendar.web_service.WebService;
+import kurovszky.robin.unicalendar.web_service.model.Subject;
+import kurovszky.robin.unicalendar.web_service.model.User;
+import kurovszky.robin.unicalendar.web_service.tools.StaticTools;
 
 public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmentInteractionListener, AddSubject.OnFragmentInteractionListener {
     private static final int FRAGMENT_COUNT = 2;
@@ -35,7 +37,6 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
     CustomViewPager pager;
     Menu menu;
     FragmentManager fm = getSupportFragmentManager();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +46,7 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         addSubject = new AddSubject();
         adapter = new MyAdapter(getSupportFragmentManager());
@@ -187,7 +189,18 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
             }
             requirement.save();
         }
+        EditText subjectName = (EditText)findViewById(R.id.subjectNameText);
+        if(subjectName.isEnabled()){
+            User u = StaticTools.loadUserFromPrefs(getApplicationContext());
+            WebService webService = new RestWebServiceImpl(u);
+            Subject subject = new Subject();
+            subject.setId(99999L);
+            subject.setInstituteId(u.getInstituteId());
+            subject.setName(subjectName.getText().toString());
+            webService.addSubject(subject);
+        }
         this.setResult(RESULT_OK);
+
         finish();
     }
     public CustomViewPager getPager() {

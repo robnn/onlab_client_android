@@ -1,6 +1,7 @@
 package kurovszky.robin.unicalendar.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
@@ -84,7 +86,14 @@ public class AddSubject extends Fragment {
         mRecyclerView.setAdapter(adapter);
         adapter.setContext(getActivity());
 
+        EditText nameText  = (EditText) v.findViewById(R.id.subjectNameText);
+        Intent starterIntent = getActivity().getIntent();
+        if(starterIntent.hasExtra("subjectName")) {
+            String subjectName = starterIntent.getStringExtra("subjectName");
 
+            nameText.setText(subjectName);
+            nameText.setEnabled(false);
+        }
 
 
 

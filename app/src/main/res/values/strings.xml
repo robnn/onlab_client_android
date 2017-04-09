@@ -150,4 +150,9 @@
     <string name="its">". It's "</string>
     <string name="set_the_date">Set the date</string>
     <string name="set_the_time">Set the time</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_institute_picker">InstitutePicker</string>
+    <string name="title_activity_register">REgisterActivity</string>
+    <string name="title_activity_add_institute">AddInstitute</string>
+    <string name="title_activity_select_subject">SelectSubject</string>
 </resources>

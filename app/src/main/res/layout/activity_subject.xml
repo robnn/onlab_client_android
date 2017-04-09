@@ -16,7 +16,30 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/subjectRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="Comments"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/comment_to_add_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter comment text"/>
+    <Button
+        android:id="@+id/add_comment_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add comment"
+        android:background="@color/primary"
+        android:textColor="@color/icons"/>
 
 
 

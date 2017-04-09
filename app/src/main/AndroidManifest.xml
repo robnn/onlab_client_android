@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="com.orm.SugarApp"
         android:allowBackup="true"
@@ -14,18 +16,14 @@
         <meta-data
             android:name="DATABASE"
             android:value="sugar_example.db" />
+
         <receiver
-            android:process=":remote"
-            android:name=".Alarm" />
+            android:name=".Alarm"
+            android:process=":remote" />
+
         <activity
             android:name=".UnireqMainActivity"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".AddReq"
             android:label="@string/title_activity_add_req"
@@ -51,12 +49,35 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kurovszky.robin.unicalendar.UnireqMainActivity" />
         </activity>
-        <activity android:name=".SettingsActivity"
+        <activity
+            android:name=".SettingsActivity"
             android:parentActivityName=".UnireqMainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kurovszky.robin.unicalendar.UnireqMainActivity" />
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AddInstitute"
+            android:label="@string/title_activity_add_institute"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SelectSubject"
+            android:label="@string/title_activity_select_subject"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
