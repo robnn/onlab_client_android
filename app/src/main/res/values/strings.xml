@@ -106,6 +106,10 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    <string-array name="protocols">
+        <item>REST</item>
+        <item>gRPC</item>
+    </string-array>
     <string-array name="hardiness_days">
         <item>1</item>
         <item>2</item>
@@ -155,4 +159,7 @@
     <string name="title_activity_register">REgisterActivity</string>
     <string name="title_activity_add_institute">AddInstitute</string>
     <string name="title_activity_select_subject">SelectSubject</string>
+    <string name="network_protocol">Network Protocol</string>
+    <string name="switch_proto">Switch between protocols</string>
+    <string name="choose_proto">Choose the protocol</string>
 </resources>

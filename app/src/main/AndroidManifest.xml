@@ -15,8 +15,12 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="DATABASE"
-            android:value="sugar_example.db" />
-
+            android:value="unireq.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+        <meta-data android:name="VALUE" android:value="2"/>
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="kurovszky.robin.unicalendar"/>
         <receiver
             android:name=".Alarm"
             android:process=":remote" />

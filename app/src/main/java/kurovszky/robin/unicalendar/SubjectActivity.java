@@ -62,7 +62,7 @@ public class SubjectActivity extends AppCompatActivity {
         commentView.setLayoutManager(commentManager);
 
         final User u = StaticTools.loadUserFromPrefs(getApplicationContext());
-        final WebService webService = new RestWebServiceImpl(u);
+        final WebService webService = StaticTools.initWebService(getApplicationContext(),u);
 
 
 
@@ -72,8 +72,7 @@ public class SubjectActivity extends AppCompatActivity {
         if(starter.hasExtra("SubjectName")){
             subjectName = starter.getStringExtra("SubjectName");
             title.setText(subjectName);
-            Subject s = new Subject();
-            s.setName(subjectName);
+            Subject s = webService.getSubjectByName(subjectName);
             List<Comment> comments = webService.getCommentsBySubject(s);
             final String finalSubjectName = subjectName;
             addComment.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +80,7 @@ public class SubjectActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     Subject subject = webService.getSubjectByName(finalSubjectName);
                     Comment toAdd = new Comment();
+                    toAdd.setId(9999L);
                     toAdd.setUserId(u.getId());
                     toAdd.setSubjectId(subject.getId());
                     toAdd.setCommentText(commentText.getText().toString());

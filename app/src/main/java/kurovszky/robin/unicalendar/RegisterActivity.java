@@ -18,6 +18,7 @@ import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
 import kurovszky.robin.unicalendar.web_service.model.Institute;
 import kurovszky.robin.unicalendar.web_service.model.User;
+import kurovszky.robin.unicalendar.web_service.tools.StaticTools;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText userInput;
@@ -35,7 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ws = new RestWebServiceImpl(null);
+        ws = StaticTools.initWebService(getApplicationContext(), null);
 
         instituteSpinner = (Spinner) findViewById(R.id.institute_spinner);
         userInput = (EditText) findViewById(R.id.user_text_input_register);

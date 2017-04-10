@@ -2,7 +2,11 @@ package kurovszky.robin.unicalendar.web_service.tools;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
+import kurovszky.robin.unicalendar.web_service.GrpcWebServiceImpl;
+import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
+import kurovszky.robin.unicalendar.web_service.WebService;
 import kurovszky.robin.unicalendar.web_service.model.User;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -12,6 +16,7 @@ import static android.content.Context.MODE_PRIVATE;
  */
 
 public class StaticTools {
+    public enum protocol {gRPC, REST};
     public static User loadUserFromPrefs(Context ctx){
         SharedPreferences userDetails = ctx.getSharedPreferences("userDetails",MODE_PRIVATE);
         String userName = userDetails.getString("userName", null);
@@ -21,5 +26,34 @@ public class StaticTools {
         String realName = userDetails.getString("realName","");
         User toReturn = new User(id,userName,realName,instituteId,passwordPref);
         return toReturn;
+    }
+    public static protocol loadProtocolFromPrefs(Context ctx){
+        String proto = PreferenceManager.getDefaultSharedPreferences(ctx).getString("networking_protocol", "gRPC");
+        switch (proto){
+            case "gRPC":
+                return protocol.gRPC;
+            case "REST":
+                return protocol.REST;
+        }
+        return null;
+    }
+    public static WebService initWebService(Context ctx, User u){
+        StaticTools.protocol protocol = StaticTools.loadProtocolFromPrefs(ctx);
+
+        WebService webService;
+
+        switch (protocol){
+            case gRPC:
+                webService = GrpcWebServiceImpl.getInstance();
+                break;
+            case REST:
+                webService = RestWebServiceImpl.getInstance(u);
+                break;
+            default:
+                webService = GrpcWebServiceImpl.getInstance();
+                break;
+
+        }
+        return webService;
     }
 }

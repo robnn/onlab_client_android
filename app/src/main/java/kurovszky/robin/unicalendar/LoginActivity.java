@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                     user = new User();
                     user.setUserName(userInput.getText().toString());
                     user.setPassword(password.getText().toString());
-                    webService = new RestWebServiceImpl(user);
+                    webService = StaticTools.initWebService(getApplicationContext(), user);
                     Long id_  = webService.getIdByName(user);
                     Long instituteId_ = webService.getInstituteIdByName(user);
                     SharedPreferences userDetails = getSharedPreferences("userDetails", MODE_PRIVATE);

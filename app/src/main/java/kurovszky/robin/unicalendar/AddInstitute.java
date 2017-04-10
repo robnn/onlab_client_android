@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import kurovszky.robin.unicalendar.web_service.GrpcWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
 import kurovszky.robin.unicalendar.web_service.model.Institute;
@@ -21,14 +22,15 @@ public class AddInstitute extends AppCompatActivity {
     Button submit;
 
     User u ;
-    WebService ws = new RestWebServiceImpl(u);
+    WebService ws;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        u= StaticTools.loadUserFromPrefs(getApplicationContext());
+        ws = StaticTools.initWebService(getApplicationContext(),u);
         setContentView(R.layout.activity_add_institute);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        u  = StaticTools.loadUserFromPrefs(getApplicationContext());
         instituteName = (EditText)findViewById(R.id.institute_text_input);
         submit = (Button) findViewById(R.id.submit_input_institute);
         submit.setOnClickListener(new View.OnClickListener() {

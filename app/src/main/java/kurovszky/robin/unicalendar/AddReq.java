@@ -24,6 +24,7 @@ import kurovszky.robin.unicalendar.fragment.AddReqElement;
 import kurovszky.robin.unicalendar.fragment.AddSubject;
 import kurovszky.robin.unicalendar.model.Requirement;
 import kurovszky.robin.unicalendar.view.CustomViewPager;
+import kurovszky.robin.unicalendar.web_service.GrpcWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
 import kurovszky.robin.unicalendar.web_service.model.Subject;
@@ -192,7 +193,9 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
         EditText subjectName = (EditText)findViewById(R.id.subjectNameText);
         if(subjectName.isEnabled()){
             User u = StaticTools.loadUserFromPrefs(getApplicationContext());
-            WebService webService = new RestWebServiceImpl(u);
+            StaticTools.protocol protocol = StaticTools.loadProtocolFromPrefs(getApplicationContext());
+
+            WebService webService = StaticTools.initWebService(getApplicationContext(), u);
             Subject subject = new Subject();
             subject.setId(99999L);
             subject.setInstituteId(u.getInstituteId());

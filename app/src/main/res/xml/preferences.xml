@@ -32,6 +32,22 @@
             android:layout_height="wrap_content" >
         </RingtonePreference>
     </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/network_protocol"
+        android:key="notification_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListPreference
+            android:key="networking_protocol"
+            android:summary="@string/switch_proto"
+            android:title="@string/choose_proto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/protocols"
+            android:entryValues="@array/protocols"
+            android:defaultValue="2"
+            />
+    </PreferenceCategory>
     <PreferenceCategory android:title="@string/hardiness_settings"
         android:key="hardiness_settings"
         android:layout_width="match_parent"
@@ -84,7 +100,7 @@
             android:layout_height="wrap_content"
             android:entries="@array/hardiness_days"
             android:entryValues="@array/hardiness_days"
-            android:defaultValue=""
+            android:defaultValue="9"
             />
     </PreferenceCategory>
 </PreferenceScreen>

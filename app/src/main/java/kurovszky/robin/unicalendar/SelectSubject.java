@@ -37,7 +37,7 @@ public class SelectSubject extends AppCompatActivity {
         selectSubject = (Button) findViewById(R.id.submit_input_subject_pick);
         addNewSubject = (Button) findViewById(R.id.subject_create);
         User  user = StaticTools.loadUserFromPrefs(getApplicationContext());
-        WebService webService = new RestWebServiceImpl(user);
+        WebService webService = StaticTools.initWebService(getApplicationContext(), user);
         Institute i = webService.getInstituteById(user.getInstituteId());
         List<Subject> subjects = webService.getSubjectsByInstitute(i);
         final ArrayList<String> spinnerItems = new ArrayList<>();

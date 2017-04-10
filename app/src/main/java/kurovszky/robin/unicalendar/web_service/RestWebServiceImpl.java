@@ -34,11 +34,17 @@ public class RestWebServiceImpl implements WebService {
     private OkHttpClient client;
     private Gson gson = new Gson();
     private User user;
-
+    private static RestWebServiceImpl instance=null;
 
     public RestWebServiceImpl(User user) {
         this.user = user;
         authenticate(this.user);
+    }
+
+    public static WebService getInstance(User u) {
+        if(instance == null)
+            instance = new RestWebServiceImpl(u);
+        return instance;
     }
 
     @Override
