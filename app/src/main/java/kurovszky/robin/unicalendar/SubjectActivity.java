@@ -1,6 +1,8 @@
 package kurovszky.robin.unicalendar;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +11,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -24,6 +27,7 @@ import kurovszky.robin.unicalendar.model.Requirement;
 import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
 import kurovszky.robin.unicalendar.web_service.model.Comment;
+import kurovszky.robin.unicalendar.web_service.model.Institute;
 import kurovszky.robin.unicalendar.web_service.model.Subject;
 import kurovszky.robin.unicalendar.web_service.model.User;
 import kurovszky.robin.unicalendar.web_service.tools.StaticTools;
@@ -40,6 +44,11 @@ public class SubjectActivity extends AppCompatActivity {
     Button addComment;
     EditText commentText;
     RecyclerView.LayoutManager layoutManager;
+    WebService webService;
+    List<Comment> comments;
+    String subjectName = null;
+    User u;
+    String finalSubjectName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,35 +70,32 @@ public class SubjectActivity extends AppCompatActivity {
         commentManager = new LinearLayoutManager(this);
         commentView.setLayoutManager(commentManager);
 
-        final User u = StaticTools.loadUserFromPrefs(getApplicationContext());
-        final WebService webService = StaticTools.initWebService(getApplicationContext(),u);
+        u = StaticTools.loadUserFromPrefs(getApplicationContext());
+        webService = StaticTools.initWebService(getApplicationContext(),u);
 
 
 
         Intent starter = getIntent();
-        String subjectName = null;
+
         TextView title = (TextView) findViewById(R.id.toolbar_title);
         if(starter.hasExtra("SubjectName")){
             subjectName = starter.getStringExtra("SubjectName");
             title.setText(subjectName);
-            Subject s = webService.getSubjectByName(subjectName);
-            List<Comment> comments = webService.getCommentsBySubject(s);
-            final String finalSubjectName = subjectName;
+            finalSubjectName = subjectName;
+            final SubjectActivity this_ = this;
+            AsyncGetComments asyncGetComments = new AsyncGetComments(this_);
+            asyncGetComments.execute(finalSubjectName);
             addComment.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Subject subject = webService.getSubjectByName(finalSubjectName);
                     Comment toAdd = new Comment();
                     toAdd.setId(9999L);
                     toAdd.setUserId(u.getId());
-                    toAdd.setSubjectId(subject.getId());
                     toAdd.setCommentText(commentText.getText().toString());
-                    webService.addComment(toAdd);
+                    AsyncPostComment asyncPostComment = new AsyncPostComment(this_);
+                    asyncPostComment.execute(toAdd);
                 }
             });
-            for(Comment i : comments){
-                i.setUserName(webService.getNameById(i.getUserId()));
-            }
             requirements = Requirement.listAll(Requirement.class);
             List<Requirement> forSubjectOnly = new ArrayList<>();
             for (Requirement r: requirements){
@@ -98,8 +104,7 @@ public class SubjectActivity extends AppCompatActivity {
             }
             adapter = new UpcomingAdapter(forSubjectOnly);
 
-            commentAdapter = new CommentAdapter(comments);
-            commentAdapter.setContext(this);
+
 
             recyclerView.setHasFixedSize(true);
             recyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this).color(R.color.divider).sizeResId(R.dimen.divider).marginResId(R.dimen.leftmargin, R.dimen.rightmargin).build());
@@ -110,11 +115,76 @@ public class SubjectActivity extends AppCompatActivity {
             commentView.setHasFixedSize(true);
             commentView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this).color(R.color.divider).sizeResId(R.dimen.divider).marginResId(R.dimen.leftmargin, R.dimen.rightmargin).build());
 
-            commentView.setAdapter(commentAdapter);
-            commentAdapter.notifyDataSetChanged();
+
         }
     }
     public void startSubjectActivity(View view) {
 
+    }
+    private class AsyncGetComments extends AsyncTask<String, Void, Void> {
+        ProgressDialog dialog;
+        SubjectActivity activity;
+        public AsyncGetComments(SubjectActivity context) {
+            activity = context;
+            dialog = new ProgressDialog(context);
+        }
+
+        @Override
+        protected Void doInBackground(String... subjects) {
+            Subject s = webService.getSubjectByName(subjects[0]);
+            comments = webService.getCommentsBySubject(s);
+            for(Comment i : comments){
+                i.setUserName(webService.getNameById(i.getUserId()));
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            this.dialog.setMessage("Getting comment list");
+            this.dialog.show();
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            commentAdapter = new CommentAdapter(comments);
+            commentAdapter.setContext(activity);
+            commentView.setAdapter(commentAdapter);
+            commentAdapter.notifyDataSetChanged();
+            dialog.dismiss();
+        }
+    }
+    private class AsyncPostComment extends AsyncTask<Comment, Void, Void> {
+        ProgressDialog dialog;
+        SubjectActivity activity;
+        public AsyncPostComment(SubjectActivity context) {
+            activity = context;
+            dialog = new ProgressDialog(context);
+        }
+
+        @Override
+        protected Void doInBackground(Comment... comments) {
+            Subject s = webService.getSubjectByName(subjectName);
+            comments[0].setSubjectId(s.getId());
+            webService.addComment(comments[0]);
+            return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            this.dialog.setMessage("Adding comment");
+            this.dialog.show();
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            AsyncGetComments asyncGetComments = new AsyncGetComments(activity);
+            asyncGetComments.execute(finalSubjectName);
+            dialog.dismiss();
+        }
     }
 }

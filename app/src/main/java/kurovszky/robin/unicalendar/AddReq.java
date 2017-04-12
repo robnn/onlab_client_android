@@ -1,6 +1,8 @@
 package kurovszky.robin.unicalendar;
 
+import android.app.ProgressDialog;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
@@ -13,11 +15,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import kurovszky.robin.unicalendar.fragment.AddReqElement;
@@ -27,6 +31,7 @@ import kurovszky.robin.unicalendar.view.CustomViewPager;
 import kurovszky.robin.unicalendar.web_service.GrpcWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
+import kurovszky.robin.unicalendar.web_service.model.Institute;
 import kurovszky.robin.unicalendar.web_service.model.Subject;
 import kurovszky.robin.unicalendar.web_service.model.User;
 import kurovszky.robin.unicalendar.web_service.tools.StaticTools;
@@ -38,6 +43,7 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
     CustomViewPager pager;
     Menu menu;
     FragmentManager fm = getSupportFragmentManager();
+    WebService webService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -189,27 +195,60 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
                 alarm.setAlarm(this, date.getTime(), requirement);
             }
             requirement.save();
+
         }
         EditText subjectName = (EditText)findViewById(R.id.subjectNameText);
         if(subjectName.isEnabled()){
             User u = StaticTools.loadUserFromPrefs(getApplicationContext());
             StaticTools.protocol protocol = StaticTools.loadProtocolFromPrefs(getApplicationContext());
 
-            WebService webService = StaticTools.initWebService(getApplicationContext(), u);
+            webService = StaticTools.initWebService(getApplicationContext(), u);
             Subject subject = new Subject();
             subject.setId(99999L);
             subject.setInstituteId(u.getInstituteId());
             subject.setName(subjectName.getText().toString());
-            webService.addSubject(subject);
+            AsyncAddSubject asyncAddSubject = new AsyncAddSubject(this);
+            asyncAddSubject.execute(subject);
         }
-        this.setResult(RESULT_OK);
+        else {
+            this.setResult(RESULT_OK);
+            finish();
+        }
 
-        finish();
     }
     public CustomViewPager getPager() {
         return pager;
     }
     public void startSubjectActivity(View view) {
 
+    }
+    private class AsyncAddSubject extends AsyncTask<Subject, Void, Void> {
+        ProgressDialog dialog;
+        AddReq activity;
+        public AsyncAddSubject(AddReq context) {
+            activity = context;
+            dialog = new ProgressDialog(context);
+        }
+
+        @Override
+        protected Void doInBackground(Subject... subjects) {
+            webService.addSubject(subjects[0]);
+            return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            this.dialog.setMessage("Adding subject");
+            this.dialog.show();
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            dialog.dismiss();
+            activity.setResult(RESULT_OK);
+            activity.finish();
+        }
     }
 }
