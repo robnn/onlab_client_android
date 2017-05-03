@@ -12,7 +12,12 @@
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        style="@style/ListTextBold"
+        android:text="Requirements"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/subjectRecyclerView"
         android:layout_width="match_parent"
@@ -22,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
+        style="@style/ListTextBold"
         android:text="Comments"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/commentRecyclerView"
