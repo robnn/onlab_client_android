@@ -46,8 +46,7 @@ public class StaticTools {
         WebService webService;
 
         switch (protocol){
-            //DEBUG
-            /*case gRPC:
+            case gRPC:
                 webService = GrpcWebServiceImpl.getInstance();
                 break;
             case REST:
@@ -55,7 +54,7 @@ public class StaticTools {
                 break;
             case SOAP:
                 webService = SoapWebServiceImpl.getInstance();
-                break;*/
+                break;
             default:
                 webService = SoapWebServiceImpl.getInstance();
                 break;
