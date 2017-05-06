@@ -22,7 +22,7 @@ import kurovszky.robin.unicalendar.web_service.model.Subject;
 import kurovszky.robin.unicalendar.web_service.model.User;
 public class SoapClient {
     private static final String NAMESPACE = "http://service/";
-    private static String URL="http://192.168.1.10:8888/ws/service?WSDL";
+    private static String URL="http://robinandroidrest.hopto.org:8888/ws/service?WSDL";
 
 
 
