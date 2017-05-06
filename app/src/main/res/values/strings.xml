@@ -109,6 +109,7 @@
     <string-array name="protocols">
         <item>REST</item>
         <item>gRPC</item>
+        <item>SOAP</item>
     </string-array>
     <string-array name="hardiness_days">
         <item>1</item>

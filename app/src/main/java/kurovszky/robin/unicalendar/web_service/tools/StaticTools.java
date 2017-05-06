@@ -6,6 +6,7 @@ import android.preference.PreferenceManager;
 
 import kurovszky.robin.unicalendar.web_service.GrpcWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
+import kurovszky.robin.unicalendar.web_service.SoapWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
 import kurovszky.robin.unicalendar.web_service.model.User;
 
@@ -16,7 +17,7 @@ import static android.content.Context.MODE_PRIVATE;
  */
 
 public class StaticTools {
-    public enum protocol {gRPC, REST};
+    public enum protocol {gRPC, REST, SOAP};
     public static User loadUserFromPrefs(Context ctx){
         SharedPreferences userDetails = ctx.getSharedPreferences("userDetails",MODE_PRIVATE);
         String userName = userDetails.getString("userName", null);
@@ -34,6 +35,8 @@ public class StaticTools {
                 return protocol.gRPC;
             case "REST":
                 return protocol.REST;
+            case "SOAP":
+                return protocol.SOAP;
         }
         return null;
     }
@@ -43,14 +46,18 @@ public class StaticTools {
         WebService webService;
 
         switch (protocol){
-            case gRPC:
+            //DEBUG
+            /*case gRPC:
                 webService = GrpcWebServiceImpl.getInstance();
                 break;
             case REST:
                 webService = RestWebServiceImpl.getInstance(u);
                 break;
+            case SOAP:
+                webService = SoapWebServiceImpl.getInstance();
+                break;*/
             default:
-                webService = GrpcWebServiceImpl.getInstance();
+                webService = SoapWebServiceImpl.getInstance();
                 break;
 
         }

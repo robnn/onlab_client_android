@@ -1,10 +1,15 @@
 package kurovszky.robin.unicalendar.web_service.model;
 
+import org.ksoap2.serialization.KvmSerializable;
+import org.ksoap2.serialization.PropertyInfo;
+
+import java.util.Hashtable;
+
 /**
  * Created by robin on 2017. 03. 15..
  */
 
-public class Comment {
+public class Comment implements KvmSerializable {
     private Long id;
     private String commentText;
     private Long userId;
@@ -60,5 +65,64 @@ public class Comment {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+    @Override
+    public Object getProperty(int index) {
+        switch (index){
+            case 0:
+                return id;
+            case 1:
+                return commentText;
+            case 2:
+                return userId;
+            case 3:
+                return subjectId;
+        }
+        return null;
+    }
+
+    @Override
+    public int getPropertyCount() {
+        return 4;
+    }
+
+    @Override
+    public void setProperty(int index, Object value) {
+        switch (index){
+            case 0:
+                id = (Long) value;
+                break;
+            case 1:
+                commentText = (String) value;
+                break;
+            case 2:
+                userId = (Long) value;
+                break;
+            case 3:
+                subjectId = (Long) value;
+                break;
+        }
+    }
+
+    @Override
+    public void getPropertyInfo(int index, Hashtable properties, PropertyInfo info) {
+        switch (index){
+            case 0:
+                info.type = PropertyInfo.LONG_CLASS;
+                info.name = "id";
+                break;
+            case 1:
+                info.type = PropertyInfo.STRING_CLASS;
+                info.name = "commentText";
+                break;
+            case 2:
+                info.type = PropertyInfo.LONG_CLASS;
+                info.name= "userId";
+                break;
+            case 3:
+                info.type = PropertyInfo.INTEGER_CLASS;
+                info.name = "subjectId";
+                break;
+        }
     }
 }

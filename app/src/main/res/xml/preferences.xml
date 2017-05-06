@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:entries="@array/protocols"
             android:entryValues="@array/protocols"
-            android:defaultValue="2"
+            android:defaultValue="3"
             />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/hardiness_settings"
