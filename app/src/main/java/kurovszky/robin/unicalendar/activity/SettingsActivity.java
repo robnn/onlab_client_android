@@ -1,10 +1,10 @@
-package kurovszky.robin.unicalendar;
+package kurovszky.robin.unicalendar.activity;
 
-import android.preference.PreferenceActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import kurovszky.robin.unicalendar.R;
 import kurovszky.robin.unicalendar.fragment.PreferencesFragment;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -15,6 +15,7 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);

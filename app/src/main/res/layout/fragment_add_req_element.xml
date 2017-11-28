@@ -3,8 +3,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="kurovszky.robin.unicalendar.fragment.AddReqElement">
+    tools:context="kurovszky.robin.unicalendar.fragment.AddReqElementFragment">
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/usericon"
+            android:src="@drawable/ic_book_black_24dp"
+            android:tint="@color/accent" />
+
+        <TextView
+            style="@style/ListTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_the_type_hardiness_date_and_time_for_the_new_requirement_after_finished_select_the_check_mark" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
     <TextView
         android:text="@string/type"
         android:layout_width="match_parent"
@@ -39,7 +67,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
     <TextView
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:ems="10"
         android:id="@+id/dateText"
@@ -73,7 +101,7 @@
         android:orientation="horizontal"
         >
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:ems="10"
             style="@style/ListTextBold"
@@ -91,5 +119,6 @@
             android:layout_height="30dp"
             android:background="@drawable/time"/>
     </LinearLayout>
+        </LinearLayout>
 
 </LinearLayout>

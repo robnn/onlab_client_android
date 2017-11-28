@@ -3,43 +3,34 @@
 
 package kurovszky.robin.unicalendar.web_service.grpc.generated;
 
+import com.google.protobuf.CodedInputStream;
+
 /**
  * Protobuf type {@code CommentList}
  */
-public final class CommentList extends
-    com.google.protobuf.GeneratedMessage implements
+public  final class CommentList extends
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:CommentList)
-    CommentListOrBuilder {
+        CommentListOrBuilder {
   // Use CommentList.newBuilder() to construct.
-  private CommentList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private CommentList(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
-    this.unknownFields = builder.getUnknownFields();
   }
-  private CommentList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-  private static final CommentList defaultInstance;
-  public static CommentList getDefaultInstance() {
-    return defaultInstance;
+  private CommentList() {
+    comments_ = java.util.Collections.emptyList();
   }
 
-  public CommentList getDefaultInstanceForType() {
-    return defaultInstance;
-  }
-
-  private final com.google.protobuf.UnknownFieldSet unknownFields;
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
-      getUnknownFields() {
-    return this.unknownFields;
+  getUnknownFields() {
+    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
   private CommentList(
-      com.google.protobuf.CodedInputStream input,
+      CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
-    initFields();
+    this();
     int mutable_bitField0_ = 0;
-    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -49,8 +40,7 @@ public final class CommentList extends
             done = true;
             break;
           default: {
-            if (!parseUnknownField(input, unknownFields,
-                                   extensionRegistry, tag)) {
+            if (!input.skipField(tag)) {
               done = true;
             }
             break;
@@ -60,7 +50,8 @@ public final class CommentList extends
               comments_ = new java.util.ArrayList<Comment>();
               mutable_bitField0_ |= 0x00000001;
             }
-            comments_.add(input.readMessage(Comment.PARSER, extensionRegistry));
+            comments_.add(
+                input.readMessage(Comment.parser(), extensionRegistry));
             break;
           }
         }
@@ -69,12 +60,11 @@ public final class CommentList extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-          e.getMessage()).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         comments_ = java.util.Collections.unmodifiableList(comments_);
       }
-      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -83,26 +73,11 @@ public final class CommentList extends
     return Handler.internal_static_CommentList_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return Handler.internal_static_CommentList_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             CommentList.class, Builder.class);
-  }
-
-  public static com.google.protobuf.Parser<CommentList> PARSER =
-      new com.google.protobuf.AbstractParser<CommentList>() {
-    public CommentList parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return new CommentList(input, extensionRegistry);
-    }
-  };
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<CommentList> getParserForType() {
-    return PARSER;
   }
 
   public static final int COMMENTS_FIELD_NUMBER = 1;
@@ -140,37 +115,25 @@ public final class CommentList extends
     return comments_.get(index);
   }
 
-  private void initFields() {
-    comments_ = java.util.Collections.emptyList();
-  }
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
     if (isInitialized == 0) return false;
 
-    for (int i = 0; i < getCommentsCount(); i++) {
-      if (!getComments(i).isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-    }
     memoizedIsInitialized = 1;
     return true;
   }
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    getSerializedSize();
     for (int i = 0; i < comments_.size(); i++) {
       output.writeMessage(1, comments_.get(i));
     }
-    getUnknownFields().writeTo(output);
   }
 
-  private int memoizedSerializedSize = -1;
   public int getSerializedSize() {
-    int size = memoizedSerializedSize;
+    int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
@@ -178,18 +141,54 @@ public final class CommentList extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, comments_.get(i));
     }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSerializedSize = size;
+    memoizedSize = size;
     return size;
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  protected java.lang.Object writeReplace()
-      throws java.io.ObjectStreamException {
-    return super.writeReplace();
+  @Override
+  public boolean equals(final Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof CommentList)) {
+      return super.equals(obj);
+    }
+    CommentList other = (CommentList) obj;
+
+    boolean result = true;
+    result = result && getCommentsList()
+        .equals(other.getCommentsList());
+    return result;
   }
 
+  @Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    if (getCommentsCount() > 0) {
+      hash = (37 * hash) + COMMENTS_FIELD_NUMBER;
+      hash = (53 * hash) + getCommentsList().hashCode();
+    }
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static CommentList parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(CodedInputStream.newInstance(data));
+  }
+  public static CommentList parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(CodedInputStream.newInstance(data), extensionRegistry);
+  }
   public static CommentList parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -213,46 +212,57 @@ public final class CommentList extends
   }
   public static CommentList parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return PARSER.parseFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input);
   }
   public static CommentList parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static CommentList parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return PARSER.parseDelimitedFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static CommentList parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static CommentList parseFrom(
-      com.google.protobuf.CodedInputStream input)
+      CodedInputStream input)
       throws java.io.IOException {
-    return PARSER.parseFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input);
   }
   public static CommentList parseFrom(
-      com.google.protobuf.CodedInputStream input,
+      CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static Builder newBuilder() { return Builder.create(); }
   public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder(CommentList prototype) {
-    return newBuilder().mergeFrom(prototype);
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
   }
-  public Builder toBuilder() { return newBuilder(this); }
+  public static Builder newBuilder(CommentList prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+  public Builder toBuilder() {
+    return this == DEFAULT_INSTANCE
+        ? new Builder() : new Builder().mergeFrom(this);
+  }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -260,7 +270,7 @@ public final class CommentList extends
    * Protobuf type {@code CommentList}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:CommentList)
           CommentListOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -268,32 +278,29 @@ public final class CommentList extends
       return Handler.internal_static_CommentList_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return Handler.internal_static_CommentList_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               CommentList.class, Builder.class);
     }
 
-    // Construct using grpc.generated.CommentList.newBuilder()
+    // Construct using kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
         getCommentsFieldBuilder();
       }
     }
-    private static Builder create() {
-      return new Builder();
-    }
-
     public Builder clear() {
       super.clear();
       if (commentsBuilder_ == null) {
@@ -303,10 +310,6 @@ public final class CommentList extends
         commentsBuilder_.clear();
       }
       return this;
-    }
-
-    public Builder clone() {
-      return create().mergeFrom(buildPartial());
     }
 
     public com.google.protobuf.Descriptors.Descriptor
@@ -342,6 +345,32 @@ public final class CommentList extends
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof CommentList) {
         return mergeFrom((CommentList)other);
@@ -371,30 +400,24 @@ public final class CommentList extends
             commentsBuilder_ = null;
             comments_ = other.comments_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            commentsBuilder_ = 
-              com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+            commentsBuilder_ =
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getCommentsFieldBuilder() : null;
           } else {
             commentsBuilder_.addAllMessages(other.comments_);
           }
         }
       }
-      this.mergeUnknownFields(other.getUnknownFields());
+      onChanged();
       return this;
     }
 
     public final boolean isInitialized() {
-      for (int i = 0; i < getCommentsCount(); i++) {
-        if (!getComments(i).isInitialized()) {
-          
-          return false;
-        }
-      }
       return true;
     }
 
     public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
+        CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       CommentList parsedMessage = null;
@@ -402,7 +425,7 @@ public final class CommentList extends
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         parsedMessage = (CommentList) e.getUnfinishedMessage();
-        throw e;
+        throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
           mergeFrom(parsedMessage);
@@ -421,7 +444,7 @@ public final class CommentList extends
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilder<
+    private com.google.protobuf.RepeatedFieldBuilderV3<
             Comment, Comment.Builder, CommentOrBuilder> commentsBuilder_;
 
     /**
@@ -550,7 +573,7 @@ public final class CommentList extends
      * <code>repeated .Comment comments = 1;</code>
      */
     public Builder addAllComments(
-        java.lang.Iterable<? extends Comment> values) {
+        Iterable<? extends Comment> values) {
       if (commentsBuilder_ == null) {
         ensureCommentsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -637,11 +660,11 @@ public final class CommentList extends
          getCommentsBuilderList() {
       return getCommentsFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilder<
+    private com.google.protobuf.RepeatedFieldBuilderV3<
             Comment, Comment.Builder, CommentOrBuilder>
         getCommentsFieldBuilder() {
       if (commentsBuilder_ == null) {
-        commentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+        commentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
                 Comment, Comment.Builder, CommentOrBuilder>(
                 comments_,
                 ((bitField0_ & 0x00000001) == 0x00000001),
@@ -651,15 +674,52 @@ public final class CommentList extends
       }
       return commentsBuilder_;
     }
+    public final Builder setUnknownFields(
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
+      return this;
+    }
+
+    public final Builder mergeUnknownFields(
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
+      return this;
+    }
+
 
     // @@protoc_insertion_point(builder_scope:CommentList)
   }
 
+  // @@protoc_insertion_point(class_scope:CommentList)
+  private static final CommentList DEFAULT_INSTANCE;
   static {
-    defaultInstance = new CommentList(true);
-    defaultInstance.initFields();
+    DEFAULT_INSTANCE = new CommentList();
   }
 
-  // @@protoc_insertion_point(class_scope:CommentList)
+  public static CommentList getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<CommentList>
+      PARSER = new com.google.protobuf.AbstractParser<CommentList>() {
+    public CommentList parsePartialFrom(
+        CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CommentList(input, extensionRegistry);
+    }
+  };
+
+  public static com.google.protobuf.Parser<CommentList> parser() {
+    return PARSER;
+  }
+
+  @Override
+  public com.google.protobuf.Parser<CommentList> getParserForType() {
+    return PARSER;
+  }
+
+  public CommentList getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
 }
 

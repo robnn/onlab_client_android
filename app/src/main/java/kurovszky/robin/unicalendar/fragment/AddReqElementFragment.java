@@ -1,50 +1,29 @@
 package kurovszky.robin.unicalendar.fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.util.CircularArray;
-import android.support.v7.view.menu.ActionMenuItemView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import java.util.Calendar;
 
 import kurovszky.robin.unicalendar.R;
 import kurovszky.robin.unicalendar.model.Requirement;
-import kurovszky.robin.unicalendar.view.CustomViewPager;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link AddReqElement.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link AddReqElement#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class AddReqElement extends Fragment {
+public class AddReqElementFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-    private TextView dateText;
-    private TextView timeText;
-    private Button datePicker;
-    private Button timePicker;
     private Calendar calendar;
-    private Button confirm;
-    public AddReqElement() {
+    public AddReqElementFragment() {
         // Required empty public constructor
     }
 
-    public static AddReqElement newInstance() {
-        AddReqElement fragment = new AddReqElement();
+    public static AddReqElementFragment newInstance() {
+        AddReqElementFragment fragment = new AddReqElementFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -61,13 +40,8 @@ public class AddReqElement extends Fragment {
                              Bundle savedInstanceState) {
         calendar = Calendar.getInstance();
         View v = inflater.inflate(R.layout.fragment_add_req_element, container, false);
-        dateText = (TextView) v.findViewById(R.id.dateText);
-        timeText = (TextView) v.findViewById(R.id.timeText);
-        datePicker = (Button) v.findViewById(R.id.datePickerButton);
-        timePicker = (Button) v.findViewById(R.id.timePickerButton);
-
-        //TextView textView = (TextView)getActivity().findViewById(R.id.toolbar_title);
-        //textView.setText(R.string.add_a_requ);
+        Button datePicker = (Button) v.findViewById(R.id.datePickerButton);
+        Button timePicker = (Button) v.findViewById(R.id.timePickerButton);
 
         final DatePickerFragment datePickerFragment = new DatePickerFragment();
         datePickerFragment.setPickerReference(this);
@@ -109,21 +83,8 @@ public class AddReqElement extends Fragment {
         mListener = null;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
         void setReq(Requirement req);
-        CustomViewPager getPager();
     }
 
     public void setDate(int year, int month, int day){

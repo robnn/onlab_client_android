@@ -2,11 +2,14 @@ package kurovszky.robin.unicalendar.web_service;
 
 import java.util.List;
 
+import kurovszky.robin.unicalendar.exception.BaseException;
+import kurovszky.robin.unicalendar.web_service.error.ErrorObject;
 import kurovszky.robin.unicalendar.web_service.model.Comment;
 import kurovszky.robin.unicalendar.web_service.model.Institute;
 import kurovszky.robin.unicalendar.web_service.model.Subject;
 import kurovszky.robin.unicalendar.web_service.model.User;
 import kurovszky.robin.unicalendar.web_service.soap.SoapClient;
+import kurovszky.robin.unicalendar.web_service.type.ErrorCode;
 
 /**
  * Created by robin on 2017. 05. 03..
@@ -14,21 +17,23 @@ import kurovszky.robin.unicalendar.web_service.soap.SoapClient;
 
 public class SoapWebServiceImpl implements WebService {
 
-    static SoapWebServiceImpl soapWebService = null;
-    SoapClient soapClient;
+    private static SoapWebServiceImpl soapWebService = null;
+    private SoapClient soapClient;
     private SoapWebServiceImpl() {
         soapClient = new SoapClient();
     }
 
-    public static SoapWebServiceImpl getInstance(){
-        if(soapWebService==null)
+    public static SoapWebServiceImpl getInstance(User u){
+        if(soapWebService==null) {
             soapWebService = new SoapWebServiceImpl();
+        }
+        soapWebService.authenticate(u);
         return soapWebService;
     }
 
     @Override
     public void authenticate(User u) {
-
+        soapClient.setAuthData(u);
     }
 
     @Override
@@ -37,7 +42,7 @@ public class SoapWebServiceImpl implements WebService {
     }
 
     @Override
-    public List<Institute> getInstitutes() {
+    public List<Institute> getInstitutes() throws BaseException{
         return soapClient.getInstitutes();
     }
 
@@ -62,13 +67,19 @@ public class SoapWebServiceImpl implements WebService {
     }
 
     @Override
-    public long getIdByName(User u) {
+    public long getIdByName(User u) throws BaseException{
         return soapClient.getIdByName(u.getUserName());
     }
 
     @Override
-    public long getInstituteIdByName(User u) {
-        return soapClient.getInstituteIdByName(u.getUserName());
+    public long getInstituteIdByName(User u) throws BaseException {
+        long id = soapClient.getInstituteIdByName(u.getUserName());
+        if(id == 0L){
+            throw new BaseException(new ErrorObject(ErrorCode.SERVER_DOWN));
+        }
+        if(id == -1L)
+            throw new BaseException(new ErrorObject(ErrorCode.LOGIN_FAILED));
+        return id;
     }
 
     @Override

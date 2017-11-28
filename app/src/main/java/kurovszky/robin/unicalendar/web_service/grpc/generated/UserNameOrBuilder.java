@@ -8,15 +8,11 @@ public interface UserNameOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>required string name = 1;</code>
+   * <code>string name = 1;</code>
    */
-  boolean hasName();
+  String getName();
   /**
-   * <code>required string name = 1;</code>
-   */
-  java.lang.String getName();
-  /**
-   * <code>required string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();

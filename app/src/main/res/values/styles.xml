@@ -34,7 +34,7 @@
 
     <style name="ListTextBold">
         <item name="android:textColor">@color/accent</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 

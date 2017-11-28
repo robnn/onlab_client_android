@@ -1,4 +1,4 @@
-package kurovszky.robin.unicalendar;
+package kurovszky.robin.unicalendar.broadcast_reciever;
 
 import android.app.AlarmManager;
 import android.app.NotificationManager;
@@ -10,9 +10,9 @@ import android.net.Uri;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
-import android.widget.TextView;
-import android.widget.Toast;
 
+import kurovszky.robin.unicalendar.R;
+import kurovszky.robin.unicalendar.activity.SubjectActivity;
 import kurovszky.robin.unicalendar.model.Requirement;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
@@ -30,7 +30,6 @@ public class Alarm extends BroadcastReceiver
         String type = intent.getStringExtra("Type");
         String date = intent.getStringExtra("Date");
         String hardiness = intent.getStringExtra("Hardiness");
-        // TODO notification
 
         String sound = PreferenceManager.getDefaultSharedPreferences(context).getString("notification_sound", "DEFAULT_SOUND");
 

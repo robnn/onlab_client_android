@@ -8,12 +8,10 @@ import kurovszky.robin.unicalendar.web_service.model.Institute;
 import kurovszky.robin.unicalendar.web_service.model.Subject;
 import kurovszky.robin.unicalendar.web_service.model.User;
 
-/**
- * Created by robin on 4/10/17.
- */
-
 public class GrpcMapper {
-    //to model from grpc
+    public static boolean mapBoolean(kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean tomap){
+        return tomap.getValid();
+    }
     public static Institute mapInstitute(kurovszky.robin.unicalendar.web_service.grpc.generated.Institute tomap){
         Institute institute = new Institute();
         institute.setId(tomap.getId());
@@ -76,6 +74,12 @@ public class GrpcMapper {
         return tomap.getId();
     }
     //to grpc from model
+
+    public static kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean booleanMap(boolean tomap){
+        kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean.Builder builder = kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean.newBuilder();
+        builder.setValid(tomap);
+        return builder.build();
+    }
     public static kurovszky.robin.unicalendar.web_service.grpc.generated.Institute addInstituteMap(Institute tomap){
         kurovszky.robin.unicalendar.web_service.grpc.generated.Institute institute;
         kurovszky.robin.unicalendar.web_service.grpc.generated.Institute.Builder builder = kurovszky.robin.unicalendar.web_service.grpc.generated.Institute.newBuilder();
@@ -131,6 +135,13 @@ public class GrpcMapper {
         builder.setPassword(tomap.getPassword());
         builder.setUserName(tomap.getUserName());
         builder.setRealName(tomap.getRealName());
+        return builder.build();
+    }
+
+    public static kurovszky.robin.unicalendar.web_service.grpc.generated.User userNameAndPasswordMap(User tomap){
+        kurovszky.robin.unicalendar.web_service.grpc.generated.User.Builder builder = kurovszky.robin.unicalendar.web_service.grpc.generated.User.newBuilder();
+        builder.setPassword(tomap.getPassword());
+        builder.setUserName(tomap.getUserName());
         return builder.build();
     }
 }

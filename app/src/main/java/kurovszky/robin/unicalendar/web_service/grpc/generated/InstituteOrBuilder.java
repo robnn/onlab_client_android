@@ -8,25 +8,17 @@ public interface InstituteOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>required string instituteName = 1;</code>
+   * <code>string instituteName = 1;</code>
    */
-  boolean hasInstituteName();
+  String getInstituteName();
   /**
-   * <code>required string instituteName = 1;</code>
-   */
-  java.lang.String getInstituteName();
-  /**
-   * <code>required string instituteName = 1;</code>
+   * <code>string instituteName = 1;</code>
    */
   com.google.protobuf.ByteString
       getInstituteNameBytes();
 
   /**
-   * <code>required uint64 id = 2;</code>
-   */
-  boolean hasId();
-  /**
-   * <code>required uint64 id = 2;</code>
+   * <code>uint64 id = 2;</code>
    */
   long getId();
 }

@@ -8,11 +8,7 @@ public interface UserIdOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>required uint64 id = 1;</code>
-   */
-  boolean hasId();
-  /**
-   * <code>required uint64 id = 1;</code>
+   * <code>uint64 id = 1;</code>
    */
   long getId();
 }

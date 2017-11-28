@@ -6,107 +6,121 @@ package kurovszky.robin.unicalendar.web_service.grpc.generated;
 public final class Handler {
   private Handler() {}
   public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
+
+  public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_Boolean_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_Boolean_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Institute_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Institute_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_InstituteId_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_InstituteId_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_InstituteList_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_InstituteList_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Empty_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Empty_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_User_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_User_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_UserName_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_UserName_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_UserId_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_UserId_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Subject_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Subject_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_SubjectList_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SubjectList_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_SubjectName_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SubjectName_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Comment_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Comment_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_CommentList_descriptor;
-  static
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_CommentList_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
     return descriptor;
   }
-  private static com.google.protobuf.Descriptors.FileDescriptor
+  private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
-      "\n\rhandler.proto\".\n\tInstitute\022\025\n\rinstitut" +
-      "eName\030\001 \002(\t\022\n\n\002id\030\002 \002(\004\"\031\n\013InstituteId\022\n" +
-      "\n\002id\030\001 \002(\004\"/\n\rInstituteList\022\036\n\ninstitute" +
-      "s\030\001 \003(\0132\n.Institute\"\007\n\005Empty\"]\n\004User\022\n\n\002" +
-      "id\030\001 \002(\004\022\020\n\010userName\030\002 \002(\t\022\020\n\010realName\030\003" +
-      " \001(\t\022\023\n\013instituteId\030\004 \001(\004\022\020\n\010password\030\005 " +
-      "\002(\t\"\030\n\010UserName\022\014\n\004name\030\001 \002(\t\"\024\n\006UserId\022" +
-      "\n\n\002id\030\001 \002(\004\"J\n\007Subject\022\n\n\002id\030\001 \002(\004\022\014\n\004na" +
-      "me\030\002 \002(\t\022\023\n\013instituteId\030\003 \002(\004\022\020\n\010semeste" +
-      "r\030\004 \001(\005\")\n\013SubjectList\022\032\n\010subjects\030\001 \003(\013",
-      "2\010.Subject\"\033\n\013SubjectName\022\014\n\004name\030\001 \002(\t\"" +
-      "_\n\007Comment\022\n\n\002id\030\001 \002(\004\022\023\n\013commentText\030\002 " +
-      "\002(\t\022\016\n\006userId\030\003 \002(\004\022\021\n\tsubjectId\030\004 \002(\004\022\020" +
-      "\n\010userName\030\005 \001(\t\")\n\013CommentList\022\032\n\010comme" +
-      "nts\030\001 \003(\0132\010.Comment2\226\001\n\020InstituteService" +
-      "\022.\n\020getInstitutebyId\022\014.InstituteId\032\n.Ins" +
-      "titute\"\000\022,\n\020getAllInstitutes\022\006.Empty\032\016.I" +
-      "nstituteList\"\000\022$\n\014addInstitute\022\n.Institu" +
-      "te\032\006.Empty\"\0002\246\001\n\013UserService\022\032\n\010register" +
-      "\022\005.User\032\005.User\"\000\022#\n\013getNameById\022\007.UserId",
-      "\032\t.UserName\"\000\022#\n\013getIdByName\022\t.UserName\032" +
-      "\007.UserId\"\000\0221\n\024getInstituteIdByName\022\t.Use" +
-      "rName\032\014.InstituteId\"\0002d\n\016CommentService\022" +
-      "0\n\024getCommentsBySubject\022\010.Subject\032\014.Comm" +
-      "entList\"\000\022 \n\naddComment\022\010.Comment\032\006.Empt" +
-      "y\"\0002\226\001\n\016SubjectService\0224\n\026getSubjectsByI" +
-      "nstitute\022\n.Institute\032\014.SubjectList\"\000\022,\n\020" +
-      "getSubjectByName\022\014.SubjectName\032\010.Subject" +
-      "\"\000\022 \n\naddSubject\022\010.Subject\032\006.Empty\"\000B\010\n\004" +
-      "grpcP\001"
+    String[] descriptorData = {
+      "\n\rhandler.proto\"\030\n\007Boolean\022\r\n\005valid\030\001 \001(" +
+      "\010\".\n\tInstitute\022\025\n\rinstituteName\030\001 \001(\t\022\n\n" +
+      "\002id\030\002 \001(\004\"\031\n\013InstituteId\022\n\n\002id\030\001 \001(\004\"/\n\r" +
+      "InstituteList\022\036\n\ninstitutes\030\001 \003(\0132\n.Inst" +
+      "itute\"\007\n\005Empty\"]\n\004User\022\n\n\002id\030\001 \001(\004\022\020\n\010us" +
+      "erName\030\002 \001(\t\022\020\n\010realName\030\003 \001(\t\022\023\n\013instit" +
+      "uteId\030\004 \001(\004\022\020\n\010password\030\005 \001(\t\"\030\n\010UserNam" +
+      "e\022\014\n\004name\030\001 \001(\t\"\024\n\006UserId\022\n\n\002id\030\001 \001(\004\"J\n" +
+      "\007Subject\022\n\n\002id\030\001 \001(\004\022\014\n\004name\030\002 \001(\t\022\023\n\013in" +
+      "stituteId\030\003 \001(\004\022\020\n\010semester\030\004 \001(\005\")\n\013Sub",
+      "jectList\022\032\n\010subjects\030\001 \003(\0132\010.Subject\"\033\n\013" +
+      "SubjectName\022\014\n\004name\030\001 \001(\t\"_\n\007Comment\022\n\n\002" +
+      "id\030\001 \001(\004\022\023\n\013commentText\030\002 \001(\t\022\016\n\006userId\030" +
+      "\003 \001(\004\022\021\n\tsubjectId\030\004 \001(\004\022\020\n\010userName\030\005 \001" +
+      "(\t\")\n\013CommentList\022\032\n\010comments\030\001 \003(\0132\010.Co" +
+      "mment2\226\001\n\020InstituteService\022.\n\020getInstitu" +
+      "tebyId\022\014.InstituteId\032\n.Institute\"\000\022,\n\020ge" +
+      "tAllInstitutes\022\006.Empty\032\016.InstituteList\"\000" +
+      "\022$\n\014addInstitute\022\n.Institute\032\006.Empty\"\0002\305" +
+      "\001\n\013UserService\022\035\n\010validate\022\005.User\032\010.Bool",
+      "ean\"\000\022\032\n\010register\022\005.User\032\005.User\"\000\022#\n\013get" +
+      "NameById\022\007.UserId\032\t.UserName\"\000\022#\n\013getIdB" +
+      "yName\022\t.UserName\032\007.UserId\"\000\0221\n\024getInstit" +
+      "uteIdByName\022\t.UserName\032\014.InstituteId\"\0002d" +
+      "\n\016CommentService\0220\n\024getCommentsBySubject" +
+      "\022\010.Subject\032\014.CommentList\"\000\022 \n\naddComment" +
+      "\022\010.Comment\032\006.Empty\"\0002\226\001\n\016SubjectService\022" +
+      "4\n\026getSubjectsByInstitute\022\n.Institute\032\014." +
+      "SubjectList\"\000\022,\n\020getSubjectByName\022\014.Subj" +
+      "ectName\032\010.Subject\"\000\022 \n\naddSubject\022\010.Subj",
+      "ect\032\006.Empty\"\000B:\n6kurovszky.robin.unicale" +
+      "ndar.web_service.grpc.generatedP\001b\006proto" +
+      "3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -120,78 +134,84 @@ public final class Handler {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_Institute_descriptor =
+    internal_static_Boolean_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_Institute_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Institute_descriptor,
-        new java.lang.String[] { "InstituteName", "Id", });
-    internal_static_InstituteId_descriptor =
+    internal_static_Boolean_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Boolean_descriptor,
+        new String[] { "Valid", });
+    internal_static_Institute_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_InstituteId_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_InstituteId_descriptor,
-        new java.lang.String[] { "Id", });
-    internal_static_InstituteList_descriptor =
+    internal_static_Institute_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Institute_descriptor,
+        new String[] { "InstituteName", "Id", });
+    internal_static_InstituteId_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_InstituteList_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_InstituteList_descriptor,
-        new java.lang.String[] { "Institutes", });
-    internal_static_Empty_descriptor =
+    internal_static_InstituteId_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_InstituteId_descriptor,
+        new String[] { "Id", });
+    internal_static_InstituteList_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_Empty_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Empty_descriptor,
-        new java.lang.String[] { });
-    internal_static_User_descriptor =
+    internal_static_InstituteList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_InstituteList_descriptor,
+        new String[] { "Institutes", });
+    internal_static_Empty_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_User_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_User_descriptor,
-        new java.lang.String[] { "Id", "UserName", "RealName", "InstituteId", "Password", });
-    internal_static_UserName_descriptor =
+    internal_static_Empty_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Empty_descriptor,
+        new String[] { });
+    internal_static_User_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_UserName_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_UserName_descriptor,
-        new java.lang.String[] { "Name", });
-    internal_static_UserId_descriptor =
+    internal_static_User_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_User_descriptor,
+        new String[] { "Id", "UserName", "RealName", "InstituteId", "Password", });
+    internal_static_UserName_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_UserId_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_UserId_descriptor,
-        new java.lang.String[] { "Id", });
-    internal_static_Subject_descriptor =
+    internal_static_UserName_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_UserName_descriptor,
+        new String[] { "Name", });
+    internal_static_UserId_descriptor =
       getDescriptor().getMessageTypes().get(7);
-    internal_static_Subject_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Subject_descriptor,
-        new java.lang.String[] { "Id", "Name", "InstituteId", "Semester", });
-    internal_static_SubjectList_descriptor =
+    internal_static_UserId_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_UserId_descriptor,
+        new String[] { "Id", });
+    internal_static_Subject_descriptor =
       getDescriptor().getMessageTypes().get(8);
-    internal_static_SubjectList_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_SubjectList_descriptor,
-        new java.lang.String[] { "Subjects", });
-    internal_static_SubjectName_descriptor =
+    internal_static_Subject_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Subject_descriptor,
+        new String[] { "Id", "Name", "InstituteId", "Semester", });
+    internal_static_SubjectList_descriptor =
       getDescriptor().getMessageTypes().get(9);
-    internal_static_SubjectName_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_SubjectName_descriptor,
-        new java.lang.String[] { "Name", });
-    internal_static_Comment_descriptor =
+    internal_static_SubjectList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SubjectList_descriptor,
+        new String[] { "Subjects", });
+    internal_static_SubjectName_descriptor =
       getDescriptor().getMessageTypes().get(10);
-    internal_static_Comment_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_Comment_descriptor,
-        new java.lang.String[] { "Id", "CommentText", "UserId", "SubjectId", "UserName", });
-    internal_static_CommentList_descriptor =
+    internal_static_SubjectName_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SubjectName_descriptor,
+        new String[] { "Name", });
+    internal_static_Comment_descriptor =
       getDescriptor().getMessageTypes().get(11);
+    internal_static_Comment_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_Comment_descriptor,
+        new String[] { "Id", "CommentText", "UserId", "SubjectId", "UserName", });
+    internal_static_CommentList_descriptor =
+      getDescriptor().getMessageTypes().get(12);
     internal_static_CommentList_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CommentList_descriptor,
-        new java.lang.String[] { "Comments", });
+        new String[] { "Comments", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

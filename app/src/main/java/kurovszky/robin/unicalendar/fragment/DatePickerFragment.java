@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.app.DatePickerDialog;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -15,12 +14,8 @@ import java.util.Date;
 
 import kurovszky.robin.unicalendar.R;
 
-/**
- * Created by robin on 2016. 11. 27..
- */
-
 public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
-    AddReqElement aq;
+    AddReqElementFragment aq;
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -44,7 +39,7 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
 
         aq.setDate(year,month,dayOfMonth);
     }
-    public void setPickerReference(AddReqElement a){
+    public void setPickerReference(AddReqElementFragment a){
         aq = a;
     }
 }

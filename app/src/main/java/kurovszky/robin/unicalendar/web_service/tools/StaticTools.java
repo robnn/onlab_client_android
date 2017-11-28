@@ -4,17 +4,17 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import kurovszky.robin.unicalendar.exception.BaseException;
 import kurovszky.robin.unicalendar.web_service.GrpcWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.SoapWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
+import kurovszky.robin.unicalendar.web_service.error.ErrorObject;
 import kurovszky.robin.unicalendar.web_service.model.User;
+import kurovszky.robin.unicalendar.web_service.type.ErrorCode;
+import kurovszky.robin.unicalendar.web_service.type.Transaction;
 
 import static android.content.Context.MODE_PRIVATE;
-
-/**
- * Created by robin on 2017. 03. 19..
- */
 
 public class StaticTools {
     public enum protocol {gRPC, REST, SOAP};
@@ -29,7 +29,7 @@ public class StaticTools {
         return toReturn;
     }
     public static protocol loadProtocolFromPrefs(Context ctx){
-        String proto = PreferenceManager.getDefaultSharedPreferences(ctx).getString("networking_protocol", "gRPC");
+        String proto = PreferenceManager.getDefaultSharedPreferences(ctx).getString("networking_protocol", "REST");
         switch (proto){
             case "gRPC":
                 return protocol.gRPC;
@@ -40,26 +40,42 @@ public class StaticTools {
         }
         return null;
     }
-    public static WebService initWebService(Context ctx, User u){
+
+
+    public static WebService initWebService(Context ctx, User u, Transaction transaction) throws BaseException {
+        return initWebService(ctx,u,transaction.isAllowedWithoutLogin());
+
+    }
+
+    public static WebService initWebService(Context ctx, User u, boolean allowedWithoutLogin) throws BaseException {
         StaticTools.protocol protocol = StaticTools.loadProtocolFromPrefs(ctx);
 
         WebService webService;
-
+        if(protocol == null)
+            protocol = StaticTools.protocol.REST;
         switch (protocol){
             case gRPC:
-                webService = GrpcWebServiceImpl.getInstance();
+                //in this case we need to check manually if it is allowed
+                webService = GrpcWebServiceImpl.getInstance(u, allowedWithoutLogin);
                 break;
             case REST:
                 webService = RestWebServiceImpl.getInstance(u);
                 break;
             case SOAP:
-                webService = SoapWebServiceImpl.getInstance();
+                webService = SoapWebServiceImpl.getInstance(u);
                 break;
             default:
-                webService = SoapWebServiceImpl.getInstance();
+                webService = SoapWebServiceImpl.getInstance(u);
                 break;
 
         }
         return webService;
+    }
+
+    public static <T> T checkResponse(T o) throws BaseException {
+        if(o == null){
+            throw new BaseException(new ErrorObject(ErrorCode.SERVER_DOWN));
+        }
+        return o;
     }
 }

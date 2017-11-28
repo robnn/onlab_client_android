@@ -1,8 +1,6 @@
-package kurovszky.robin.unicalendar;
+package kurovszky.robin.unicalendar.activity;
 
 
-
-import android.content.Context;
 import android.content.Intent;
 
 
@@ -16,9 +14,7 @@ import android.os.Bundle;
 
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -28,18 +24,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.Calendar;
 import java.util.List;
 
+import kurovszky.robin.unicalendar.R;
 import kurovszky.robin.unicalendar.fragment.CalendarFragment;
 import kurovszky.robin.unicalendar.fragment.UpcomingFragment;
 import kurovszky.robin.unicalendar.model.Requirement;
 
-public class UnireqMainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-    public static final int FRAGMENT_COUNT= 2;
+    public static final int FRAGMENT_COUNT = 2;
     public static final int REQUEST_CODE = 1;
     MyAdapter adapter;
     ViewPager pager;
@@ -73,14 +68,14 @@ public class UnireqMainActivity extends AppCompatActivity {
 
         adapter = new MyAdapter(getSupportFragmentManager());
 
-        pager = (ViewPager)findViewById(R.id.pager);
+        pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(adapter);
 
         //this is a workaround, tabstrip not showing without it
         PagerTabStrip pagerTabStrip = (PagerTabStrip) findViewById(R.id.tabStrip);
         ((ViewPager.LayoutParams) pagerTabStrip.getLayoutParams()).isDecor = true;
 
-        ImageView mainButton = (ImageView)findViewById(R.id.main_toolbar_button);
+        ImageView mainButton = (ImageView) findViewById(R.id.main_toolbar_button);
         mainButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,25 +87,26 @@ public class UnireqMainActivity extends AppCompatActivity {
         requirements = Requirement.listAll(Requirement.class);
 
     }
+
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Intent intent = null;
-           switch (position){
-               case 0:
-                   intent = new Intent(getApplicationContext(), SelectSubject.class);
-                   startActivityForResult(intent, REQUEST_CODE);
-                   break;
-               case 1:
+            switch (position) {
+                case 0:
+                    intent = new Intent(getApplicationContext(), SelectSubjectActivity.class);
+                    startActivityForResult(intent, REQUEST_CODE);
+                    break;
+                case 1:
 
-                   intent = new Intent(getApplicationContext(), SettingsActivity.class);
-                   startActivity(intent);
-                   break;
-               case 2:
-                   intent = new Intent(getApplicationContext(), InfoActivity.class);
-                   startActivity(intent);
-                   break;
-           }
+                    intent = new Intent(getApplicationContext(), SettingsActivity.class);
+                    startActivity(intent);
+                    break;
+                case 2:
+                    intent = new Intent(getApplicationContext(), InfoActivity.class);
+                    startActivity(intent);
+                    break;
+            }
 
         }
 
@@ -125,9 +121,9 @@ public class UnireqMainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.add_subject:
-                Intent intent = new Intent(this, SelectSubject.class);
+                Intent intent = new Intent(this, SelectSubjectActivity.class);
                 startActivityForResult(intent, REQUEST_CODE);
                 break;
             case R.id.settings:
@@ -148,8 +144,8 @@ public class UnireqMainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode == REQUEST_CODE){
-            if(resultCode == RESULT_OK){
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
                 requirements = Requirement.listAll(Requirement.class);
                 upcomingFragment.adapter.setRequirements(upcomingFragment.setSubjects(requirements));
                 upcomingFragment.adapter.notifyDataSetChanged();
@@ -161,7 +157,7 @@ public class UnireqMainActivity extends AppCompatActivity {
     }
 
     public void startSubjectActivity(View view) {
-        if(view.getContext() instanceof UnireqMainActivity) {
+        if (view.getContext() instanceof MainActivity) {
             Intent subjectIntent = new Intent(this, SubjectActivity.class);
             String subjectName = ((TextView) view.findViewById(R.id.subjectNameText)).getText().toString();
             subjectIntent.putExtra("SubjectName", subjectName);
@@ -175,7 +171,6 @@ public class UnireqMainActivity extends AppCompatActivity {
         }
 
 
-
         @Override
         public int getCount() {
             return FRAGMENT_COUNT;
@@ -183,14 +178,14 @@ public class UnireqMainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            if(position == 0) {
+            if (position == 0) {
                 upcomingFragment = UpcomingFragment.getInstance();
                 upcomingFragment.setSubjects(requirements);
 
                 return upcomingFragment;
             }
 
-            if(position == 1) {
+            if (position == 1) {
                 calendarFragment = CalendarFragment.getInstance();
 
                 calendarFragment.setRequirements(requirements);
@@ -198,9 +193,10 @@ public class UnireqMainActivity extends AppCompatActivity {
             }
             return null;
         }
+
         @Override
         public CharSequence getPageTitle(int position) {
-            switch (position){
+            switch (position) {
                 case 0:
                     return getString(R.string.upcoming);
                 case 1:

@@ -118,7 +118,7 @@ public class User  implements KvmSerializable{
                 info.type = PropertyInfo.STRING_CLASS;
                 info.name = "userName";
                 break;
-            case 21:
+            case 2:
                 info.type = PropertyInfo.STRING_CLASS;
                 info.name = "realName";
                 break;

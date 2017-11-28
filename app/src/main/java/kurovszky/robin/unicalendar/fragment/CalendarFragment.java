@@ -31,11 +31,6 @@ import kurovszky.robin.unicalendar.model.Requirement;
 
 
 public class CalendarFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-    public static final String TAG = "Upcoming";
     static CalendarFragment calendarFragment;
     ArrayList<String> eventDays = new ArrayList<>();
     List<Requirement> requirements = new ArrayList<>();
@@ -43,14 +38,15 @@ public class CalendarFragment extends Fragment {
     public RecyclerView recyclerView = null;
     public UpcomingAdapter adapter;
     public RecyclerView.LayoutManager mLayoutManager;
+
     public CalendarFragment() {
         // Required empty public constructor
     }
-    // TODO: Rename and change types and number of parameters
+
     public static CalendarFragment getInstance() {
-       if(calendarFragment == null){
-           calendarFragment = new CalendarFragment();
-       }
+        if (calendarFragment == null) {
+            calendarFragment = new CalendarFragment();
+        }
         return calendarFragment;
     }
 
@@ -69,7 +65,7 @@ public class CalendarFragment extends Fragment {
 
         mfCalendarView = (MFCalendarView) calendarFragment.findViewById(R.id.mFCalendarView);
         final String dateString = mfCalendarView.getInitialDate();
-        Date date= null;
+        Date date = null;
         try {
             date = dateFormat.parse(dateString);
         } catch (ParseException e) {
@@ -84,12 +80,12 @@ public class CalendarFragment extends Fragment {
 
         List<Requirement> dailyReq = new ArrayList<>();
 
-        for(Requirement r : requirements){
+        for (Requirement r : requirements) {
 
             eventDays.add(dateFormat.format(r.getTimeInDate()));
         }
-        for(Requirement r : requirements){
-            if(r.getTimeInDate().getYear() == date.getYear()&& r.getTimeInDate().getMonth() == date.getMonth()&& r.getTimeInDate().getDay() == date.getDay()){
+        for (Requirement r : requirements) {
+            if (r.getTimeInDate().getYear() == date.getYear() && r.getTimeInDate().getMonth() == date.getMonth() && r.getTimeInDate().getDay() == date.getDay()) {
                 dailyReq.add(r);
             }
         }
@@ -102,7 +98,7 @@ public class CalendarFragment extends Fragment {
             @Override
             public void onDisplayedMonthChanged(int month, int year, String monthStr) {
                 requirements = Requirement.listAll(Requirement.class);
-                for(Requirement r : requirements){
+                for (Requirement r : requirements) {
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                     eventDays.add(dateFormat.format(r.getTimeInDate()));
                 }
@@ -119,8 +115,8 @@ public class CalendarFragment extends Fragment {
                     e.printStackTrace();
                 }
                 List<Requirement> daily = new ArrayList<Requirement>();
-                for(Requirement r : requirements){
-                    if(r.getTimeInDate().getYear() == date1.getYear()&& r.getTimeInDate().getMonth() == date1.getMonth()&& r.getTimeInDate().getDay() == date1.getDay()){
+                for (Requirement r : requirements) {
+                    if (r.getTimeInDate().getYear() == date1.getYear() && r.getTimeInDate().getMonth() == date1.getMonth() && r.getTimeInDate().getDay() == date1.getDay()) {
                         daily.add(r);
                     }
                 }
@@ -134,11 +130,9 @@ public class CalendarFragment extends Fragment {
         return calendarFragment;
     }
 
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-
     }
 
     @Override

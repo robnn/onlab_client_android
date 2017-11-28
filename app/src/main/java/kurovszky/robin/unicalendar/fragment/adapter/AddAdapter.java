@@ -13,23 +13,19 @@ import java.util.List;
 import kurovszky.robin.unicalendar.R;
 import kurovszky.robin.unicalendar.model.Requirement;
 
-/**
- * Created by robin on 2016. 11. 27..
- */
-
 public class AddAdapter extends RecyclerView.Adapter<AddAdapter.ViewHolder> {
     private List<Requirement> requirements;
     private Context context = null;
 
-public static class ViewHolder extends RecyclerView.ViewHolder {
+static class ViewHolder extends RecyclerView.ViewHolder {
 
-    public TextView subjectName;
-    public TextView dateText;
-    public TextView typeText;
-    public TextView hardinessText;
+    TextView subjectName;
+    TextView dateText;
+    TextView typeText;
+    TextView hardinessText;
 
 
-    public ViewHolder(View v) {
+    ViewHolder(View v) {
         super(v);
         subjectName = (TextView) v.findViewById(R.id.subjectNameText);
         dateText = (TextView) v.findViewById(R.id.dateText);
@@ -38,12 +34,10 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
     }
 }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
     public AddAdapter(List<Requirement> requirements) {
         this.requirements = requirements;
     }
 
-    // Create new views (invoked by the layout manager)
 
     @Override
     public AddAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -51,9 +45,6 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
         return new AddAdapter.ViewHolder(rowView);
     }
 
-
-
-    // Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(AddAdapter.ViewHolder holder, int position) {
         //holder.subjectName.setText(requirements.get(position).getSubject());
@@ -86,7 +77,6 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
 
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
         return requirements.size();

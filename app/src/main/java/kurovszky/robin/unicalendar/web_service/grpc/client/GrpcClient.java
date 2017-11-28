@@ -8,6 +8,8 @@ import java.util.logging.Logger;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
+import kurovszky.robin.unicalendar.exception.BaseException;
+import kurovszky.robin.unicalendar.web_service.error.ErrorObject;
 import kurovszky.robin.unicalendar.web_service.grpc.generated.CommentServiceGrpc;
 import kurovszky.robin.unicalendar.web_service.grpc.generated.Empty;
 import kurovszky.robin.unicalendar.web_service.grpc.generated.Institute;
@@ -23,9 +25,10 @@ import kurovszky.robin.unicalendar.web_service.model.Comment;
 import kurovszky.robin.unicalendar.web_service.model.Subject;
 import kurovszky.robin.unicalendar.web_service.model.User;
 import kurovszky.robin.unicalendar.web_service.tools.GrpcMapper;
+import kurovszky.robin.unicalendar.web_service.type.ErrorCode;
 
-public class OnlabClient {
-    private static final Logger logger = Logger.getLogger(OnlabClient.class.getName());
+public class GrpcClient {
+    private static final Logger logger = Logger.getLogger(GrpcClient.class.getName());
 
     private final ManagedChannel channel;
     private final InstituteServiceGrpc.InstituteServiceBlockingStub instituteBlockingStub;
@@ -34,18 +37,18 @@ public class OnlabClient {
     private final CommentServiceGrpc.CommentServiceBlockingStub commentBlockingStub;
     private final InstituteServiceGrpc.InstituteServiceStub asyncStub;
 
-    public static final String URL = "robinandroidrest.hopto.org";
+    public static final String URL = "robnn.dynu.net";
     public static final int port = 8010;
     private TestHelper testHelper;
 
-    public OnlabClient() {
+    public GrpcClient() {
         this(ManagedChannelBuilder.forAddress(URL, port).usePlaintext(true));
     }
 
-    public OnlabClient(String host, int port) {
+    public GrpcClient(String host, int port) {
         this(ManagedChannelBuilder.forAddress(host, port).usePlaintext(true));
     }
-    private OnlabClient(ManagedChannelBuilder<?> channelBuilder) {
+    private GrpcClient(ManagedChannelBuilder<?> channelBuilder) {
         channel = channelBuilder.build();
         instituteBlockingStub = InstituteServiceGrpc.newBlockingStub(channel);
         userBlockingStub = UserServiceGrpc.newBlockingStub(channel);
@@ -54,41 +57,8 @@ public class OnlabClient {
         asyncStub = InstituteServiceGrpc.newStub(channel);
         testHelper = new TestHelper();
     }
-    public void shutdown() throws InterruptedException {
-        channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
-    }
-    public void testGetInstitutes() {
-        info("*** printing all institutes");
 
-        InstituteList list;
-        try {
-            list = instituteBlockingStub.getAllInstitutes(Empty.getDefaultInstance());
-            if (testHelper != null) {
-                testHelper.onMessage(list);
-            }
-        } catch (StatusRuntimeException e) {
-            warning("RPC failed: {0}", e.getStatus());
-            if (testHelper != null) {
-                testHelper.onRpcError(e);
-            }
-        }
-    }
-    public void addTestInstitute(){
-        info("adding institute");
-        Institute.Builder builder = Institute.newBuilder();
-        builder.setId(9999);
-        builder.setInstituteName("TesztInstitute");
-        Institute toadd = builder.build();
-        try {
-            instituteBlockingStub.addInstitute(toadd);
-        } catch (StatusRuntimeException e) {
-            warning("RPC failed: {0}", e.getStatus());
-            if (testHelper != null) {
-                testHelper.onRpcError(e);
-            }
-        }
-    }
-    public List<kurovszky.robin.unicalendar.web_service.model.Institute> getAllInstitutes(){
+    public List<kurovszky.robin.unicalendar.web_service.model.Institute> getAllInstitutes() throws BaseException {
         InstituteList list = null;
         try {
             list = instituteBlockingStub.getAllInstitutes(Empty.getDefaultInstance());
@@ -100,7 +70,7 @@ public class OnlabClient {
         }
         return GrpcMapper.mapInstituteList(list);
     }
-    public kurovszky.robin.unicalendar.web_service.model.Institute getInstituteById(long id){
+    public kurovszky.robin.unicalendar.web_service.model.Institute getInstituteById(long id) throws BaseException {
         Institute institute = null;
         try {
             institute = instituteBlockingStub.getInstitutebyId(GrpcMapper.instituteIdMap(id));
@@ -112,7 +82,7 @@ public class OnlabClient {
         }
         return GrpcMapper.mapInstitute(institute);
     }
-    public  void addInstitute(kurovszky.robin.unicalendar.web_service.model.Institute institute){
+    public  void addInstitute(kurovszky.robin.unicalendar.web_service.model.Institute institute) throws BaseException {
         Institute mapped = GrpcMapper.addInstituteMap(institute);
         try {
             instituteBlockingStub.addInstitute(mapped);
@@ -123,7 +93,20 @@ public class OnlabClient {
             }
         }
     }
-    public User register(User u){
+    public boolean validateUser(User u) throws BaseException {
+        kurovszky.robin.unicalendar.web_service.grpc.generated.User mapped = GrpcMapper.userNameAndPasswordMap(u);
+        boolean isValid = false;
+        try {
+            isValid = GrpcMapper.mapBoolean(userBlockingStub.validate(mapped));
+        }catch (StatusRuntimeException e) {
+            warning("RPC failed: {0}", e.getStatus());
+            if (testHelper != null) {
+                testHelper.onRpcError(e);
+            }
+        }
+        return isValid;
+    }
+    public User register(User u) throws BaseException {
         kurovszky.robin.unicalendar.web_service.grpc.generated.User mapped = GrpcMapper.registerMap(u);
         try {
             userBlockingStub.register(mapped);
@@ -136,7 +119,7 @@ public class OnlabClient {
         }
         return  u;
     }
-    public String getNamebyId(long id){
+    public String getNamebyId(long id) throws BaseException {
         kurovszky.robin.unicalendar.web_service.grpc.generated.UserId mapped = GrpcMapper.userIdMap(id);
         UserName userName = null;
         try {
@@ -150,7 +133,7 @@ public class OnlabClient {
         return  GrpcMapper.mapUserName(userName);
 
     }
-    public long getIdByName(String name){
+    public long getIdByName(String name) throws BaseException {
         UserId userId = null;
         UserName mapped = GrpcMapper.userNameMap(name);
         try {
@@ -163,7 +146,7 @@ public class OnlabClient {
         }
         return  GrpcMapper.mapUserId(userId);
     }
-    public long getInstituteIdByName(String name){
+    public long getInstituteIdByName(String name) throws BaseException {
         InstituteId instituteId = null;
         UserName mapped = GrpcMapper.userNameMap(name);
         try {
@@ -176,7 +159,7 @@ public class OnlabClient {
         }
         return  GrpcMapper.mapInstituteId(instituteId);
     }
-    public List<kurovszky.robin.unicalendar.web_service.model.Subject> getSubjectsByInstitute(kurovszky.robin.unicalendar.web_service.model.Institute institute){
+    public List<kurovszky.robin.unicalendar.web_service.model.Subject> getSubjectsByInstitute(kurovszky.robin.unicalendar.web_service.model.Institute institute) throws BaseException {
         Institute mapped = GrpcMapper.addInstituteMap(institute);
         List<Subject> subjects = null;
         try {
@@ -189,7 +172,7 @@ public class OnlabClient {
         }
         return subjects;
     }
-    public Subject getSubjectByName(String name){
+    public Subject getSubjectByName(String name) throws BaseException {
         Subject subject = null;
         SubjectName mapped = GrpcMapper.subjectNameMap(name);
         try {
@@ -202,7 +185,7 @@ public class OnlabClient {
         }
         return subject;
     }
-    public void addSubject(Subject subject){
+    public void addSubject(Subject subject) throws BaseException {
         kurovszky.robin.unicalendar.web_service.grpc.generated.Subject mapped = GrpcMapper.addSubjectMap(subject);
         try {
             subjectBlockingStub.addSubject(mapped);
@@ -213,7 +196,7 @@ public class OnlabClient {
             }
         }
     }
-    public List<Comment> getCommentsBySubject(Subject subject){
+    public List<Comment> getCommentsBySubject(Subject subject) throws BaseException {
         List<Comment> comments = null;
         kurovszky.robin.unicalendar.web_service.grpc.generated.Subject mapped = GrpcMapper.addSubjectMap(subject);
         try {
@@ -226,7 +209,7 @@ public class OnlabClient {
         }
         return comments;
     }
-    public void addComment(Comment comment){
+    public void addComment(Comment comment) throws BaseException {
         kurovszky.robin.unicalendar.web_service.grpc.generated.Comment mapped = GrpcMapper.addCommentMap(comment);
         try {
             commentBlockingStub.addComment(mapped);
@@ -237,24 +220,13 @@ public class OnlabClient {
             }
         }
     }
-    private void info(String msg, Object... params) {
-        //System.out.println(msg);
-        logger.log(Level.INFO, msg, params);
-    }
     private void warning(String msg, Object... params) {
         logger.log(Level.WARNING, msg, params);
     }
 
     private class TestHelper {
-        void onMessage(InstituteList list) {
-            List<Institute> toprint = list.getInstitutesList();
-            for(Institute i : toprint){
-                info(" id: " +i.getId() + " name: " + i.getInstituteName());
-            }
-        }
-
-        void onRpcError(Throwable e) {
-            e.printStackTrace();
+        void onRpcError(Throwable e) throws BaseException {
+            throw new BaseException(new ErrorObject(ErrorCode.SERVER_DOWN));
         }
     }
 }

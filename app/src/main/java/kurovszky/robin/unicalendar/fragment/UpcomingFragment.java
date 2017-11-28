@@ -15,7 +15,6 @@ import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -25,23 +24,20 @@ import kurovszky.robin.unicalendar.model.Requirement;
 
 
 public class UpcomingFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-    public static final String TAG = "Upcoming";
+
     public RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
     List<Requirement> requirements;
     List<Requirement> upcoming;
     public UpcomingAdapter adapter;
     static UpcomingFragment upcomingFragment;
+
     public UpcomingFragment() {
         // Required empty public constructor
     }
-    // TODO: Rename and change types and number of parameters
+
     public static UpcomingFragment getInstance() {
-        if(upcomingFragment==null)
+        if (upcomingFragment == null)
             upcomingFragment = new UpcomingFragment();
 
         return upcomingFragment;
@@ -68,7 +64,6 @@ public class UpcomingFragment extends Fragment {
         adapter.setContext(getActivity());
 
 
-
         return upcomingView;
     }
 
@@ -90,9 +85,9 @@ public class UpcomingFragment extends Fragment {
         this.requirements = new ArrayList<>();
         this.upcoming = new ArrayList<>();
         this.requirements = requirements;
-        for (Requirement r: requirements){
+        for (Requirement r : requirements) {
             Date current = Calendar.getInstance().getTime();
-            if(r.getTimeInDate().getTime()>= current.getTime()){
+            if (r.getTimeInDate().getTime() >= current.getTime()) {
                 upcoming.add(r);
             }
 

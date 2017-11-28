@@ -1,4 +1,4 @@
-package kurovszky.robin.unicalendar;
+package kurovszky.robin.unicalendar.activity;
 
 import android.app.ProgressDialog;
 import android.net.Uri;
@@ -15,35 +15,38 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import kurovszky.robin.unicalendar.fragment.AddReqElement;
-import kurovszky.robin.unicalendar.fragment.AddSubject;
+import kurovszky.robin.unicalendar.broadcast_reciever.Alarm;
+import kurovszky.robin.unicalendar.R;
+import kurovszky.robin.unicalendar.exception.BaseException;
+import kurovszky.robin.unicalendar.fragment.AddReqElementFragment;
+import kurovszky.robin.unicalendar.fragment.AddSubjectFragment;
+import kurovszky.robin.unicalendar.fragment.error.ErrorFragmentImpl;
 import kurovszky.robin.unicalendar.model.Requirement;
 import kurovszky.robin.unicalendar.view.CustomViewPager;
-import kurovszky.robin.unicalendar.web_service.GrpcWebServiceImpl;
-import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
-import kurovszky.robin.unicalendar.web_service.model.Institute;
+import kurovszky.robin.unicalendar.web_service.error.ErrorObject;
 import kurovszky.robin.unicalendar.web_service.model.Subject;
 import kurovszky.robin.unicalendar.web_service.model.User;
 import kurovszky.robin.unicalendar.web_service.tools.StaticTools;
+import kurovszky.robin.unicalendar.web_service.type.ErrorCode;
+import kurovszky.robin.unicalendar.web_service.type.Transaction;
 
-public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmentInteractionListener, AddSubject.OnFragmentInteractionListener {
+public class AddRequirementActivity extends AppCompatActivity implements AddReqElementFragment.OnFragmentInteractionListener, AddSubjectFragment.OnFragmentInteractionListener {
     private static final int FRAGMENT_COUNT = 2;
-    AddSubject addSubject;
+    AddSubjectFragment addSubjectFragment;
     MyAdapter adapter;
     CustomViewPager pager;
     Menu menu;
-    FragmentManager fm = getSupportFragmentManager();
     WebService webService;
+    ErrorFragmentImpl errorFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,17 +57,12 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-        addSubject = new AddSubject();
+        addSubjectFragment = new AddSubjectFragment();
         adapter = new MyAdapter(getSupportFragmentManager());
         adapter.setActivityCompat(this);
-        pager = (CustomViewPager)findViewById(R.id.add_pager);
+        pager = (CustomViewPager) findViewById(R.id.add_pager);
         pager.setPagingEnabled(false);
         pager.setAdapter(adapter);
-
-
-
-
     }
 
     @Override
@@ -89,19 +87,16 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
     }
 
     @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
-
-    @Override
     public void setReq(Requirement req) {
-        addSubject.addRequirement(req);
+        addSubjectFragment.addRequirement(req);
     }
+
     public class MyAdapter extends FragmentPagerAdapter {
         public MyAdapter(FragmentManager fm) {
             super(fm);
         }
-        AddReqElement aq;
+
+        AddReqElementFragment aq;
         AppCompatActivity activityCompat;
 
         @Override
@@ -111,14 +106,14 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
 
         @Override
         public Fragment getItem(int position) {
-            if(position == 0) {
-                ((TextView)activityCompat.findViewById(R.id.toolbar_title)).setText(R.string.add_subject);
-                return addSubject;
+            if (position == 0) {
+                ((TextView) activityCompat.findViewById(R.id.toolbar_title)).setText(R.string.add_subject);
+                return addSubjectFragment;
             }
 
-            if(position == 1) {
-                ((TextView)activityCompat.findViewById(R.id.toolbar_title)).setText(R.string.add_requirement);
-                aq = new AddReqElement();
+            if (position == 1) {
+                ((TextView) activityCompat.findViewById(R.id.toolbar_title)).setText(R.string.add_requirement);
+                aq = new AddReqElementFragment();
                 return aq;
             }
             return null;
@@ -127,7 +122,7 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
         @Override
         public void finishUpdate(ViewGroup container) {
             super.finishUpdate(container);
-            if(menu != null) {
+            if (menu != null) {
                 MenuItem confirm = menu.findItem(R.id.confirm);
                 confirm.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                     @Override
@@ -152,36 +147,37 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
         }
     }
 
-    String readSubjectName(){
+    String readSubjectName() {
         EditText et = (EditText) findViewById(R.id.subjectNameText);
         return et.getText().toString();
     }
-    void finishAddActivity(){
-        for(Requirement requirement: addSubject.getRequirements()){
+
+    void finishAddActivity() {
+        for (Requirement requirement : addSubjectFragment.getRequirements()) {
             requirement.setSubject(readSubjectName());
-            if(PreferenceManager.getDefaultSharedPreferences(this).getBoolean("notification", false)) {
-                String days =null;
+            if (PreferenceManager.getDefaultSharedPreferences(this).getBoolean("notification", false)) {
+                String days = null;
                 switch (requirement.getHardiness()) {
                     case 0:
-                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("very_easy_days","1");
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("very_easy_days", "1");
                         break;
                     case 1:
-                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("easy_days","3");
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("easy_days", "3");
                         break;
                     case 2:
-                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("moderate_days","5");
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("moderate_days", "5");
                         break;
                     case 3:
-                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("hard_days","7");
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("hard_days", "7");
                         break;
                     case 4:
-                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("very_hard_days","9");
+                        days = PreferenceManager.getDefaultSharedPreferences(this).getString("very_hard_days", "9");
                         break;
                 }
                 int daysBefore = Integer.parseInt(days);
                 long before = TimeUnit.DAYS.toMillis(daysBefore);
                 Alarm alarm = new Alarm();
-                long time = requirement.getTimeInDate().getTime()-before;
+                long time = requirement.getTimeInDate().getTime() - before;
                 Date date = new Date(time);
                 Long timeToNotify = PreferenceManager.getDefaultSharedPreferences(this).getLong("notification_time", 0);
 
@@ -197,43 +193,92 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
             requirement.save();
 
         }
-        EditText subjectName = (EditText)findViewById(R.id.subjectNameText);
-        if(subjectName.isEnabled()){
+        EditText subjectName = (EditText) findViewById(R.id.subjectNameText);
+        if (subjectName.isEnabled()) {
             User u = StaticTools.loadUserFromPrefs(getApplicationContext());
             StaticTools.protocol protocol = StaticTools.loadProtocolFromPrefs(getApplicationContext());
 
-            webService = StaticTools.initWebService(getApplicationContext(), u);
+            AsyncInitWebService asyncInitWebService = new AsyncInitWebService(this);
+            asyncInitWebService.execute(u);
+//            webService = StaticTools.initWebService(getApplicationContext(), u);
             Subject subject = new Subject();
             subject.setId(99999L);
             subject.setInstituteId(u.getInstituteId());
             subject.setName(subjectName.getText().toString());
             AsyncAddSubject asyncAddSubject = new AsyncAddSubject(this);
             asyncAddSubject.execute(subject);
-        }
-        else {
+        } else {
             this.setResult(RESULT_OK);
             finish();
         }
 
     }
+
     public CustomViewPager getPager() {
         return pager;
     }
+
     public void startSubjectActivity(View view) {
 
     }
-    private class AsyncAddSubject extends AsyncTask<Subject, Void, Void> {
+
+    private class AsyncInitWebService extends AsyncTask<User, Void, ErrorObject> {
+
         ProgressDialog dialog;
-        AddReq activity;
-        public AsyncAddSubject(AddReq context) {
+        AddRequirementActivity activity;
+
+        public AsyncInitWebService(AddRequirementActivity activity) {
+            this.activity = activity;
+            dialog = new ProgressDialog(activity);
+        }
+
+        @Override
+        protected ErrorObject doInBackground(User... users) {
+            try {
+                webService = StaticTools.initWebService(getApplicationContext(), users[0], Transaction.ADD_SUBJECTS);
+            } catch (BaseException e) {
+                return new ErrorObject(e.getErrorObject().getErrorCode(), getApplication());
+            }
+            return new ErrorObject(ErrorCode.NO_ERROR, getApplication());
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            this.dialog.setMessage("Initializing connection...");
+            this.dialog.show();
+        }
+
+        @Override
+        protected void onPostExecute(ErrorObject errorObject) {
+            super.onPostExecute(errorObject);
+            ErrorCode errorCode = errorObject.getErrorCode();
+            String message = errorObject.getMessage();
+            dialog.dismiss();
+            if (errorCode == ErrorCode.NO_ERROR)
+                return;
+            errorFragment = ErrorFragmentImpl.newInstance(message);
+            errorFragment.show(activity.getSupportFragmentManager(), "DIALOG");
+        }
+    }
+
+    private class AsyncAddSubject extends AsyncTask<Subject, Void, ErrorObject> {
+        ProgressDialog dialog;
+        AddRequirementActivity activity;
+
+        public AsyncAddSubject(AddRequirementActivity context) {
             activity = context;
             dialog = new ProgressDialog(context);
         }
 
         @Override
-        protected Void doInBackground(Subject... subjects) {
-            webService.addSubject(subjects[0]);
-            return null;
+        protected ErrorObject doInBackground(Subject... subjects) {
+            try {
+                webService.addSubject(subjects[0]);
+            } catch (BaseException e) {
+                return new ErrorObject(ErrorCode.SERVER_DOWN, activity);
+            }
+            return new ErrorObject(ErrorCode.NO_ERROR, activity);
         }
 
         @Override
@@ -244,11 +289,19 @@ public class AddReq extends AppCompatActivity implements AddReqElement.OnFragmen
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
+        protected void onPostExecute(ErrorObject errorObject) {
+            super.onPostExecute(errorObject);
+            ErrorCode errorCode = errorObject.getErrorCode();
+            String message = errorObject.getMessage();
             dialog.dismiss();
-            activity.setResult(RESULT_OK);
-            activity.finish();
+            if (errorCode == ErrorCode.NO_ERROR) {
+                activity.setResult(RESULT_OK);
+                activity.finish();
+                return;
+            }
+            errorFragment = ErrorFragmentImpl.newInstance(message);
+            errorFragment.show(activity.getSupportFragmentManager(), "DIALOG");
+
         }
     }
 }

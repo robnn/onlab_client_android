@@ -8,56 +8,36 @@ public interface CommentOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>required uint64 id = 1;</code>
-   */
-  boolean hasId();
-  /**
-   * <code>required uint64 id = 1;</code>
+   * <code>uint64 id = 1;</code>
    */
   long getId();
 
   /**
-   * <code>required string commentText = 2;</code>
+   * <code>string commentText = 2;</code>
    */
-  boolean hasCommentText();
+  String getCommentText();
   /**
-   * <code>required string commentText = 2;</code>
-   */
-  java.lang.String getCommentText();
-  /**
-   * <code>required string commentText = 2;</code>
+   * <code>string commentText = 2;</code>
    */
   com.google.protobuf.ByteString
       getCommentTextBytes();
 
   /**
-   * <code>required uint64 userId = 3;</code>
-   */
-  boolean hasUserId();
-  /**
-   * <code>required uint64 userId = 3;</code>
+   * <code>uint64 userId = 3;</code>
    */
   long getUserId();
 
   /**
-   * <code>required uint64 subjectId = 4;</code>
-   */
-  boolean hasSubjectId();
-  /**
-   * <code>required uint64 subjectId = 4;</code>
+   * <code>uint64 subjectId = 4;</code>
    */
   long getSubjectId();
 
   /**
-   * <code>optional string userName = 5;</code>
+   * <code>string userName = 5;</code>
    */
-  boolean hasUserName();
+  String getUserName();
   /**
-   * <code>optional string userName = 5;</code>
-   */
-  java.lang.String getUserName();
-  /**
-   * <code>optional string userName = 5;</code>
+   * <code>string userName = 5;</code>
    */
   com.google.protobuf.ByteString
       getUserNameBytes();

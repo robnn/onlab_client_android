@@ -5,7 +5,6 @@ import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -15,12 +14,8 @@ import java.util.Date;
 
 import kurovszky.robin.unicalendar.R;
 
-/**
- * Created by robin on 2016. 11. 27..
- */
-
 public class TimePickerFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
-    AddReqElement aq;
+    AddReqElementFragment aq;
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -42,7 +37,7 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
         time.setText(format.format(date));
         aq.setTime(hourOfDay,minute);
     }
-    public void setPickerReference(AddReqElement a){
+    public void setPickerReference(AddReqElementFragment a){
         aq = a;
     }
 }

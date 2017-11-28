@@ -3,14 +3,9 @@ package kurovszky.robin.unicalendar.web_service.model;
 import org.ksoap2.serialization.KvmSerializable;
 import org.ksoap2.serialization.PropertyInfo;
 
-import java.io.Serializable;
 import java.util.Hashtable;
 
-/**
- * Created by robin on 2017. 03. 15..
- */
-
-public class Institute implements KvmSerializable{
+public class Institute implements KvmSerializable {
 
     private Long id;
     private String name;
@@ -48,7 +43,7 @@ public class Institute implements KvmSerializable{
 
     @Override
     public Object getProperty(int index) {
-        switch (index){
+        switch (index) {
             case 0:
                 return id;
             case 1:
@@ -64,9 +59,9 @@ public class Institute implements KvmSerializable{
 
     @Override
     public void setProperty(int index, Object value) {
-        switch (index){
+        switch (index) {
             case 0:
-                id = (long)value;
+                id = (long) value;
                 break;
             case 1:
                 name = (String) value;
@@ -75,7 +70,7 @@ public class Institute implements KvmSerializable{
 
     @Override
     public void getPropertyInfo(int index, Hashtable properties, PropertyInfo info) {
-        switch (index){
+        switch (index) {
             case 0:
                 info.type = PropertyInfo.LONG_CLASS;
                 info.name = "id";

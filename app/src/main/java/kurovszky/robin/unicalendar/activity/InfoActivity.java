@@ -1,12 +1,15 @@
-package kurovszky.robin.unicalendar;
+package kurovszky.robin.unicalendar.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
+import kurovszky.robin.unicalendar.R;
+
 public class InfoActivity extends AppCompatActivity {
 
+    //TODO infó activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -4,25 +4,55 @@
     android:id="@+id/activity_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kurovszky.robin.unicalendar.InfoActivity"
+    tools:context="kurovszky.robin.unicalendar.activity.InfoActivity"
     android:orientation="vertical">
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
-    <TextView
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INSTITUTE_NAME"/>
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/usericon"
+            android:src="@drawable/ic_home_black_24dp"
+            android:tint="@color/accent"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_institute_hint"
+            style="@style/ListTextBold"/>
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinputlayout_login_user"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"
+        >
     <EditText
         android:id="@+id/institute_text_input"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/institute_name"/>
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/submit_input_institute"
-        android:text="submit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:text="@string/submit_add_institute"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="3dp"
+        android:padding="10dp"
         android:background="@color/primary"
         android:textColor="@color/icons"/>
 

@@ -8,43 +8,27 @@ public interface SubjectOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>required uint64 id = 1;</code>
-   */
-  boolean hasId();
-  /**
-   * <code>required uint64 id = 1;</code>
+   * <code>uint64 id = 1;</code>
    */
   long getId();
 
   /**
-   * <code>required string name = 2;</code>
+   * <code>string name = 2;</code>
    */
-  boolean hasName();
+  String getName();
   /**
-   * <code>required string name = 2;</code>
-   */
-  java.lang.String getName();
-  /**
-   * <code>required string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>required uint64 instituteId = 3;</code>
-   */
-  boolean hasInstituteId();
-  /**
-   * <code>required uint64 instituteId = 3;</code>
+   * <code>uint64 instituteId = 3;</code>
    */
   long getInstituteId();
 
   /**
-   * <code>optional int32 semester = 4;</code>
-   */
-  boolean hasSemester();
-  /**
-   * <code>optional int32 semester = 4;</code>
+   * <code>int32 semester = 4;</code>
    */
   int getSemester();
 }

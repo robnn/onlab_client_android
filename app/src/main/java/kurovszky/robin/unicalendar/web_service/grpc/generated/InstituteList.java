@@ -3,43 +3,34 @@
 
 package kurovszky.robin.unicalendar.web_service.grpc.generated;
 
+import com.google.protobuf.CodedInputStream;
+
 /**
  * Protobuf type {@code InstituteList}
  */
-public final class InstituteList extends
-    com.google.protobuf.GeneratedMessage implements
+public  final class InstituteList extends
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:InstituteList)
-    InstituteListOrBuilder {
+        InstituteListOrBuilder {
   // Use InstituteList.newBuilder() to construct.
-  private InstituteList(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private InstituteList(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
-    this.unknownFields = builder.getUnknownFields();
   }
-  private InstituteList(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-  private static final InstituteList defaultInstance;
-  public static InstituteList getDefaultInstance() {
-    return defaultInstance;
+  private InstituteList() {
+    institutes_ = java.util.Collections.emptyList();
   }
 
-  public InstituteList getDefaultInstanceForType() {
-    return defaultInstance;
-  }
-
-  private final com.google.protobuf.UnknownFieldSet unknownFields;
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
-      getUnknownFields() {
-    return this.unknownFields;
+  getUnknownFields() {
+    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
   private InstituteList(
-      com.google.protobuf.CodedInputStream input,
+      CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
-    initFields();
+    this();
     int mutable_bitField0_ = 0;
-    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -49,8 +40,7 @@ public final class InstituteList extends
             done = true;
             break;
           default: {
-            if (!parseUnknownField(input, unknownFields,
-                                   extensionRegistry, tag)) {
+            if (!input.skipField(tag)) {
               done = true;
             }
             break;
@@ -60,7 +50,8 @@ public final class InstituteList extends
               institutes_ = new java.util.ArrayList<Institute>();
               mutable_bitField0_ |= 0x00000001;
             }
-            institutes_.add(input.readMessage(Institute.PARSER, extensionRegistry));
+            institutes_.add(
+                input.readMessage(Institute.parser(), extensionRegistry));
             break;
           }
         }
@@ -69,12 +60,11 @@ public final class InstituteList extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-          e.getMessage()).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         institutes_ = java.util.Collections.unmodifiableList(institutes_);
       }
-      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -83,26 +73,11 @@ public final class InstituteList extends
     return Handler.internal_static_InstituteList_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return Handler.internal_static_InstituteList_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             InstituteList.class, Builder.class);
-  }
-
-  public static com.google.protobuf.Parser<InstituteList> PARSER =
-      new com.google.protobuf.AbstractParser<InstituteList>() {
-    public InstituteList parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return new InstituteList(input, extensionRegistry);
-    }
-  };
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<InstituteList> getParserForType() {
-    return PARSER;
   }
 
   public static final int INSTITUTES_FIELD_NUMBER = 1;
@@ -140,37 +115,25 @@ public final class InstituteList extends
     return institutes_.get(index);
   }
 
-  private void initFields() {
-    institutes_ = java.util.Collections.emptyList();
-  }
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
     if (isInitialized == 0) return false;
 
-    for (int i = 0; i < getInstitutesCount(); i++) {
-      if (!getInstitutes(i).isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-    }
     memoizedIsInitialized = 1;
     return true;
   }
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    getSerializedSize();
     for (int i = 0; i < institutes_.size(); i++) {
       output.writeMessage(1, institutes_.get(i));
     }
-    getUnknownFields().writeTo(output);
   }
 
-  private int memoizedSerializedSize = -1;
   public int getSerializedSize() {
-    int size = memoizedSerializedSize;
+    int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
@@ -178,18 +141,54 @@ public final class InstituteList extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, institutes_.get(i));
     }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSerializedSize = size;
+    memoizedSize = size;
     return size;
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  protected java.lang.Object writeReplace()
-      throws java.io.ObjectStreamException {
-    return super.writeReplace();
+  @Override
+  public boolean equals(final Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof InstituteList)) {
+      return super.equals(obj);
+    }
+    InstituteList other = (InstituteList) obj;
+
+    boolean result = true;
+    result = result && getInstitutesList()
+        .equals(other.getInstitutesList());
+    return result;
   }
 
+  @Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    if (getInstitutesCount() > 0) {
+      hash = (37 * hash) + INSTITUTES_FIELD_NUMBER;
+      hash = (53 * hash) + getInstitutesList().hashCode();
+    }
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static InstituteList parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(CodedInputStream.newInstance(data));
+  }
+  public static InstituteList parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(CodedInputStream.newInstance(data), extensionRegistry);
+  }
   public static InstituteList parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -213,46 +212,57 @@ public final class InstituteList extends
   }
   public static InstituteList parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return PARSER.parseFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input);
   }
   public static InstituteList parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static InstituteList parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return PARSER.parseDelimitedFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static InstituteList parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static InstituteList parseFrom(
-      com.google.protobuf.CodedInputStream input)
+      CodedInputStream input)
       throws java.io.IOException {
-    return PARSER.parseFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input);
   }
   public static InstituteList parseFrom(
-      com.google.protobuf.CodedInputStream input,
+      CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static Builder newBuilder() { return Builder.create(); }
   public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder(InstituteList prototype) {
-    return newBuilder().mergeFrom(prototype);
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
   }
-  public Builder toBuilder() { return newBuilder(this); }
+  public static Builder newBuilder(InstituteList prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+  public Builder toBuilder() {
+    return this == DEFAULT_INSTANCE
+        ? new Builder() : new Builder().mergeFrom(this);
+  }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -260,7 +270,7 @@ public final class InstituteList extends
    * Protobuf type {@code InstituteList}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:InstituteList)
           InstituteListOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -268,32 +278,29 @@ public final class InstituteList extends
       return Handler.internal_static_InstituteList_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return Handler.internal_static_InstituteList_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               InstituteList.class, Builder.class);
     }
 
-    // Construct using grpc.generated.InstituteList.newBuilder()
+    // Construct using kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteList.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
         getInstitutesFieldBuilder();
       }
     }
-    private static Builder create() {
-      return new Builder();
-    }
-
     public Builder clear() {
       super.clear();
       if (institutesBuilder_ == null) {
@@ -303,10 +310,6 @@ public final class InstituteList extends
         institutesBuilder_.clear();
       }
       return this;
-    }
-
-    public Builder clone() {
-      return create().mergeFrom(buildPartial());
     }
 
     public com.google.protobuf.Descriptors.Descriptor
@@ -342,6 +345,32 @@ public final class InstituteList extends
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof InstituteList) {
         return mergeFrom((InstituteList)other);
@@ -371,30 +400,24 @@ public final class InstituteList extends
             institutesBuilder_ = null;
             institutes_ = other.institutes_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            institutesBuilder_ = 
-              com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+            institutesBuilder_ =
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getInstitutesFieldBuilder() : null;
           } else {
             institutesBuilder_.addAllMessages(other.institutes_);
           }
         }
       }
-      this.mergeUnknownFields(other.getUnknownFields());
+      onChanged();
       return this;
     }
 
     public final boolean isInitialized() {
-      for (int i = 0; i < getInstitutesCount(); i++) {
-        if (!getInstitutes(i).isInitialized()) {
-          
-          return false;
-        }
-      }
       return true;
     }
 
     public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
+        CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       InstituteList parsedMessage = null;
@@ -402,7 +425,7 @@ public final class InstituteList extends
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         parsedMessage = (InstituteList) e.getUnfinishedMessage();
-        throw e;
+        throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
           mergeFrom(parsedMessage);
@@ -421,7 +444,7 @@ public final class InstituteList extends
        }
     }
 
-    private com.google.protobuf.RepeatedFieldBuilder<
+    private com.google.protobuf.RepeatedFieldBuilderV3<
             Institute, Institute.Builder, InstituteOrBuilder> institutesBuilder_;
 
     /**
@@ -550,7 +573,7 @@ public final class InstituteList extends
      * <code>repeated .Institute institutes = 1;</code>
      */
     public Builder addAllInstitutes(
-        java.lang.Iterable<? extends Institute> values) {
+        Iterable<? extends Institute> values) {
       if (institutesBuilder_ == null) {
         ensureInstitutesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -637,11 +660,11 @@ public final class InstituteList extends
          getInstitutesBuilderList() {
       return getInstitutesFieldBuilder().getBuilderList();
     }
-    private com.google.protobuf.RepeatedFieldBuilder<
+    private com.google.protobuf.RepeatedFieldBuilderV3<
             Institute, Institute.Builder, InstituteOrBuilder>
         getInstitutesFieldBuilder() {
       if (institutesBuilder_ == null) {
-        institutesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+        institutesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
                 Institute, Institute.Builder, InstituteOrBuilder>(
                 institutes_,
                 ((bitField0_ & 0x00000001) == 0x00000001),
@@ -651,15 +674,52 @@ public final class InstituteList extends
       }
       return institutesBuilder_;
     }
+    public final Builder setUnknownFields(
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
+      return this;
+    }
+
+    public final Builder mergeUnknownFields(
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
+      return this;
+    }
+
 
     // @@protoc_insertion_point(builder_scope:InstituteList)
   }
 
+  // @@protoc_insertion_point(class_scope:InstituteList)
+  private static final InstituteList DEFAULT_INSTANCE;
   static {
-    defaultInstance = new InstituteList(true);
-    defaultInstance.initFields();
+    DEFAULT_INSTANCE = new InstituteList();
   }
 
-  // @@protoc_insertion_point(class_scope:InstituteList)
+  public static InstituteList getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<InstituteList>
+      PARSER = new com.google.protobuf.AbstractParser<InstituteList>() {
+    public InstituteList parsePartialFrom(
+        CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+        return new InstituteList(input, extensionRegistry);
+    }
+  };
+
+  public static com.google.protobuf.Parser<InstituteList> parser() {
+    return PARSER;
+  }
+
+  @Override
+  public com.google.protobuf.Parser<InstituteList> getParserForType() {
+    return PARSER;
+  }
+
+  public InstituteList getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
 }
 

@@ -6,7 +6,7 @@ import org.ksoap2.serialization.PropertyInfo;
 
 import java.util.Hashtable;
 
-public class Subject implements KvmSerializable{
+public class Subject implements KvmSerializable {
     private Long id;
     private String name;
     private Long instituteId;
@@ -56,7 +56,7 @@ public class Subject implements KvmSerializable{
 
     @Override
     public Object getProperty(int index) {
-        switch (index){
+        switch (index) {
             case 0:
                 return id;
             case 1:
@@ -76,7 +76,7 @@ public class Subject implements KvmSerializable{
 
     @Override
     public void setProperty(int index, Object value) {
-        switch (index){
+        switch (index) {
             case 0:
                 id = (Long) value;
                 break;
@@ -94,7 +94,7 @@ public class Subject implements KvmSerializable{
 
     @Override
     public void getPropertyInfo(int index, Hashtable properties, PropertyInfo info) {
-        switch (index){
+        switch (index) {
             case 0:
                 info.type = PropertyInfo.LONG_CLASS;
                 info.name = "id";
@@ -105,7 +105,7 @@ public class Subject implements KvmSerializable{
                 break;
             case 2:
                 info.type = PropertyInfo.LONG_CLASS;
-                info.name= "instituteId";
+                info.name = "instituteId";
                 break;
             case 3:
                 info.type = PropertyInfo.INTEGER_CLASS;

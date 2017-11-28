@@ -1,19 +1,10 @@
 package kurovszky.robin.unicalendar.model;
 
-import android.content.res.Resources;
-
 import com.orm.SugarRecord;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Comparator;
 import java.util.Date;
-
-import kurovszky.robin.unicalendar.R;
-
-/**
- * Created by robin on 2016. 11. 26..
- */
 
 public class Requirement extends SugarRecord  implements Comparable<Requirement>{
     private String type;

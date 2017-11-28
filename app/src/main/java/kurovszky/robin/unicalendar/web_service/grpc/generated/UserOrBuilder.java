@@ -8,61 +8,41 @@ public interface UserOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>required uint64 id = 1;</code>
-   */
-  boolean hasId();
-  /**
-   * <code>required uint64 id = 1;</code>
+   * <code>uint64 id = 1;</code>
    */
   long getId();
 
   /**
-   * <code>required string userName = 2;</code>
+   * <code>string userName = 2;</code>
    */
-  boolean hasUserName();
+  String getUserName();
   /**
-   * <code>required string userName = 2;</code>
-   */
-  java.lang.String getUserName();
-  /**
-   * <code>required string userName = 2;</code>
+   * <code>string userName = 2;</code>
    */
   com.google.protobuf.ByteString
       getUserNameBytes();
 
   /**
-   * <code>optional string realName = 3;</code>
+   * <code>string realName = 3;</code>
    */
-  boolean hasRealName();
+  String getRealName();
   /**
-   * <code>optional string realName = 3;</code>
-   */
-  java.lang.String getRealName();
-  /**
-   * <code>optional string realName = 3;</code>
+   * <code>string realName = 3;</code>
    */
   com.google.protobuf.ByteString
       getRealNameBytes();
 
   /**
-   * <code>optional uint64 instituteId = 4;</code>
-   */
-  boolean hasInstituteId();
-  /**
-   * <code>optional uint64 instituteId = 4;</code>
+   * <code>uint64 instituteId = 4;</code>
    */
   long getInstituteId();
 
   /**
-   * <code>required string password = 5;</code>
+   * <code>string password = 5;</code>
    */
-  boolean hasPassword();
+  String getPassword();
   /**
-   * <code>required string password = 5;</code>
-   */
-  java.lang.String getPassword();
-  /**
-   * <code>required string password = 5;</code>
+   * <code>string password = 5;</code>
    */
   com.google.protobuf.ByteString
       getPasswordBytes();

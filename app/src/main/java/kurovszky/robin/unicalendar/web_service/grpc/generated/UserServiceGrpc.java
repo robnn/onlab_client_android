@@ -1,10 +1,9 @@
 package kurovszky.robin.unicalendar.web_service.grpc.generated;
 
+import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
@@ -14,7 +13,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.2.0)",
+    value = "by gRPC proto compiler (version 1.6.1)",
     comments = "Source: handler.proto")
 public final class UserServiceGrpc {
 
@@ -24,41 +23,65 @@ public final class UserServiceGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<User,
-          User> METHOD_REGISTER =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "UserService", "register"),
-          io.grpc.protobuf.ProtoUtils.marshaller(User.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(User.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.User,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean> METHOD_VALIDATE =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.User, kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "UserService", "validate"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.User.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean.getDefaultInstance()))
+          .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<UserId,
-          UserName> METHOD_GET_NAME_BY_ID =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "UserService", "getNameById"),
-          io.grpc.protobuf.ProtoUtils.marshaller(UserId.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(UserName.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.User,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.User> METHOD_REGISTER =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.User, kurovszky.robin.unicalendar.web_service.grpc.generated.User>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "UserService", "register"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.User.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.User.getDefaultInstance()))
+          .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<UserName,
-          UserId> METHOD_GET_ID_BY_NAME =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "UserService", "getIdByName"),
-          io.grpc.protobuf.ProtoUtils.marshaller(UserName.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(UserId.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.UserId,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.UserName> METHOD_GET_NAME_BY_ID =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.UserId, kurovszky.robin.unicalendar.web_service.grpc.generated.UserName>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "UserService", "getNameById"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.UserId.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.UserName.getDefaultInstance()))
+          .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<UserName,
-          InstituteId> METHOD_GET_INSTITUTE_ID_BY_NAME =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "UserService", "getInstituteIdByName"),
-          io.grpc.protobuf.ProtoUtils.marshaller(UserName.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(InstituteId.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.UserName,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.UserId> METHOD_GET_ID_BY_NAME =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.UserName, kurovszky.robin.unicalendar.web_service.grpc.generated.UserId>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "UserService", "getIdByName"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.UserName.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.UserId.getDefaultInstance()))
+          .build();
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.UserName,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId> METHOD_GET_INSTITUTE_ID_BY_NAME =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.UserName, kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "UserService", "getInstituteIdByName"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.UserName.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId.getDefaultInstance()))
+          .build();
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -76,7 +99,7 @@ public final class UserServiceGrpc {
   }
 
   /**
-   * Creates a new ListenableFuture-style stub that supports unary and streaming output calls on the service
+   * Creates a new ListenableFuture-style stub that supports unary calls on the service
    */
   public static UserServiceFutureStub newFutureStub(
       io.grpc.Channel channel) {
@@ -92,61 +115,75 @@ public final class UserServiceGrpc {
 
     /**
      */
-    public void register(User request,
-        io.grpc.stub.StreamObserver<User> responseObserver) {
+    public void validate(kurovszky.robin.unicalendar.web_service.grpc.generated.User request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean> responseObserver) {
+      asyncUnimplementedUnaryCall(METHOD_VALIDATE, responseObserver);
+    }
+
+    /**
+     */
+    public void register(kurovszky.robin.unicalendar.web_service.grpc.generated.User request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.User> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_REGISTER, responseObserver);
     }
 
     /**
      */
-    public void getNameById(UserId request,
-        io.grpc.stub.StreamObserver<UserName> responseObserver) {
+    public void getNameById(kurovszky.robin.unicalendar.web_service.grpc.generated.UserId request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.UserName> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_NAME_BY_ID, responseObserver);
     }
 
     /**
      */
-    public void getIdByName(UserName request,
-        io.grpc.stub.StreamObserver<UserId> responseObserver) {
+    public void getIdByName(kurovszky.robin.unicalendar.web_service.grpc.generated.UserName request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.UserId> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_ID_BY_NAME, responseObserver);
     }
 
     /**
      */
-    public void getInstituteIdByName(UserName request,
-        io.grpc.stub.StreamObserver<InstituteId> responseObserver) {
+    public void getInstituteIdByName(kurovszky.robin.unicalendar.web_service.grpc.generated.UserName request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_INSTITUTE_ID_BY_NAME, responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
+          .addMethod(
+            METHOD_VALIDATE,
+            asyncUnaryCall(
+              new MethodHandlers<
+                kurovszky.robin.unicalendar.web_service.grpc.generated.User,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean>(
+                  this, METHODID_VALIDATE)))
           .addMethod(
             METHOD_REGISTER,
             asyncUnaryCall(
               new MethodHandlers<
-                      User,
-                      User>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.User,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.User>(
                   this, METHODID_REGISTER)))
           .addMethod(
             METHOD_GET_NAME_BY_ID,
             asyncUnaryCall(
               new MethodHandlers<
-                      UserId,
-                      UserName>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.UserId,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.UserName>(
                   this, METHODID_GET_NAME_BY_ID)))
           .addMethod(
             METHOD_GET_ID_BY_NAME,
             asyncUnaryCall(
               new MethodHandlers<
-                      UserName,
-                      UserId>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.UserName,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.UserId>(
                   this, METHODID_GET_ID_BY_NAME)))
           .addMethod(
             METHOD_GET_INSTITUTE_ID_BY_NAME,
             asyncUnaryCall(
               new MethodHandlers<
-                      UserName,
-                      InstituteId>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.UserName,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId>(
                   this, METHODID_GET_INSTITUTE_ID_BY_NAME)))
           .build();
     }
@@ -167,7 +204,7 @@ public final class UserServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected UserServiceStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new UserServiceStub(channel, callOptions);
@@ -175,32 +212,40 @@ public final class UserServiceGrpc {
 
     /**
      */
-    public void register(User request,
-        io.grpc.stub.StreamObserver<User> responseObserver) {
+    public void validate(kurovszky.robin.unicalendar.web_service.grpc.generated.User request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(METHOD_VALIDATE, getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void register(kurovszky.robin.unicalendar.web_service.grpc.generated.User request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.User> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_REGISTER, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getNameById(UserId request,
-        io.grpc.stub.StreamObserver<UserName> responseObserver) {
+    public void getNameById(kurovszky.robin.unicalendar.web_service.grpc.generated.UserId request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.UserName> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_NAME_BY_ID, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getIdByName(UserName request,
-        io.grpc.stub.StreamObserver<UserId> responseObserver) {
+    public void getIdByName(kurovszky.robin.unicalendar.web_service.grpc.generated.UserName request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.UserId> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_ID_BY_NAME, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getInstituteIdByName(UserName request,
-        io.grpc.stub.StreamObserver<InstituteId> responseObserver) {
+    public void getInstituteIdByName(kurovszky.robin.unicalendar.web_service.grpc.generated.UserName request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_INSTITUTE_ID_BY_NAME, getCallOptions()), request, responseObserver);
     }
@@ -221,7 +266,7 @@ public final class UserServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected UserServiceBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new UserServiceBlockingStub(channel, callOptions);
@@ -229,28 +274,35 @@ public final class UserServiceGrpc {
 
     /**
      */
-    public User register(User request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean validate(kurovszky.robin.unicalendar.web_service.grpc.generated.User request) {
+      return blockingUnaryCall(
+          getChannel(), METHOD_VALIDATE, getCallOptions(), request);
+    }
+
+    /**
+     */
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.User register(kurovszky.robin.unicalendar.web_service.grpc.generated.User request) {
       return blockingUnaryCall(
           getChannel(), METHOD_REGISTER, getCallOptions(), request);
     }
 
     /**
      */
-    public UserName getNameById(UserId request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.UserName getNameById(kurovszky.robin.unicalendar.web_service.grpc.generated.UserId request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_NAME_BY_ID, getCallOptions(), request);
     }
 
     /**
      */
-    public UserId getIdByName(UserName request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.UserId getIdByName(kurovszky.robin.unicalendar.web_service.grpc.generated.UserName request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_ID_BY_NAME, getCallOptions(), request);
     }
 
     /**
      */
-    public InstituteId getInstituteIdByName(UserName request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId getInstituteIdByName(kurovszky.robin.unicalendar.web_service.grpc.generated.UserName request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_INSTITUTE_ID_BY_NAME, getCallOptions(), request);
     }
@@ -271,7 +323,7 @@ public final class UserServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected UserServiceFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new UserServiceFutureStub(channel, callOptions);
@@ -279,41 +331,50 @@ public final class UserServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<User> register(
-        User request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean> validate(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.User request) {
+      return futureUnaryCall(
+          getChannel().newCall(METHOD_VALIDATE, getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.User> register(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.User request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_REGISTER, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<UserName> getNameById(
-        UserId request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.UserName> getNameById(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.UserId request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_NAME_BY_ID, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<UserId> getIdByName(
-        UserName request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.UserId> getIdByName(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.UserName request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_ID_BY_NAME, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<InstituteId> getInstituteIdByName(
-        UserName request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId> getInstituteIdByName(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.UserName request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_INSTITUTE_ID_BY_NAME, getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_REGISTER = 0;
-  private static final int METHODID_GET_NAME_BY_ID = 1;
-  private static final int METHODID_GET_ID_BY_NAME = 2;
-  private static final int METHODID_GET_INSTITUTE_ID_BY_NAME = 3;
+  private static final int METHODID_VALIDATE = 0;
+  private static final int METHODID_REGISTER = 1;
+  private static final int METHODID_GET_NAME_BY_ID = 2;
+  private static final int METHODID_GET_ID_BY_NAME = 3;
+  private static final int METHODID_GET_INSTITUTE_ID_BY_NAME = 4;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -328,33 +389,37 @@ public final class UserServiceGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_VALIDATE:
+          serviceImpl.validate((kurovszky.robin.unicalendar.web_service.grpc.generated.User) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Boolean>) responseObserver);
+          break;
         case METHODID_REGISTER:
-          serviceImpl.register((User) request,
-              (io.grpc.stub.StreamObserver<User>) responseObserver);
+          serviceImpl.register((kurovszky.robin.unicalendar.web_service.grpc.generated.User) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.User>) responseObserver);
           break;
         case METHODID_GET_NAME_BY_ID:
-          serviceImpl.getNameById((UserId) request,
-              (io.grpc.stub.StreamObserver<UserName>) responseObserver);
+          serviceImpl.getNameById((kurovszky.robin.unicalendar.web_service.grpc.generated.UserId) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.UserName>) responseObserver);
           break;
         case METHODID_GET_ID_BY_NAME:
-          serviceImpl.getIdByName((UserName) request,
-              (io.grpc.stub.StreamObserver<UserId>) responseObserver);
+          serviceImpl.getIdByName((kurovszky.robin.unicalendar.web_service.grpc.generated.UserName) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.UserId>) responseObserver);
           break;
         case METHODID_GET_INSTITUTE_ID_BY_NAME:
-          serviceImpl.getInstituteIdByName((UserName) request,
-              (io.grpc.stub.StreamObserver<InstituteId>) responseObserver);
+          serviceImpl.getInstituteIdByName((kurovszky.robin.unicalendar.web_service.grpc.generated.UserName) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.InstituteId>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -365,9 +430,9 @@ public final class UserServiceGrpc {
   }
 
   private static final class UserServiceDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return Handler.getDescriptor();
+      return kurovszky.robin.unicalendar.web_service.grpc.generated.Handler.getDescriptor();
     }
   }
 
@@ -381,6 +446,7 @@ public final class UserServiceGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new UserServiceDescriptorSupplier())
+              .addMethod(METHOD_VALIDATE)
               .addMethod(METHOD_REGISTER)
               .addMethod(METHOD_GET_NAME_BY_ID)
               .addMethod(METHOD_GET_ID_BY_NAME)

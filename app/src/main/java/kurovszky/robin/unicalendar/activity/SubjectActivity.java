@@ -1,17 +1,14 @@
-package kurovszky.robin.unicalendar;
+package kurovszky.robin.unicalendar.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,16 +18,20 @@ import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
+import kurovszky.robin.unicalendar.R;
+import kurovszky.robin.unicalendar.exception.BaseException;
 import kurovszky.robin.unicalendar.fragment.adapter.CommentAdapter;
 import kurovszky.robin.unicalendar.fragment.adapter.UpcomingAdapter;
+import kurovszky.robin.unicalendar.fragment.error.ErrorFragmentImpl;
 import kurovszky.robin.unicalendar.model.Requirement;
-import kurovszky.robin.unicalendar.web_service.RestWebServiceImpl;
 import kurovszky.robin.unicalendar.web_service.WebService;
+import kurovszky.robin.unicalendar.web_service.error.ErrorObject;
 import kurovszky.robin.unicalendar.web_service.model.Comment;
-import kurovszky.robin.unicalendar.web_service.model.Institute;
 import kurovszky.robin.unicalendar.web_service.model.Subject;
 import kurovszky.robin.unicalendar.web_service.model.User;
 import kurovszky.robin.unicalendar.web_service.tools.StaticTools;
+import kurovszky.robin.unicalendar.web_service.type.ErrorCode;
+import kurovszky.robin.unicalendar.web_service.type.Transaction;
 
 public class SubjectActivity extends AppCompatActivity {
 
@@ -49,6 +50,7 @@ public class SubjectActivity extends AppCompatActivity {
     String subjectName = null;
     User u;
     String finalSubjectName;
+    ErrorFragmentImpl errorFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +73,12 @@ public class SubjectActivity extends AppCompatActivity {
         commentView.setLayoutManager(commentManager);
 
         u = StaticTools.loadUserFromPrefs(getApplicationContext());
-        webService = StaticTools.initWebService(getApplicationContext(),u);
+
+
+        AsyncInitWebService asyncInitWebService = new AsyncInitWebService(this);
+        asyncInitWebService.execute(u);
+
+//        webService = StaticTools.initWebService(getApplicationContext(),u);
 
 
 
@@ -121,7 +128,47 @@ public class SubjectActivity extends AppCompatActivity {
     public void startSubjectActivity(View view) {
 
     }
-    private class AsyncGetComments extends AsyncTask<String, Void, Void> {
+
+    private class AsyncInitWebService extends AsyncTask<User, Void, ErrorObject>{
+
+        ProgressDialog dialog;
+        SubjectActivity activity;
+
+        public AsyncInitWebService(SubjectActivity activity) {
+            this.activity = activity;
+            dialog = new ProgressDialog(activity);
+        }
+
+        @Override
+        protected ErrorObject doInBackground(User... users) {
+            try {
+                webService = StaticTools.initWebService(getApplicationContext(), users[0], Transaction.COMMENT);
+            } catch (BaseException e) {
+                return new ErrorObject(e.getErrorObject().getErrorCode(),getApplication());
+            }
+            return new ErrorObject(ErrorCode.NO_ERROR,getApplication());
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            this.dialog.setMessage("Initializing connection...");
+            this.dialog.show();
+        }
+
+        @Override
+        protected void onPostExecute(ErrorObject errorObject) {
+            super.onPostExecute(errorObject);
+            ErrorCode errorCode = errorObject.getErrorCode();
+            String message = errorObject.getMessage();
+            dialog.dismiss();
+            if(errorCode == ErrorCode.NO_ERROR)
+                return;
+            errorFragment = ErrorFragmentImpl.newInstance(message);
+            errorFragment.show(activity.getSupportFragmentManager(), "DIALOG");
+        }
+    }
+    private class AsyncGetComments extends AsyncTask<String, Void, ErrorObject> {
         ProgressDialog dialog;
         SubjectActivity activity;
         public AsyncGetComments(SubjectActivity context) {
@@ -130,13 +177,21 @@ public class SubjectActivity extends AppCompatActivity {
         }
 
         @Override
-        protected Void doInBackground(String... subjects) {
-            Subject s = webService.getSubjectByName(subjects[0]);
-            comments = webService.getCommentsBySubject(s);
-            for(Comment i : comments){
-                i.setUserName(webService.getNameById(i.getUserId()));
+        protected ErrorObject doInBackground(String... subjects) {
+            Subject s = null;
+            try {
+                s = webService.getSubjectByName(subjects[0]);
+                if(s == null){
+                    return new ErrorObject(ErrorCode.CANNOT_FIND_SUBJECT_ON_SERVER,activity);
+                }
+                comments = webService.getCommentsBySubject(s);
+                for(Comment i : comments){
+                    i.setUserName(webService.getNameById(i.getUserId()));
+                }
+            } catch (BaseException e) {
+                return new ErrorObject(ErrorCode.SERVER_DOWN,activity);
             }
-            return null;
+            return new ErrorObject(ErrorCode.NO_ERROR,activity);
         }
 
         @Override
@@ -147,16 +202,24 @@ public class SubjectActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
-            commentAdapter = new CommentAdapter(comments);
-            commentAdapter.setContext(activity);
-            commentView.setAdapter(commentAdapter);
-            commentAdapter.notifyDataSetChanged();
+        protected void onPostExecute(ErrorObject errorObject) {
+            super.onPostExecute(errorObject);
+            ErrorCode errorCode = errorObject.getErrorCode();
+            String message = errorObject.getMessage();
             dialog.dismiss();
+            if(errorCode == ErrorCode.NO_ERROR){
+                commentAdapter = new CommentAdapter(comments);
+                commentAdapter.setContext(activity);
+                commentView.setAdapter(commentAdapter);
+                commentAdapter.notifyDataSetChanged();
+                return;
+            }
+            errorFragment = ErrorFragmentImpl.newInstance(message);
+            errorFragment.show(activity.getSupportFragmentManager(), "DIALOG");
+
         }
     }
-    private class AsyncPostComment extends AsyncTask<Comment, Void, Void> {
+    private class AsyncPostComment extends AsyncTask<Comment, Void, ErrorObject> {
         ProgressDialog dialog;
         SubjectActivity activity;
         public AsyncPostComment(SubjectActivity context) {
@@ -165,11 +228,21 @@ public class SubjectActivity extends AppCompatActivity {
         }
 
         @Override
-        protected Void doInBackground(Comment... comments) {
-            Subject s = webService.getSubjectByName(subjectName);
-            comments[0].setSubjectId(s.getId());
-            webService.addComment(comments[0]);
-            return null;
+        protected ErrorObject doInBackground(Comment... comments) {
+            Subject s = null;
+            try {
+                s = webService.getSubjectByName(subjectName);
+                if(s == null){
+                    return new ErrorObject(ErrorCode.CANNOT_FIND_SUBJECT_ON_SERVER,activity);
+                }
+                comments[0].setSubjectId(s.getId());
+                webService.addComment(comments[0]);
+            } catch (BaseException e) {
+                errorFragment = ErrorFragmentImpl.newInstance(e.getMessage());
+                errorFragment.show(activity.getSupportFragmentManager(), "DIALOG");
+                return new ErrorObject(ErrorCode.SERVER_DOWN,activity);
+            }
+            return new ErrorObject(ErrorCode.NO_ERROR,activity);
         }
 
         @Override
@@ -180,11 +253,19 @@ public class SubjectActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
-            AsyncGetComments asyncGetComments = new AsyncGetComments(activity);
-            asyncGetComments.execute(finalSubjectName);
+        protected void onPostExecute(ErrorObject errorObject) {
+            super.onPostExecute(errorObject);
+            ErrorCode errorCode = errorObject.getErrorCode();
+            String message = errorObject.getMessage();
             dialog.dismiss();
+            if(errorCode == ErrorCode.NO_ERROR) {
+                AsyncGetComments asyncGetComments = new AsyncGetComments(activity);
+                asyncGetComments.execute(finalSubjectName);
+                return;
+            }
+            errorFragment = ErrorFragmentImpl.newInstance(message);
+            errorFragment.show(activity.getSupportFragmentManager(), "DIALOG");
+
         }
     }
 }

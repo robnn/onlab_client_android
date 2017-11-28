@@ -3,43 +3,37 @@
 
 package kurovszky.robin.unicalendar.web_service.grpc.generated;
 
+import com.google.protobuf.CodedInputStream;
+
 /**
  * Protobuf type {@code Subject}
  */
-public final class Subject extends
-    com.google.protobuf.GeneratedMessage implements
+public  final class Subject extends
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:Subject)
-    SubjectOrBuilder {
+        SubjectOrBuilder {
   // Use Subject.newBuilder() to construct.
-  private Subject(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private Subject(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
-    this.unknownFields = builder.getUnknownFields();
   }
-  private Subject(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
-
-  private static final Subject defaultInstance;
-  public static Subject getDefaultInstance() {
-    return defaultInstance;
-  }
-
-  public Subject getDefaultInstanceForType() {
-    return defaultInstance;
+  private Subject() {
+    id_ = 0L;
+    name_ = "";
+    instituteId_ = 0L;
+    semester_ = 0;
   }
 
-  private final com.google.protobuf.UnknownFieldSet unknownFields;
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
-      getUnknownFields() {
-    return this.unknownFields;
+  getUnknownFields() {
+    return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
   private Subject(
-      com.google.protobuf.CodedInputStream input,
+      CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
-    initFields();
+    this();
     int mutable_bitField0_ = 0;
-    com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-        com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
       boolean done = false;
       while (!done) {
@@ -49,30 +43,29 @@ public final class Subject extends
             done = true;
             break;
           default: {
-            if (!parseUnknownField(input, unknownFields,
-                                   extensionRegistry, tag)) {
+            if (!input.skipField(tag)) {
               done = true;
             }
             break;
           }
           case 8: {
-            bitField0_ |= 0x00000001;
+
             id_ = input.readUInt64();
             break;
           }
           case 18: {
-            com.google.protobuf.ByteString bs = input.readBytes();
-            bitField0_ |= 0x00000002;
-            name_ = bs;
+            String s = input.readStringRequireUtf8();
+
+            name_ = s;
             break;
           }
           case 24: {
-            bitField0_ |= 0x00000004;
+
             instituteId_ = input.readUInt64();
             break;
           }
           case 32: {
-            bitField0_ |= 0x00000008;
+
             semester_ = input.readInt32();
             break;
           }
@@ -82,9 +75,8 @@ public final class Subject extends
       throw e.setUnfinishedMessage(this);
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(
-          e.getMessage()).setUnfinishedMessage(this);
+          e).setUnfinishedMessage(this);
     } finally {
-      this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
   }
@@ -93,79 +85,49 @@ public final class Subject extends
     return Handler.internal_static_Subject_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return Handler.internal_static_Subject_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             Subject.class, Builder.class);
   }
 
-  public static com.google.protobuf.Parser<Subject> PARSER =
-      new com.google.protobuf.AbstractParser<Subject>() {
-    public Subject parsePartialFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return new Subject(input, extensionRegistry);
-    }
-  };
-
-  @java.lang.Override
-  public com.google.protobuf.Parser<Subject> getParserForType() {
-    return PARSER;
-  }
-
-  private int bitField0_;
   public static final int ID_FIELD_NUMBER = 1;
   private long id_;
   /**
-   * <code>required uint64 id = 1;</code>
-   */
-  public boolean hasId() {
-    return ((bitField0_ & 0x00000001) == 0x00000001);
-  }
-  /**
-   * <code>required uint64 id = 1;</code>
+   * <code>uint64 id = 1;</code>
    */
   public long getId() {
     return id_;
   }
 
   public static final int NAME_FIELD_NUMBER = 2;
-  private java.lang.Object name_;
+  private volatile Object name_;
   /**
-   * <code>required string name = 2;</code>
+   * <code>string name = 2;</code>
    */
-  public boolean hasName() {
-    return ((bitField0_ & 0x00000002) == 0x00000002);
-  }
-  /**
-   * <code>required string name = 2;</code>
-   */
-  public java.lang.String getName() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  public String getName() {
+    Object ref = name_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
-      com.google.protobuf.ByteString bs = 
+      com.google.protobuf.ByteString bs =
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      if (bs.isValidUtf8()) {
-        name_ = s;
-      }
+      String s = bs.toStringUtf8();
+      name_ = s;
       return s;
     }
   }
   /**
-   * <code>required string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
+    Object ref = name_;
+    if (ref instanceof String) {
+      com.google.protobuf.ByteString b =
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       name_ = b;
       return b;
     } else {
@@ -176,13 +138,7 @@ public final class Subject extends
   public static final int INSTITUTEID_FIELD_NUMBER = 3;
   private long instituteId_;
   /**
-   * <code>required uint64 instituteId = 3;</code>
-   */
-  public boolean hasInstituteId() {
-    return ((bitField0_ & 0x00000004) == 0x00000004);
-  }
-  /**
-   * <code>required uint64 instituteId = 3;</code>
+   * <code>uint64 instituteId = 3;</code>
    */
   public long getInstituteId() {
     return instituteId_;
@@ -191,98 +147,118 @@ public final class Subject extends
   public static final int SEMESTER_FIELD_NUMBER = 4;
   private int semester_;
   /**
-   * <code>optional int32 semester = 4;</code>
-   */
-  public boolean hasSemester() {
-    return ((bitField0_ & 0x00000008) == 0x00000008);
-  }
-  /**
-   * <code>optional int32 semester = 4;</code>
+   * <code>int32 semester = 4;</code>
    */
   public int getSemester() {
     return semester_;
   }
 
-  private void initFields() {
-    id_ = 0L;
-    name_ = "";
-    instituteId_ = 0L;
-    semester_ = 0;
-  }
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
     if (isInitialized == 1) return true;
     if (isInitialized == 0) return false;
 
-    if (!hasId()) {
-      memoizedIsInitialized = 0;
-      return false;
-    }
-    if (!hasName()) {
-      memoizedIsInitialized = 0;
-      return false;
-    }
-    if (!hasInstituteId()) {
-      memoizedIsInitialized = 0;
-      return false;
-    }
     memoizedIsInitialized = 1;
     return true;
   }
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    getSerializedSize();
-    if (((bitField0_ & 0x00000001) == 0x00000001)) {
+    if (id_ != 0L) {
       output.writeUInt64(1, id_);
     }
-    if (((bitField0_ & 0x00000002) == 0x00000002)) {
-      output.writeBytes(2, getNameBytes());
+    if (!getNameBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
     }
-    if (((bitField0_ & 0x00000004) == 0x00000004)) {
+    if (instituteId_ != 0L) {
       output.writeUInt64(3, instituteId_);
     }
-    if (((bitField0_ & 0x00000008) == 0x00000008)) {
+    if (semester_ != 0) {
       output.writeInt32(4, semester_);
     }
-    getUnknownFields().writeTo(output);
   }
 
-  private int memoizedSerializedSize = -1;
   public int getSerializedSize() {
-    int size = memoizedSerializedSize;
+    int size = memoizedSize;
     if (size != -1) return size;
 
     size = 0;
-    if (((bitField0_ & 0x00000001) == 0x00000001)) {
+    if (id_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
         .computeUInt64Size(1, id_);
     }
-    if (((bitField0_ & 0x00000002) == 0x00000002)) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(2, getNameBytes());
+    if (!getNameBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
     }
-    if (((bitField0_ & 0x00000004) == 0x00000004)) {
+    if (instituteId_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
         .computeUInt64Size(3, instituteId_);
     }
-    if (((bitField0_ & 0x00000008) == 0x00000008)) {
+    if (semester_ != 0) {
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(4, semester_);
     }
-    size += getUnknownFields().getSerializedSize();
-    memoizedSerializedSize = size;
+    memoizedSize = size;
     return size;
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  protected java.lang.Object writeReplace()
-      throws java.io.ObjectStreamException {
-    return super.writeReplace();
+  @Override
+  public boolean equals(final Object obj) {
+    if (obj == this) {
+     return true;
+    }
+    if (!(obj instanceof Subject)) {
+      return super.equals(obj);
+    }
+    Subject other = (Subject) obj;
+
+    boolean result = true;
+    result = result && (getId()
+        == other.getId());
+    result = result && getName()
+        .equals(other.getName());
+    result = result && (getInstituteId()
+        == other.getInstituteId());
+    result = result && (getSemester()
+        == other.getSemester());
+    return result;
   }
 
+  @Override
+  public int hashCode() {
+    if (memoizedHashCode != 0) {
+      return memoizedHashCode;
+    }
+    int hash = 41;
+    hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + ID_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getId());
+    hash = (37 * hash) + NAME_FIELD_NUMBER;
+    hash = (53 * hash) + getName().hashCode();
+    hash = (37 * hash) + INSTITUTEID_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getInstituteId());
+    hash = (37 * hash) + SEMESTER_FIELD_NUMBER;
+    hash = (53 * hash) + getSemester();
+    hash = (29 * hash) + unknownFields.hashCode();
+    memoizedHashCode = hash;
+    return hash;
+  }
+
+  public static Subject parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(CodedInputStream.newInstance(data));
+  }
+  public static Subject parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(CodedInputStream.newInstance(data), extensionRegistry);
+  }
   public static Subject parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -306,46 +282,57 @@ public final class Subject extends
   }
   public static Subject parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return PARSER.parseFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input);
   }
   public static Subject parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static Subject parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return PARSER.parseDelimitedFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseDelimitedWithIOException(PARSER, input);
   }
   public static Subject parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static Subject parseFrom(
-      com.google.protobuf.CodedInputStream input)
+      CodedInputStream input)
       throws java.io.IOException {
-    return PARSER.parseFrom(input);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input);
   }
   public static Subject parseFrom(
-      com.google.protobuf.CodedInputStream input,
+      CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return PARSER.parseFrom(input, extensionRegistry);
+    return com.google.protobuf.GeneratedMessageV3
+        .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static Builder newBuilder() { return Builder.create(); }
   public Builder newBuilderForType() { return newBuilder(); }
-  public static Builder newBuilder(Subject prototype) {
-    return newBuilder().mergeFrom(prototype);
+  public static Builder newBuilder() {
+    return DEFAULT_INSTANCE.toBuilder();
   }
-  public Builder toBuilder() { return newBuilder(this); }
+  public static Builder newBuilder(Subject prototype) {
+    return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+  }
+  public Builder toBuilder() {
+    return this == DEFAULT_INSTANCE
+        ? new Builder() : new Builder().mergeFrom(this);
+  }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -353,7 +340,7 @@ public final class Subject extends
    * Protobuf type {@code Subject}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:Subject)
           SubjectOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -361,46 +348,39 @@ public final class Subject extends
       return Handler.internal_static_Subject_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return Handler.internal_static_Subject_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               Subject.class, Builder.class);
     }
 
-    // Construct using grpc.generated.Subject.newBuilder()
+    // Construct using kurovszky.robin.unicalendar.web_service.grpc.generated.Subject.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
       }
     }
-    private static Builder create() {
-      return new Builder();
-    }
-
     public Builder clear() {
       super.clear();
       id_ = 0L;
-      bitField0_ = (bitField0_ & ~0x00000001);
-      name_ = "";
-      bitField0_ = (bitField0_ & ~0x00000002);
-      instituteId_ = 0L;
-      bitField0_ = (bitField0_ & ~0x00000004);
-      semester_ = 0;
-      bitField0_ = (bitField0_ & ~0x00000008);
-      return this;
-    }
 
-    public Builder clone() {
-      return create().mergeFrom(buildPartial());
+      name_ = "";
+
+      instituteId_ = 0L;
+
+      semester_ = 0;
+
+      return this;
     }
 
     public com.google.protobuf.Descriptors.Descriptor
@@ -422,29 +402,40 @@ public final class Subject extends
 
     public Subject buildPartial() {
       Subject result = new Subject(this);
-      int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-        to_bitField0_ |= 0x00000001;
-      }
       result.id_ = id_;
-      if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-        to_bitField0_ |= 0x00000002;
-      }
       result.name_ = name_;
-      if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-        to_bitField0_ |= 0x00000004;
-      }
       result.instituteId_ = instituteId_;
-      if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-        to_bitField0_ |= 0x00000008;
-      }
       result.semester_ = semester_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
 
+    public Builder clone() {
+      return (Builder) super.clone();
+    }
+    public Builder setField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        Object value) {
+      return (Builder) super.setField(field, value);
+    }
+    public Builder clearField(
+        com.google.protobuf.Descriptors.FieldDescriptor field) {
+      return (Builder) super.clearField(field);
+    }
+    public Builder clearOneof(
+        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      return (Builder) super.clearOneof(oneof);
+    }
+    public Builder setRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        int index, Object value) {
+      return (Builder) super.setRepeatedField(field, index, value);
+    }
+    public Builder addRepeatedField(
+        com.google.protobuf.Descriptors.FieldDescriptor field,
+        Object value) {
+      return (Builder) super.addRepeatedField(field, value);
+    }
     public Builder mergeFrom(com.google.protobuf.Message other) {
       if (other instanceof Subject) {
         return mergeFrom((Subject)other);
@@ -456,42 +447,29 @@ public final class Subject extends
 
     public Builder mergeFrom(Subject other) {
       if (other == Subject.getDefaultInstance()) return this;
-      if (other.hasId()) {
+      if (other.getId() != 0L) {
         setId(other.getId());
       }
-      if (other.hasName()) {
-        bitField0_ |= 0x00000002;
+      if (!other.getName().isEmpty()) {
         name_ = other.name_;
         onChanged();
       }
-      if (other.hasInstituteId()) {
+      if (other.getInstituteId() != 0L) {
         setInstituteId(other.getInstituteId());
       }
-      if (other.hasSemester()) {
+      if (other.getSemester() != 0) {
         setSemester(other.getSemester());
       }
-      this.mergeUnknownFields(other.getUnknownFields());
+      onChanged();
       return this;
     }
 
     public final boolean isInitialized() {
-      if (!hasId()) {
-        
-        return false;
-      }
-      if (!hasName()) {
-        
-        return false;
-      }
-      if (!hasInstituteId()) {
-        
-        return false;
-      }
       return true;
     }
 
     public Builder mergeFrom(
-        com.google.protobuf.CodedInputStream input,
+        CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       Subject parsedMessage = null;
@@ -499,7 +477,7 @@ public final class Subject extends
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         parsedMessage = (Subject) e.getUnfinishedMessage();
-        throw e;
+        throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
           mergeFrom(parsedMessage);
@@ -507,74 +485,59 @@ public final class Subject extends
       }
       return this;
     }
-    private int bitField0_;
 
     private long id_ ;
     /**
-     * <code>required uint64 id = 1;</code>
-     */
-    public boolean hasId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required uint64 id = 1;</code>
+     * <code>uint64 id = 1;</code>
      */
     public long getId() {
       return id_;
     }
     /**
-     * <code>required uint64 id = 1;</code>
+     * <code>uint64 id = 1;</code>
      */
     public Builder setId(long value) {
-      bitField0_ |= 0x00000001;
+
       id_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>required uint64 id = 1;</code>
+     * <code>uint64 id = 1;</code>
      */
     public Builder clearId() {
-      bitField0_ = (bitField0_ & ~0x00000001);
+
       id_ = 0L;
       onChanged();
       return this;
     }
 
-    private java.lang.Object name_ = "";
+    private Object name_ = "";
     /**
-     * <code>required string name = 2;</code>
+     * <code>string name = 2;</code>
      */
-    public boolean hasName() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required string name = 2;</code>
-     */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getName() {
+      Object ref = name_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          name_ = s;
-        }
+        String s = bs.toStringUtf8();
+        name_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
-     * <code>required string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
+      Object ref = name_;
       if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -582,36 +545,37 @@ public final class Subject extends
       }
     }
     /**
-     * <code>required string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
-        java.lang.String value) {
+        String value) {
       if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+
       name_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>required string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
-      bitField0_ = (bitField0_ & ~0x00000002);
+
       name_ = getDefaultInstance().getName();
       onChanged();
       return this;
     }
     /**
-     * <code>required string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  checkByteStringIsUtf8(value);
+
       name_ = value;
       onChanged();
       return this;
@@ -619,31 +583,25 @@ public final class Subject extends
 
     private long instituteId_ ;
     /**
-     * <code>required uint64 instituteId = 3;</code>
-     */
-    public boolean hasInstituteId() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>required uint64 instituteId = 3;</code>
+     * <code>uint64 instituteId = 3;</code>
      */
     public long getInstituteId() {
       return instituteId_;
     }
     /**
-     * <code>required uint64 instituteId = 3;</code>
+     * <code>uint64 instituteId = 3;</code>
      */
     public Builder setInstituteId(long value) {
-      bitField0_ |= 0x00000004;
+
       instituteId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>required uint64 instituteId = 3;</code>
+     * <code>uint64 instituteId = 3;</code>
      */
     public Builder clearInstituteId() {
-      bitField0_ = (bitField0_ & ~0x00000004);
+
       instituteId_ = 0L;
       onChanged();
       return this;
@@ -651,44 +609,75 @@ public final class Subject extends
 
     private int semester_ ;
     /**
-     * <code>optional int32 semester = 4;</code>
-     */
-    public boolean hasSemester() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>optional int32 semester = 4;</code>
+     * <code>int32 semester = 4;</code>
      */
     public int getSemester() {
       return semester_;
     }
     /**
-     * <code>optional int32 semester = 4;</code>
+     * <code>int32 semester = 4;</code>
      */
     public Builder setSemester(int value) {
-      bitField0_ |= 0x00000008;
+
       semester_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional int32 semester = 4;</code>
+     * <code>int32 semester = 4;</code>
      */
     public Builder clearSemester() {
-      bitField0_ = (bitField0_ & ~0x00000008);
+
       semester_ = 0;
       onChanged();
       return this;
     }
+    public final Builder setUnknownFields(
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
+      return this;
+    }
+
+    public final Builder mergeUnknownFields(
+        final com.google.protobuf.UnknownFieldSet unknownFields) {
+      return this;
+    }
+
 
     // @@protoc_insertion_point(builder_scope:Subject)
   }
 
+  // @@protoc_insertion_point(class_scope:Subject)
+  private static final Subject DEFAULT_INSTANCE;
   static {
-    defaultInstance = new Subject(true);
-    defaultInstance.initFields();
+    DEFAULT_INSTANCE = new Subject();
   }
 
-  // @@protoc_insertion_point(class_scope:Subject)
+  public static Subject getDefaultInstance() {
+    return DEFAULT_INSTANCE;
+  }
+
+  private static final com.google.protobuf.Parser<Subject>
+      PARSER = new com.google.protobuf.AbstractParser<Subject>() {
+    public Subject parsePartialFrom(
+        CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Subject(input, extensionRegistry);
+    }
+  };
+
+  public static com.google.protobuf.Parser<Subject> parser() {
+    return PARSER;
+  }
+
+  @Override
+  public com.google.protobuf.Parser<Subject> getParserForType() {
+    return PARSER;
+  }
+
+  public Subject getDefaultInstanceForType() {
+    return DEFAULT_INSTANCE;
+  }
+
 }
 

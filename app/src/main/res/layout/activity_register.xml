@@ -4,57 +4,119 @@
     android:id="@+id/activity_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kurovszky.robin.unicalendar.InfoActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="kurovszky.robin.unicalendar.activity.InfoActivity">
+
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="USER"/>
-    <EditText
-        android:id="@+id/user_text_input_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PASSWORD"/>
-    <EditText
-        android:id="@+id/password_text_input_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="REAL_NAME"/>
-    <EditText
-        android:id="@+id/real_name_text_input_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="INSTITUTE"/>
 
-    <Spinner
-        android:id="@+id/institute_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/institute_create_register"
-        android:text="cant find institute? add one here"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primary"
-        android:textColor="@color/icons"/>
-    <Button
-        android:id="@+id/submit_input_register"
-        android:text="submit"
-        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/usericon"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:tint="@color/accent" />
+
+        <TextView
+            style="@style/ListTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_hint" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@color/primary"
-        android:textColor="@color/icons"/>
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/user_text_input_register"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/username_login" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password_text_input_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/real_name_text_input_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/real_name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/institute"
+            android:textSize="17sp"
+            android:paddingStart="6dp"
+            android:paddingLeft="6dp" />
+
+        <Spinner
+            android:id="@+id/institute_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/institute"
+            android:spinnerMode="dialog"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/institute_create_register"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="3dp"
+            android:background="@color/primary"
+            android:padding="10dp"
+            android:text="@string/cant_find_institute_add_one_here"
+            android:textColor="@color/icons" />
+
+        <Button
+            android:id="@+id/submit_input_register"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="3dp"
+            android:background="@color/primary"
+            android:text="@string/register_submit"
+            android:textColor="@color/icons" />
+    </LinearLayout>
 
 </LinearLayout>

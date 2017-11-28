@@ -4,7 +4,7 @@
     android:id="@+id/activity_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kurovszky.robin.unicalendar.InfoActivity"
+    tools:context="kurovszky.robin.unicalendar.activity.InfoActivity"
     android:orientation="vertical">
     <include
         android:id="@+id/toolbar"

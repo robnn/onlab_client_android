@@ -1,10 +1,9 @@
 package kurovszky.robin.unicalendar.web_service.grpc.generated;
 
+import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
@@ -14,7 +13,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.2.0)",
+    value = "by gRPC proto compiler (version 1.6.1)",
     comments = "Source: handler.proto")
 public final class CommentServiceGrpc {
 
@@ -24,23 +23,29 @@ public final class CommentServiceGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<Subject,
-          CommentList> METHOD_GET_COMMENTS_BY_SUBJECT =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "CommentService", "getCommentsBySubject"),
-          io.grpc.protobuf.ProtoUtils.marshaller(Subject.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(CommentList.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.Subject,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList> METHOD_GET_COMMENTS_BY_SUBJECT =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.Subject, kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "CommentService", "getCommentsBySubject"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.Subject.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList.getDefaultInstance()))
+          .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<Comment,
-          Empty> METHOD_ADD_COMMENT =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "CommentService", "addComment"),
-          io.grpc.protobuf.ProtoUtils.marshaller(Comment.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(Empty.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.Comment,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.Empty> METHOD_ADD_COMMENT =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.Comment, kurovszky.robin.unicalendar.web_service.grpc.generated.Empty>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "CommentService", "addComment"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.Comment.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.Empty.getDefaultInstance()))
+          .build();
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -58,7 +63,7 @@ public final class CommentServiceGrpc {
   }
 
   /**
-   * Creates a new ListenableFuture-style stub that supports unary and streaming output calls on the service
+   * Creates a new ListenableFuture-style stub that supports unary calls on the service
    */
   public static CommentServiceFutureStub newFutureStub(
       io.grpc.Channel channel) {
@@ -74,33 +79,33 @@ public final class CommentServiceGrpc {
 
     /**
      */
-    public void getCommentsBySubject(Subject request,
-        io.grpc.stub.StreamObserver<CommentList> responseObserver) {
+    public void getCommentsBySubject(kurovszky.robin.unicalendar.web_service.grpc.generated.Subject request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_COMMENTS_BY_SUBJECT, responseObserver);
     }
 
     /**
      */
-    public void addComment(Comment request,
-        io.grpc.stub.StreamObserver<Empty> responseObserver) {
+    public void addComment(kurovszky.robin.unicalendar.web_service.grpc.generated.Comment request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_ADD_COMMENT, responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_GET_COMMENTS_BY_SUBJECT,
             asyncUnaryCall(
               new MethodHandlers<
-                      Subject,
-                      CommentList>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.Subject,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList>(
                   this, METHODID_GET_COMMENTS_BY_SUBJECT)))
           .addMethod(
             METHOD_ADD_COMMENT,
             asyncUnaryCall(
               new MethodHandlers<
-                      Comment,
-                      Empty>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.Comment,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.Empty>(
                   this, METHODID_ADD_COMMENT)))
           .build();
     }
@@ -121,7 +126,7 @@ public final class CommentServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected CommentServiceStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new CommentServiceStub(channel, callOptions);
@@ -129,16 +134,16 @@ public final class CommentServiceGrpc {
 
     /**
      */
-    public void getCommentsBySubject(Subject request,
-        io.grpc.stub.StreamObserver<CommentList> responseObserver) {
+    public void getCommentsBySubject(kurovszky.robin.unicalendar.web_service.grpc.generated.Subject request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_COMMENTS_BY_SUBJECT, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void addComment(Comment request,
-        io.grpc.stub.StreamObserver<Empty> responseObserver) {
+    public void addComment(kurovszky.robin.unicalendar.web_service.grpc.generated.Comment request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Empty> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_ADD_COMMENT, getCallOptions()), request, responseObserver);
     }
@@ -159,7 +164,7 @@ public final class CommentServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected CommentServiceBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new CommentServiceBlockingStub(channel, callOptions);
@@ -167,14 +172,14 @@ public final class CommentServiceGrpc {
 
     /**
      */
-    public CommentList getCommentsBySubject(Subject request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList getCommentsBySubject(kurovszky.robin.unicalendar.web_service.grpc.generated.Subject request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_COMMENTS_BY_SUBJECT, getCallOptions(), request);
     }
 
     /**
      */
-    public Empty addComment(Comment request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.Empty addComment(kurovszky.robin.unicalendar.web_service.grpc.generated.Comment request) {
       return blockingUnaryCall(
           getChannel(), METHOD_ADD_COMMENT, getCallOptions(), request);
     }
@@ -195,7 +200,7 @@ public final class CommentServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected CommentServiceFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new CommentServiceFutureStub(channel, callOptions);
@@ -203,16 +208,16 @@ public final class CommentServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<CommentList> getCommentsBySubject(
-        Subject request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList> getCommentsBySubject(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.Subject request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_COMMENTS_BY_SUBJECT, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<Empty> addComment(
-        Comment request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.Empty> addComment(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.Comment request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_ADD_COMMENT, getCallOptions()), request);
     }
@@ -234,25 +239,25 @@ public final class CommentServiceGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_COMMENTS_BY_SUBJECT:
-          serviceImpl.getCommentsBySubject((Subject) request,
-              (io.grpc.stub.StreamObserver<CommentList>) responseObserver);
+          serviceImpl.getCommentsBySubject((kurovszky.robin.unicalendar.web_service.grpc.generated.Subject) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.CommentList>) responseObserver);
           break;
         case METHODID_ADD_COMMENT:
-          serviceImpl.addComment((Comment) request,
-              (io.grpc.stub.StreamObserver<Empty>) responseObserver);
+          serviceImpl.addComment((kurovszky.robin.unicalendar.web_service.grpc.generated.Comment) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Empty>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -263,9 +268,9 @@ public final class CommentServiceGrpc {
   }
 
   private static final class CommentServiceDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return Handler.getDescriptor();
+      return kurovszky.robin.unicalendar.web_service.grpc.generated.Handler.getDescriptor();
     }
   }
 

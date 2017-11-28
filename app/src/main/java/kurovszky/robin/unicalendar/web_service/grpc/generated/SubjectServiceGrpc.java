@@ -1,10 +1,9 @@
 package kurovszky.robin.unicalendar.web_service.grpc.generated;
 
+import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
 import static io.grpc.stub.ClientCalls.blockingUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
 import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
@@ -14,7 +13,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.2.0)",
+    value = "by gRPC proto compiler (version 1.6.1)",
     comments = "Source: handler.proto")
 public final class SubjectServiceGrpc {
 
@@ -24,32 +23,41 @@ public final class SubjectServiceGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<Institute,
-          SubjectList> METHOD_GET_SUBJECTS_BY_INSTITUTE =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "SubjectService", "getSubjectsByInstitute"),
-          io.grpc.protobuf.ProtoUtils.marshaller(Institute.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(SubjectList.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.Institute,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList> METHOD_GET_SUBJECTS_BY_INSTITUTE =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.Institute, kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "SubjectService", "getSubjectsByInstitute"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.Institute.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList.getDefaultInstance()))
+          .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<SubjectName,
-          Subject> METHOD_GET_SUBJECT_BY_NAME =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "SubjectService", "getSubjectByName"),
-          io.grpc.protobuf.ProtoUtils.marshaller(SubjectName.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(Subject.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.Subject> METHOD_GET_SUBJECT_BY_NAME =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName, kurovszky.robin.unicalendar.web_service.grpc.generated.Subject>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "SubjectService", "getSubjectByName"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.Subject.getDefaultInstance()))
+          .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<Subject,
-          Empty> METHOD_ADD_SUBJECT =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "SubjectService", "addSubject"),
-          io.grpc.protobuf.ProtoUtils.marshaller(Subject.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(Empty.getDefaultInstance()));
+  public static final io.grpc.MethodDescriptor<kurovszky.robin.unicalendar.web_service.grpc.generated.Subject,
+      kurovszky.robin.unicalendar.web_service.grpc.generated.Empty> METHOD_ADD_SUBJECT =
+      io.grpc.MethodDescriptor.<kurovszky.robin.unicalendar.web_service.grpc.generated.Subject, kurovszky.robin.unicalendar.web_service.grpc.generated.Empty>newBuilder()
+          .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName(generateFullMethodName(
+              "SubjectService", "addSubject"))
+          .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.Subject.getDefaultInstance()))
+          .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+              kurovszky.robin.unicalendar.web_service.grpc.generated.Empty.getDefaultInstance()))
+          .build();
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -67,7 +75,7 @@ public final class SubjectServiceGrpc {
   }
 
   /**
-   * Creates a new ListenableFuture-style stub that supports unary and streaming output calls on the service
+   * Creates a new ListenableFuture-style stub that supports unary calls on the service
    */
   public static SubjectServiceFutureStub newFutureStub(
       io.grpc.Channel channel) {
@@ -83,47 +91,47 @@ public final class SubjectServiceGrpc {
 
     /**
      */
-    public void getSubjectsByInstitute(Institute request,
-        io.grpc.stub.StreamObserver<SubjectList> responseObserver) {
+    public void getSubjectsByInstitute(kurovszky.robin.unicalendar.web_service.grpc.generated.Institute request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_SUBJECTS_BY_INSTITUTE, responseObserver);
     }
 
     /**
      */
-    public void getSubjectByName(SubjectName request,
-        io.grpc.stub.StreamObserver<Subject> responseObserver) {
+    public void getSubjectByName(kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Subject> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_SUBJECT_BY_NAME, responseObserver);
     }
 
     /**
      */
-    public void addSubject(Subject request,
-        io.grpc.stub.StreamObserver<Empty> responseObserver) {
+    public void addSubject(kurovszky.robin.unicalendar.web_service.grpc.generated.Subject request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_ADD_SUBJECT, responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_GET_SUBJECTS_BY_INSTITUTE,
             asyncUnaryCall(
               new MethodHandlers<
-                      Institute,
-                      SubjectList>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.Institute,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList>(
                   this, METHODID_GET_SUBJECTS_BY_INSTITUTE)))
           .addMethod(
             METHOD_GET_SUBJECT_BY_NAME,
             asyncUnaryCall(
               new MethodHandlers<
-                      SubjectName,
-                      Subject>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.Subject>(
                   this, METHODID_GET_SUBJECT_BY_NAME)))
           .addMethod(
             METHOD_ADD_SUBJECT,
             asyncUnaryCall(
               new MethodHandlers<
-                      Subject,
-                      Empty>(
+                kurovszky.robin.unicalendar.web_service.grpc.generated.Subject,
+                kurovszky.robin.unicalendar.web_service.grpc.generated.Empty>(
                   this, METHODID_ADD_SUBJECT)))
           .build();
     }
@@ -144,7 +152,7 @@ public final class SubjectServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SubjectServiceStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new SubjectServiceStub(channel, callOptions);
@@ -152,24 +160,24 @@ public final class SubjectServiceGrpc {
 
     /**
      */
-    public void getSubjectsByInstitute(Institute request,
-        io.grpc.stub.StreamObserver<SubjectList> responseObserver) {
+    public void getSubjectsByInstitute(kurovszky.robin.unicalendar.web_service.grpc.generated.Institute request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_SUBJECTS_BY_INSTITUTE, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getSubjectByName(SubjectName request,
-        io.grpc.stub.StreamObserver<Subject> responseObserver) {
+    public void getSubjectByName(kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Subject> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_SUBJECT_BY_NAME, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void addSubject(Subject request,
-        io.grpc.stub.StreamObserver<Empty> responseObserver) {
+    public void addSubject(kurovszky.robin.unicalendar.web_service.grpc.generated.Subject request,
+        io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Empty> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_ADD_SUBJECT, getCallOptions()), request, responseObserver);
     }
@@ -190,7 +198,7 @@ public final class SubjectServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SubjectServiceBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new SubjectServiceBlockingStub(channel, callOptions);
@@ -198,21 +206,21 @@ public final class SubjectServiceGrpc {
 
     /**
      */
-    public SubjectList getSubjectsByInstitute(Institute request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList getSubjectsByInstitute(kurovszky.robin.unicalendar.web_service.grpc.generated.Institute request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_SUBJECTS_BY_INSTITUTE, getCallOptions(), request);
     }
 
     /**
      */
-    public Subject getSubjectByName(SubjectName request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.Subject getSubjectByName(kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_SUBJECT_BY_NAME, getCallOptions(), request);
     }
 
     /**
      */
-    public Empty addSubject(Subject request) {
+    public kurovszky.robin.unicalendar.web_service.grpc.generated.Empty addSubject(kurovszky.robin.unicalendar.web_service.grpc.generated.Subject request) {
       return blockingUnaryCall(
           getChannel(), METHOD_ADD_SUBJECT, getCallOptions(), request);
     }
@@ -233,7 +241,7 @@ public final class SubjectServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected SubjectServiceFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new SubjectServiceFutureStub(channel, callOptions);
@@ -241,24 +249,24 @@ public final class SubjectServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<SubjectList> getSubjectsByInstitute(
-        Institute request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList> getSubjectsByInstitute(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.Institute request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_SUBJECTS_BY_INSTITUTE, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<Subject> getSubjectByName(
-        SubjectName request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.Subject> getSubjectByName(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_SUBJECT_BY_NAME, getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<Empty> addSubject(
-        Subject request) {
+    public com.google.common.util.concurrent.ListenableFuture<kurovszky.robin.unicalendar.web_service.grpc.generated.Empty> addSubject(
+        kurovszky.robin.unicalendar.web_service.grpc.generated.Subject request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_ADD_SUBJECT, getCallOptions()), request);
     }
@@ -281,29 +289,29 @@ public final class SubjectServiceGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_SUBJECTS_BY_INSTITUTE:
-          serviceImpl.getSubjectsByInstitute((Institute) request,
-              (io.grpc.stub.StreamObserver<SubjectList>) responseObserver);
+          serviceImpl.getSubjectsByInstitute((kurovszky.robin.unicalendar.web_service.grpc.generated.Institute) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectList>) responseObserver);
           break;
         case METHODID_GET_SUBJECT_BY_NAME:
-          serviceImpl.getSubjectByName((SubjectName) request,
-              (io.grpc.stub.StreamObserver<Subject>) responseObserver);
+          serviceImpl.getSubjectByName((kurovszky.robin.unicalendar.web_service.grpc.generated.SubjectName) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Subject>) responseObserver);
           break;
         case METHODID_ADD_SUBJECT:
-          serviceImpl.addSubject((Subject) request,
-              (io.grpc.stub.StreamObserver<Empty>) responseObserver);
+          serviceImpl.addSubject((kurovszky.robin.unicalendar.web_service.grpc.generated.Subject) request,
+              (io.grpc.stub.StreamObserver<kurovszky.robin.unicalendar.web_service.grpc.generated.Empty>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -314,9 +322,9 @@ public final class SubjectServiceGrpc {
   }
 
   private static final class SubjectServiceDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return Handler.getDescriptor();
+      return kurovszky.robin.unicalendar.web_service.grpc.generated.Handler.getDescriptor();
     }
   }
 

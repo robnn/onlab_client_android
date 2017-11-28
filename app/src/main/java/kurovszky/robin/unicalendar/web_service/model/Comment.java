@@ -5,10 +5,6 @@ import org.ksoap2.serialization.PropertyInfo;
 
 import java.util.Hashtable;
 
-/**
- * Created by robin on 2017. 03. 15..
- */
-
 public class Comment implements KvmSerializable {
     private Long id;
     private String commentText;
